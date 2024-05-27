@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="pruebamjp.list">
+      <field name="name">pruebamjp list</field>
+      <field name="model">pruebamjp.pruebamjp</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="pruebamjp.action_window">
+      <field name="name">pruebamjp window</field>
+      <field name="res_model">pruebamjp.pruebamjp</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="pruebamjp.action_server">
+      <field name="name">pruebamjp server</field>
+      <field name="model_id" ref="model_pruebamjp_pruebamjp"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="pruebamjp" id="pruebamjp.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="pruebamjp.menu_1" parent="pruebamjp.menu_root"/>
+    <menuitem name="Menu 2" id="pruebamjp.menu_2" parent="pruebamjp.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="pruebamjp.menu_1_list" parent="pruebamjp.menu_1"
+              action="pruebamjp.action_window"/>
+    <menuitem name="Server to list" id="pruebamjp" parent="pruebamjp.menu_2"
+              action="pruebamjp.action_server"/>
+-->
+  </data>
+</odoo>
