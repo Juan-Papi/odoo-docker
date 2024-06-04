@@ -6089,3 +6089,867 @@ pruebamjp.access_pruebamjp_estudiante_tutor,access_pruebamjp_estudiante_tutor,pr
 2024-06-04 18:39:48,731 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:39:48] "POST /web/dataset/call_kw/pruebamjp.curso/get_views HTTP/1.1" 200 - 18 0.007 0.013
 2024-06-04 18:39:48,752 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:39:48] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.001 0.004
 2024-06-04 18:39:48,752 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:39:48] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 3 0.002 0.004
+2024-06-04 18:41:20,997 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:41:20] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 2 0.001 0.003
+2024-06-04 18:41:35,852 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:41:35] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 2 0.001 0.003
+2024-06-04 18:42:36,746 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:42:36] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 2 0.001 0.002
+2024-06-04 18:42:39,196 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:42:39] "POST /web/dataset/call_kw/pruebamjp.curso/onchange HTTP/1.1" 200 - 2 0.001 0.003
+2024-06-04 18:42:43,133 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:42:43] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 2 0.001 0.005
+2024-06-04 18:42:43,408 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:42:43] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 2 0.001 0.003
+2024-06-04 18:42:46,980 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:42:46] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 2 0.001 0.005
+2024-06-04 18:42:48,668 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:42:48] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 2 0.001 0.004
+2024-06-04 18:42:48,917 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:42:48] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 2 0.001 0.002
+2024-06-04 18:42:54,790 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:42:54] "POST /web/dataset/call_kw/pruebamjp.curso/get_import_templates HTTP/1.1" 200 - 1 0.000 0.007
+2024-06-04 18:42:54,800 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:42:54] "POST /web/dataset/call_kw/base_import.import/create HTTP/1.1" 200 - 5 0.005 0.011
+2024-06-04 18:42:54,816 1 INFO ? werkzeug: 172.25.0.1 - - [04/Jun/2024 18:42:54] "GET /web/static/img/smiling_face.svg HTTP/1.1" 200 - 0 0.000 0.002
+2024-06-04 18:42:57,334 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:42:57] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 2 0.001 0.004
+2024-06-04 18:43:00,626 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:43:00] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 2 0.001 0.004
+2024-06-04 18:43:34,045 1 INFO ? werkzeug: 172.25.0.1 - - [04/Jun/2024 18:43:34] "GET /mail/static/src/img/smiley/mailfailure.jpg HTTP/1.1" 200 - 0 0.000 0.003
+2024-06-04 18:43:34,045 1 INFO ? werkzeug: 172.25.0.1 - - [04/Jun/2024 18:43:34] "GET /sms/static/img/sms_failure.svg HTTP/1.1" 200 - 0 0.000 0.004
+2024-06-04 18:43:34,055 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:43:34] "GET /web/image?field=avatar_128&id=2&model=res.partner&unique=2024-06-04%2018%3A36%3A42 HTTP/1.1" 200 - 6 0.004 0.013
+2024-06-04 18:43:34,079 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:43:34] "POST /web/dataset/call_kw/discuss.channel/channel_fetch_preview HTTP/1.1" 200 - 38 0.017 0.025
+2024-06-04 18:43:35,946 1 INFO ? werkzeug: 172.25.0.1 - - [04/Jun/2024 18:43:35] "GET /sale/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2024-06-04 18:43:35,954 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:43:35] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 9 0.003 0.008
+2024-06-04 18:47:04,250 1 INFO odoo-p2 odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2024-06-04 18:47:04,264 1 INFO odoo-p2 odoo.addons.base.models.ir_cron: Job done: `payment: post-process transactions` (0.012s). 
+2024-06-04 18:50:46,756 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-06-04 18:50:46,756 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-06-04 18:50:47,089 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2024-06-04 18:50:50,193 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:561: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 561, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-04 18:50:50,194 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:587: DeprecationWarning: The 'osv_memory_age_limit' option found in the configuration file is a deprecated alias to 'transient_age_limit', please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 587, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-04 18:50:50,196 1 INFO ? odoo: Odoo version 17.0-20240522 
+2024-06-04 18:50:50,197 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-06-04 18:50:50,198 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-06-04 18:50:50,198 1 INFO ? odoo: database: odoo@db:5432 
+2024-06-04 18:50:50,271 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-06-04 18:50:50,473 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on e8d1133b0bda:8069 
+2024-06-04 18:50:53,651 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 18:50:53,658 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-04 18:50:53,687 1 WARNING odoo-p2 odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-04 18:50:53,702 1 INFO odoo-p2 odoo.modules.loading: loading 53 modules... 
+2024-06-04 18:50:54,537 1 INFO odoo-p2 odoo.modules.loading: 53 modules loaded in 0.83s, 0 queries (+0 extra) 
+2024-06-04 18:50:54,622 1 INFO odoo-p2 odoo.modules.loading: Modules loaded. 
+2024-06-04 18:50:54,625 1 INFO odoo-p2 odoo.modules.registry: Registry loaded in 0.997s 
+2024-06-04 18:50:54,628 1 INFO odoo-p2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-04 18:50:54,701 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:50:54] "GET /websocket HTTP/1.1" 101 - 22 0.023 1.051
+2024-06-04 18:50:54,729 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-06-04 18:50:55,058 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:50:55] "POST /web/action/load HTTP/1.1" 200 - 11 0.005 0.688
+2024-06-04 18:50:55,159 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:50:55] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 50 0.028 0.065
+2024-06-04 18:50:55,204 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:50:55] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.002 0.031
+2024-06-04 18:50:55,234 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:50:55] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.018 0.041
+2024-06-04 18:50:55,264 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:50:55] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.009 0.072
+2024-06-04 18:50:56,625 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:50:56] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.037 0.093
+2024-06-04 18:50:56,637 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:50:56] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.011 0.129
+2024-06-04 18:50:58,030 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:50:58] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.014 0.018
+2024-06-04 18:50:58,048 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:50:58] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.004 0.007
+2024-06-04 18:51:00,772 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:00] "POST /web/dataset/call_button HTTP/1.1" 200 - 1 0.001 0.014
+2024-06-04 18:51:00,786 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:00] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 7 0.002 0.007
+2024-06-04 18:51:00,845 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:00] "POST /web/dataset/call_kw/ir.module.module/web_read HTTP/1.1" 200 - 12 0.006 0.045
+2024-06-04 18:51:00,901 1 WARNING odoo-p2 odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-04 18:51:00,941 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:00] "GET /web/bundle/web_editor.backend_assets_wysiwyg?lang=es_BO&debug=1 HTTP/1.1" 200 - 9 0.003 0.068
+2024-06-04 18:51:00,993 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:00] "GET /web/image?model=ir.module.module&id=377&field=icon_image&unique=1717526373000 HTTP/1.1" 200 - 4 0.003 0.005
+2024-06-04 18:51:01,798 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.25.0.1 
+2024-06-04 18:51:01,800 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.25.0.1 
+2024-06-04 18:51:01,800 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.25.0.1 
+2024-06-04 18:51:02,325 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user pablojuan123@gmail.com #2 via 172.25.0.1 
+2024-06-04 18:51:03,243 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 18:51:03,249 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-04 18:51:03,274 1 INFO odoo-p2 odoo.modules.loading: updating modules list 
+2024-06-04 18:51:03,277 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.25.0.1 
+2024-06-04 18:51:03,761 1 INFO odoo-p2 odoo.modules.loading: loading 53 modules... 
+2024-06-04 18:51:03,762 1 INFO odoo-p2 odoo.modules.loading: Loading module pruebamjp (2/53) 
+2024-06-04 18:51:03,788 1 INFO odoo-p2 odoo.modules.registry: module pruebamjp: creating or updating database tables 
+2024-06-04 18:51:03,832 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.curso() have the same label: Cursos. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 18:51:03,835 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (estudiante_tutor_ids, inscripcion_ids) of pruebamjp.estudiante() have the same label: Estudiantes. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 18:51:03,837 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.gestion() have the same label: Gestiones. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 18:51:03,866 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/security/ir.model.access.csv 
+2024-06-04 18:51:03,918 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/views/views.xml 
+2024-06-04 18:51:03,954 1 WARNING odoo-p2 odoo.modules.loading: Transient module states were reset 
+2024-06-04 18:51:03,957 1 ERROR odoo-p2 odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 99, in lookup
+    r = d[key]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: ('ir.model.data', <function IrModelData._xmlid_lookup at 0x7f3f7a01f130>, 'pruebamjp.action_materia_window')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 556, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 312, in _tag_menuitem
+    act = self.env.ref(a_action).sudo()
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 580, in ref
+    res_model, res_id = self['ir.model.data']._xmlid_to_res_model_res_id(
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2187, in _xmlid_to_res_model_res_id
+    return self._xmlid_lookup(xmlid)
+  File "<decorator-gen-43>", line 2, in _xmlid_lookup
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 104, in lookup
+    value = d[key] = self.method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2180, in _xmlid_lookup
+    raise ValueError('External ID not found in the system: %s' % xmlid)
+ValueError: External ID not found in the system: pruebamjp.action_materia_window
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 227, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(env, package.name, filename, idref, mode, noupdate, kind)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 627, in convert_file
+    convert_xml_import(env, module, fp, idref, mode, noupdate)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 693, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 613, in parse
+    self._tag_root(de)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 556, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 569, in _tag_root
+    raise ParseError('while parsing %s:%s, somewhere inside\n%s' % (
+odoo.tools.convert.ParseError: while parsing /mnt/extra-addons/pruebamjp/views/views.xml:12, somewhere inside
+<menuitem name="materias" id="pruebamjp.menu_2_list" parent="pruebamjp.menu_2" action="pruebamjp.action_materia_window"/>
+2024-06-04 18:51:03,964 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 18:51:03,971 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-04 18:51:03,976 1 INFO odoo-p2 odoo.modules.loading: loading 53 modules... 
+2024-06-04 18:51:04,063 1 INFO odoo-p2 odoo.modules.loading: 53 modules loaded in 0.09s, 0 queries (+0 extra) 
+2024-06-04 18:51:04,182 1 INFO odoo-p2 odoo.modules.loading: Modules loaded. 
+2024-06-04 18:51:04,187 1 INFO odoo-p2 odoo.modules.registry: Registry loaded in 0.226s 
+2024-06-04 18:51:04,192 1 ERROR odoo-p2 odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 99, in lookup
+    r = d[key]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: ('ir.model.data', <function IrModelData._xmlid_lookup at 0x7f3f7a01f130>, 'pruebamjp.action_materia_window')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 556, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 312, in _tag_menuitem
+    act = self.env.ref(a_action).sudo()
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 580, in ref
+    res_model, res_id = self['ir.model.data']._xmlid_to_res_model_res_id(
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2187, in _xmlid_to_res_model_res_id
+    return self._xmlid_lookup(xmlid)
+  File "<decorator-gen-43>", line 2, in _xmlid_lookup
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 104, in lookup
+    value = d[key] = self.method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2180, in _xmlid_lookup
+    raise ValueError('External ID not found in the system: %s' % xmlid)
+ValueError: External ID not found in the system: pruebamjp.action_materia_window
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2194, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1770, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 133, in retrying
+    result = func()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1797, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2001, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 222, in _dispatch
+    result = endpoint(**request.params)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 725, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 28, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 20, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 468, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 453, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-83>", line 2, in button_immediate_upgrade
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 75, in check_and_log
+    return method(self, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 657, in button_immediate_upgrade
+    return self._button_immediate_function(self.env.registry[self._name].button_upgrade)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 590, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-16>", line 2, in new
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 227, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(env, package.name, filename, idref, mode, noupdate, kind)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 627, in convert_file
+    convert_xml_import(env, module, fp, idref, mode, noupdate)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 693, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 613, in parse
+    self._tag_root(de)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 556, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 569, in _tag_root
+    raise ParseError('while parsing %s:%s, somewhere inside\n%s' % (
+odoo.tools.convert.ParseError: while parsing /mnt/extra-addons/pruebamjp/views/views.xml:12, somewhere inside
+<menuitem name="materias" id="pruebamjp.menu_2_list" parent="pruebamjp.menu_2" action="pruebamjp.action_materia_window"/>
+2024-06-04 18:51:04,195 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:04] "POST /web/dataset/call_button HTTP/1.1" 200 - 2799 0.663 1.737
+2024-06-04 18:51:41,182 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-06-04 18:51:41,183 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-06-04 18:51:41,414 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2024-06-04 18:51:44,440 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:561: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 561, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-04 18:51:44,441 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:587: DeprecationWarning: The 'osv_memory_age_limit' option found in the configuration file is a deprecated alias to 'transient_age_limit', please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 587, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-04 18:51:44,442 1 INFO ? odoo: Odoo version 17.0-20240522 
+2024-06-04 18:51:44,444 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-06-04 18:51:44,444 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-06-04 18:51:44,445 1 INFO ? odoo: database: odoo@db:5432 
+2024-06-04 18:51:44,520 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-06-04 18:51:44,638 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on e8d1133b0bda:8069 
+2024-06-04 18:51:47,230 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 18:51:47,248 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-04 18:51:47,305 1 WARNING odoo-p2 odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-04 18:51:47,325 1 INFO odoo-p2 odoo.modules.loading: loading 53 modules... 
+2024-06-04 18:51:47,970 1 INFO odoo-p2 odoo.modules.loading: 53 modules loaded in 0.64s, 0 queries (+0 extra) 
+2024-06-04 18:51:48,211 1 INFO odoo-p2 odoo.modules.loading: Modules loaded. 
+2024-06-04 18:51:48,215 1 INFO odoo-p2 odoo.modules.registry: Registry loaded in 1.033s 
+2024-06-04 18:51:48,217 1 INFO odoo-p2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-04 18:51:48,268 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:48] "GET /websocket HTTP/1.1" 101 - 22 0.027 1.062
+2024-06-04 18:51:48,328 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-06-04 18:51:48,674 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.25.0.1 
+2024-06-04 18:51:48,675 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.25.0.1 
+2024-06-04 18:51:48,676 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.25.0.1 
+2024-06-04 18:51:49,192 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user pablojuan123@gmail.com #2 via 172.25.0.1 
+2024-06-04 18:51:49,969 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 18:51:49,974 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-06-04 18:51:49,991 1 INFO odoo-p2 odoo.modules.loading: updating modules list 
+2024-06-04 18:51:49,994 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.25.0.1 
+2024-06-04 18:51:50,485 1 INFO odoo-p2 odoo.modules.loading: loading 53 modules... 
+2024-06-04 18:51:50,487 1 INFO odoo-p2 odoo.modules.loading: Loading module pruebamjp (2/53) 
+2024-06-04 18:51:50,513 1 INFO odoo-p2 odoo.modules.registry: module pruebamjp: creating or updating database tables 
+2024-06-04 18:51:50,549 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.curso() have the same label: Cursos. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 18:51:50,551 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (estudiante_tutor_ids, inscripcion_ids) of pruebamjp.estudiante() have the same label: Estudiantes. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 18:51:50,552 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.gestion() have the same label: Gestiones. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 18:51:50,601 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/security/ir.model.access.csv 
+2024-06-04 18:51:50,666 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/views/views.xml 
+2024-06-04 18:51:50,704 1 WARNING odoo-p2 odoo.modules.loading: Transient module states were reset 
+2024-06-04 18:51:50,707 1 ERROR odoo-p2 odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 99, in lookup
+    r = d[key]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: ('ir.model.data', <function IrModelData._xmlid_lookup at 0x7f211cd03130>, 'pruebamjp.action_materia_window')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 556, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 312, in _tag_menuitem
+    act = self.env.ref(a_action).sudo()
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 580, in ref
+    res_model, res_id = self['ir.model.data']._xmlid_to_res_model_res_id(
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2187, in _xmlid_to_res_model_res_id
+    return self._xmlid_lookup(xmlid)
+  File "<decorator-gen-43>", line 2, in _xmlid_lookup
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 104, in lookup
+    value = d[key] = self.method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2180, in _xmlid_lookup
+    raise ValueError('External ID not found in the system: %s' % xmlid)
+ValueError: External ID not found in the system: pruebamjp.action_materia_window
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 227, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(env, package.name, filename, idref, mode, noupdate, kind)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 627, in convert_file
+    convert_xml_import(env, module, fp, idref, mode, noupdate)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 693, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 613, in parse
+    self._tag_root(de)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 556, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 569, in _tag_root
+    raise ParseError('while parsing %s:%s, somewhere inside\n%s' % (
+odoo.tools.convert.ParseError: while parsing /mnt/extra-addons/pruebamjp/views/views.xml:12, somewhere inside
+<menuitem name="materias" id="pruebamjp.menu_3_list" parent="pruebamjp.menu_2" action="pruebamjp.action_materia_window"/>
+2024-06-04 18:51:50,719 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 18:51:50,724 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-06-04 18:51:50,732 1 INFO odoo-p2 odoo.modules.loading: loading 53 modules... 
+2024-06-04 18:51:50,758 1 INFO odoo-p2 odoo.modules.loading: 53 modules loaded in 0.02s, 0 queries (+0 extra) 
+2024-06-04 18:51:50,831 1 INFO odoo-p2 odoo.modules.loading: Modules loaded. 
+2024-06-04 18:51:50,841 1 INFO odoo-p2 odoo.modules.registry: Registry loaded in 0.129s 
+2024-06-04 18:51:50,844 1 ERROR odoo-p2 odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 99, in lookup
+    r = d[key]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: ('ir.model.data', <function IrModelData._xmlid_lookup at 0x7f211cd03130>, 'pruebamjp.action_materia_window')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 556, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 312, in _tag_menuitem
+    act = self.env.ref(a_action).sudo()
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 580, in ref
+    res_model, res_id = self['ir.model.data']._xmlid_to_res_model_res_id(
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2187, in _xmlid_to_res_model_res_id
+    return self._xmlid_lookup(xmlid)
+  File "<decorator-gen-43>", line 2, in _xmlid_lookup
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 104, in lookup
+    value = d[key] = self.method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2180, in _xmlid_lookup
+    raise ValueError('External ID not found in the system: %s' % xmlid)
+ValueError: External ID not found in the system: pruebamjp.action_materia_window
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2194, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1770, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 133, in retrying
+    result = func()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1797, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2001, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 222, in _dispatch
+    result = endpoint(**request.params)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 725, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 28, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 20, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 468, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 453, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-83>", line 2, in button_immediate_upgrade
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 75, in check_and_log
+    return method(self, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 657, in button_immediate_upgrade
+    return self._button_immediate_function(self.env.registry[self._name].button_upgrade)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 590, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-16>", line 2, in new
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 227, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(env, package.name, filename, idref, mode, noupdate, kind)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 627, in convert_file
+    convert_xml_import(env, module, fp, idref, mode, noupdate)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 693, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 613, in parse
+    self._tag_root(de)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 556, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 569, in _tag_root
+    raise ParseError('while parsing %s:%s, somewhere inside\n%s' % (
+odoo.tools.convert.ParseError: while parsing /mnt/extra-addons/pruebamjp/views/views.xml:12, somewhere inside
+<menuitem name="materias" id="pruebamjp.menu_3_list" parent="pruebamjp.menu_2" action="pruebamjp.action_materia_window"/>
+2024-06-04 18:51:50,846 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:50] "POST /web/dataset/call_button HTTP/1.1" 200 - 2804 0.615 2.133
+2024-06-04 18:51:53,082 1 INFO odoo-p2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-04 18:51:56,739 1 WARNING odoo-p2 odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-04 18:51:56,838 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:56] "GET /web HTTP/1.1" 200 - 76 0.031 3.727
+2024-06-04 18:51:56,997 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:56] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 4 0.001 0.004
+2024-06-04 18:51:57,054 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:57] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 21 0.020 0.022
+2024-06-04 18:51:57,069 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:57] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.030
+2024-06-04 18:51:57,092 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:57] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.025 0.045
+2024-06-04 18:51:57,098 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:57] "POST /mail/init_messaging HTTP/1.1" 200 - 61 0.073 0.027
+2024-06-04 18:51:57,131 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:57] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.012 0.011
+2024-06-04 18:51:57,139 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:57] "POST /mail/load_message_failures HTTP/1.1" 200 - 10 0.012 0.012
+2024-06-04 18:51:57,154 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:57] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 42 0.033 0.089
+2024-06-04 18:51:57,183 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:57] "POST /web/dataset/call_kw/ir.module.module/web_read HTTP/1.1" 200 - 13 0.004 0.012
+2024-06-04 18:51:57,234 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:57] "GET /web/bundle/web_editor.backend_assets_wysiwyg?lang=es_BO&debug=1 HTTP/1.1" 200 - 7 0.002 0.020
+2024-06-04 18:51:57,269 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:57] "GET /web/image?model=ir.module.module&id=377&field=icon_image&unique=1717527108000 HTTP/1.1" 200 - 3 0.002 0.006
+2024-06-04 18:51:58,006 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.25.0.1 
+2024-06-04 18:51:58,008 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.25.0.1 
+2024-06-04 18:51:58,009 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.25.0.1 
+2024-06-04 18:51:58,559 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user pablojuan123@gmail.com #2 via 172.25.0.1 
+2024-06-04 18:51:58,583 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 18:51:58,590 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-06-04 18:51:58,609 1 INFO odoo-p2 odoo.modules.loading: updating modules list 
+2024-06-04 18:51:58,612 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.25.0.1 
+2024-06-04 18:51:59,152 1 INFO odoo-p2 odoo.modules.loading: loading 53 modules... 
+2024-06-04 18:51:59,153 1 INFO odoo-p2 odoo.modules.loading: Loading module pruebamjp (2/53) 
+2024-06-04 18:51:59,176 1 INFO odoo-p2 odoo.modules.registry: module pruebamjp: creating or updating database tables 
+2024-06-04 18:51:59,219 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.curso() have the same label: Cursos. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 18:51:59,221 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (estudiante_tutor_ids, inscripcion_ids) of pruebamjp.estudiante() have the same label: Estudiantes. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 18:51:59,223 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.gestion() have the same label: Gestiones. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 18:51:59,253 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/security/ir.model.access.csv 
+2024-06-04 18:51:59,312 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/views/views.xml 
+2024-06-04 18:51:59,332 1 WARNING odoo-p2 odoo.modules.loading: Transient module states were reset 
+2024-06-04 18:51:59,337 1 ERROR odoo-p2 odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 99, in lookup
+    r = d[key]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: ('ir.model.data', <function IrModelData._xmlid_lookup at 0x7f211cd03130>, 'pruebamjp.action_materia_window')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 556, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 312, in _tag_menuitem
+    act = self.env.ref(a_action).sudo()
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 580, in ref
+    res_model, res_id = self['ir.model.data']._xmlid_to_res_model_res_id(
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2187, in _xmlid_to_res_model_res_id
+    return self._xmlid_lookup(xmlid)
+  File "<decorator-gen-43>", line 2, in _xmlid_lookup
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 104, in lookup
+    value = d[key] = self.method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2180, in _xmlid_lookup
+    raise ValueError('External ID not found in the system: %s' % xmlid)
+ValueError: External ID not found in the system: pruebamjp.action_materia_window
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 227, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(env, package.name, filename, idref, mode, noupdate, kind)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 627, in convert_file
+    convert_xml_import(env, module, fp, idref, mode, noupdate)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 693, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 613, in parse
+    self._tag_root(de)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 556, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 569, in _tag_root
+    raise ParseError('while parsing %s:%s, somewhere inside\n%s' % (
+odoo.tools.convert.ParseError: while parsing /mnt/extra-addons/pruebamjp/views/views.xml:12, somewhere inside
+<menuitem name="materias" id="pruebamjp.menu_3_list" parent="pruebamjp.menu_2" action="pruebamjp.action_materia_window"/>
+2024-06-04 18:51:59,342 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 18:51:59,350 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-04 18:51:59,357 1 INFO odoo-p2 odoo.modules.loading: loading 53 modules... 
+2024-06-04 18:51:59,384 1 INFO odoo-p2 odoo.modules.loading: 53 modules loaded in 0.02s, 0 queries (+0 extra) 
+2024-06-04 18:51:59,471 1 INFO odoo-p2 odoo.modules.loading: Modules loaded. 
+2024-06-04 18:51:59,476 1 INFO odoo-p2 odoo.modules.registry: Registry loaded in 0.138s 
+2024-06-04 18:51:59,480 1 ERROR odoo-p2 odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 99, in lookup
+    r = d[key]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: ('ir.model.data', <function IrModelData._xmlid_lookup at 0x7f211cd03130>, 'pruebamjp.action_materia_window')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 556, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 312, in _tag_menuitem
+    act = self.env.ref(a_action).sudo()
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 580, in ref
+    res_model, res_id = self['ir.model.data']._xmlid_to_res_model_res_id(
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2187, in _xmlid_to_res_model_res_id
+    return self._xmlid_lookup(xmlid)
+  File "<decorator-gen-43>", line 2, in _xmlid_lookup
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 104, in lookup
+    value = d[key] = self.method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2180, in _xmlid_lookup
+    raise ValueError('External ID not found in the system: %s' % xmlid)
+ValueError: External ID not found in the system: pruebamjp.action_materia_window
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2194, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1770, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 133, in retrying
+    result = func()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1797, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2001, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 222, in _dispatch
+    result = endpoint(**request.params)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 725, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 28, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 20, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 468, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 453, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-83>", line 2, in button_immediate_upgrade
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 75, in check_and_log
+    return method(self, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 657, in button_immediate_upgrade
+    return self._button_immediate_function(self.env.registry[self._name].button_upgrade)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 590, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-16>", line 2, in new
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 227, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(env, package.name, filename, idref, mode, noupdate, kind)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 627, in convert_file
+    convert_xml_import(env, module, fp, idref, mode, noupdate)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 693, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 613, in parse
+    self._tag_root(de)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 556, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 569, in _tag_root
+    raise ParseError('while parsing %s:%s, somewhere inside\n%s' % (
+odoo.tools.convert.ParseError: while parsing /mnt/extra-addons/pruebamjp/views/views.xml:12, somewhere inside
+<menuitem name="materias" id="pruebamjp.menu_3_list" parent="pruebamjp.menu_2" action="pruebamjp.action_materia_window"/>
+2024-06-04 18:51:59,483 1 INFO odoo-p2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-04 18:51:59,484 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:59] "POST /web/dataset/call_button HTTP/1.1" 200 - 2786 0.710 0.774
+2024-06-04 18:51:59,533 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:51:59] "GET /web/service-worker.js HTTP/1.1" 200 - 23 0.012 0.776
+2024-06-04 18:53:16,077 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-06-04 18:53:16,078 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-06-04 18:53:16,416 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 8 connections  
+2024-06-04 18:53:20,442 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:561: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 561, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-04 18:53:20,443 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:587: DeprecationWarning: The 'osv_memory_age_limit' option found in the configuration file is a deprecated alias to 'transient_age_limit', please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 587, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-04 18:53:20,444 1 INFO ? odoo: Odoo version 17.0-20240522 
+2024-06-04 18:53:20,445 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-06-04 18:53:20,446 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-06-04 18:53:20,447 1 INFO ? odoo: database: odoo@db:5432 
+2024-06-04 18:53:20,522 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-06-04 18:53:20,628 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on e8d1133b0bda:8069 
+2024-06-04 18:53:21,431 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 18:53:21,437 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-06-04 18:53:21,454 1 WARNING odoo-p2 odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-04 18:53:21,473 1 INFO odoo-p2 odoo.modules.loading: loading 53 modules... 
+2024-06-04 18:53:22,103 1 INFO odoo-p2 odoo.modules.loading: 53 modules loaded in 0.63s, 0 queries (+0 extra) 
+2024-06-04 18:53:22,191 1 INFO odoo-p2 odoo.modules.loading: Modules loaded. 
+2024-06-04 18:53:22,195 1 INFO odoo-p2 odoo.modules.registry: Registry loaded in 0.777s 
+2024-06-04 18:53:22,196 1 INFO odoo-p2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-04 18:53:22,241 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:53:22] "GET /websocket HTTP/1.1" 101 - 22 0.014 0.810
+2024-06-04 18:53:22,253 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-06-04 18:53:26,366 1 WARNING odoo-p2 odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-04 18:53:26,497 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:53:26] "GET /web HTTP/1.1" 200 - 68 0.049 3.510
+2024-06-04 18:53:26,655 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:53:26] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 4 0.002 0.004
+2024-06-04 18:53:26,728 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:53:26] "GET /websocket HTTP/1.1" 101 - 1 0.004 0.018
+2024-06-04 18:53:26,729 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:53:26] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.014 0.023
+2024-06-04 18:53:26,735 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:53:26] "POST /mail/init_messaging HTTP/1.1" 200 - 57 0.049 0.028
+2024-06-04 18:53:26,758 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:53:26] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.014 0.009
+2024-06-04 18:53:26,771 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:53:26] "POST /mail/load_message_failures HTTP/1.1" 200 - 11 0.014 0.012
+2024-06-04 18:53:27,292 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:53:27] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 20 0.012 0.599
+2024-06-04 18:53:27,306 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:53:27] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 41 0.016 0.588
+2024-06-04 18:53:27,358 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:53:27] "POST /web/dataset/call_kw/ir.module.module/web_read HTTP/1.1" 200 - 13 0.005 0.036
+2024-06-04 18:53:27,395 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:53:27] "GET /web/bundle/web_editor.backend_assets_wysiwyg?lang=es_BO&debug=1 HTTP/1.1" 200 - 7 0.002 0.012
+2024-06-04 18:53:27,435 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:53:27] "GET /web/image?model=ir.module.module&id=377&field=icon_image&unique=1717527118000 HTTP/1.1" 200 - 3 0.002 0.005
+2024-06-04 18:53:28,119 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.25.0.1 
+2024-06-04 18:53:28,120 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.25.0.1 
+2024-06-04 18:53:28,121 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.25.0.1 
+2024-06-04 18:53:28,301 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:53:28] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2024-06-04 18:53:28,655 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user pablojuan123@gmail.com #2 via 172.25.0.1 
+2024-06-04 18:53:29,499 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 18:53:29,504 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-06-04 18:53:29,518 1 INFO odoo-p2 odoo.modules.loading: updating modules list 
+2024-06-04 18:53:29,520 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.25.0.1 
+2024-06-04 18:53:29,987 1 INFO odoo-p2 odoo.modules.loading: loading 53 modules... 
+2024-06-04 18:53:29,988 1 INFO odoo-p2 odoo.modules.loading: Loading module pruebamjp (2/53) 
+2024-06-04 18:53:30,027 1 INFO odoo-p2 odoo.modules.registry: module pruebamjp: creating or updating database tables 
+2024-06-04 18:53:30,069 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.curso() have the same label: Cursos. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 18:53:30,069 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (estudiante_tutor_ids, inscripcion_ids) of pruebamjp.estudiante() have the same label: Estudiantes. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 18:53:30,070 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.gestion() have the same label: Gestiones. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 18:53:30,106 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/security/ir.model.access.csv 
+2024-06-04 18:53:30,155 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/views/views.xml 
+2024-06-04 18:53:30,170 1 WARNING odoo-p2 odoo.modules.loading: Transient module states were reset 
+2024-06-04 18:53:30,174 1 ERROR odoo-p2 odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 99, in lookup
+    r = d[key]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: ('ir.model.data', <function IrModelData._xmlid_lookup at 0x7febccfc55a0>, 'pruebamjp.action_materia_window')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 556, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 312, in _tag_menuitem
+    act = self.env.ref(a_action).sudo()
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 580, in ref
+    res_model, res_id = self['ir.model.data']._xmlid_to_res_model_res_id(
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2187, in _xmlid_to_res_model_res_id
+    return self._xmlid_lookup(xmlid)
+  File "<decorator-gen-43>", line 2, in _xmlid_lookup
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 104, in lookup
+    value = d[key] = self.method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2180, in _xmlid_lookup
+    raise ValueError('External ID not found in the system: %s' % xmlid)
+ValueError: External ID not found in the system: pruebamjp.action_materia_window
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 227, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(env, package.name, filename, idref, mode, noupdate, kind)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 627, in convert_file
+    convert_xml_import(env, module, fp, idref, mode, noupdate)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 693, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 613, in parse
+    self._tag_root(de)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 556, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 569, in _tag_root
+    raise ParseError('while parsing %s:%s, somewhere inside\n%s' % (
+odoo.tools.convert.ParseError: while parsing /mnt/extra-addons/pruebamjp/views/views.xml:12, somewhere inside
+<menuitem name="materias" id="pruebamjp.menu_3_list" parent="pruebamjp.menu_2" action="pruebamjp.action_materia_window"/>
+2024-06-04 18:53:30,179 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 18:53:30,184 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-06-04 18:53:30,190 1 INFO odoo-p2 odoo.modules.loading: loading 53 modules... 
+2024-06-04 18:53:30,215 1 INFO odoo-p2 odoo.modules.loading: 53 modules loaded in 0.02s, 0 queries (+0 extra) 
+2024-06-04 18:53:30,355 1 INFO odoo-p2 odoo.modules.loading: Modules loaded. 
+2024-06-04 18:53:30,361 1 INFO odoo-p2 odoo.modules.registry: Registry loaded in 0.185s 
+2024-06-04 18:53:30,364 1 ERROR odoo-p2 odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 99, in lookup
+    r = d[key]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: ('ir.model.data', <function IrModelData._xmlid_lookup at 0x7febccfc55a0>, 'pruebamjp.action_materia_window')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 556, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 312, in _tag_menuitem
+    act = self.env.ref(a_action).sudo()
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 580, in ref
+    res_model, res_id = self['ir.model.data']._xmlid_to_res_model_res_id(
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2187, in _xmlid_to_res_model_res_id
+    return self._xmlid_lookup(xmlid)
+  File "<decorator-gen-43>", line 2, in _xmlid_lookup
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 104, in lookup
+    value = d[key] = self.method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2180, in _xmlid_lookup
+    raise ValueError('External ID not found in the system: %s' % xmlid)
+ValueError: External ID not found in the system: pruebamjp.action_materia_window
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2194, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1770, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 133, in retrying
+    result = func()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1797, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2001, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 222, in _dispatch
+    result = endpoint(**request.params)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 725, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 28, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 20, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 468, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 453, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-83>", line 2, in button_immediate_upgrade
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 75, in check_and_log
+    return method(self, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 657, in button_immediate_upgrade
+    return self._button_immediate_function(self.env.registry[self._name].button_upgrade)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 590, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-16>", line 2, in new
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 227, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(env, package.name, filename, idref, mode, noupdate, kind)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 627, in convert_file
+    convert_xml_import(env, module, fp, idref, mode, noupdate)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 693, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 613, in parse
+    self._tag_root(de)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 556, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 569, in _tag_root
+    raise ParseError('while parsing %s:%s, somewhere inside\n%s' % (
+odoo.tools.convert.ParseError: while parsing /mnt/extra-addons/pruebamjp/views/views.xml:12, somewhere inside
+<menuitem name="materias" id="pruebamjp.menu_3_list" parent="pruebamjp.menu_2" action="pruebamjp.action_materia_window"/>
+2024-06-04 18:53:30,367 1 INFO odoo-p2 werkzeug: 172.25.0.1 - - [04/Jun/2024 18:53:30] "POST /web/dataset/call_button HTTP/1.1" 200 - 2800 0.638 1.615
