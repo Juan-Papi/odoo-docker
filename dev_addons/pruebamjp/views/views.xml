@@ -1,16 +1,5 @@
 <odoo>
   <data>
-    <menuitem name="Gestion" id="pruebamjp.menu_root" />
-
-    <!-- <menuitem name="Materia" id="pruebamjp.menu_1" parent="pruebamjp.menu_root"/> -->
-
-
-    <menuitem name="Curso" id="pruebamjp.menu_2" parent="pruebamjp.menu_root" />
-    <menuitem name="cursos" id="pruebamjp.menu_2_list" parent="pruebamjp.menu_2"
-      action="pruebamjp.action_curso_window" />
-    <!-- <menuitem name="materias" id="pruebamjp.menu_3_list" parent="pruebamjp.menu_2"
-      action="pruebamjp.action_materia_window" /> -->
-
 
   </data>
 </odoo>
