@@ -1,5 +1,67 @@
 <odoo>
   <data>
+
+
+    <record model="ir.ui.view" id="pruebamjp.task_list">
+      <field name="name">pruebamjp task list</field>
+      <field name="model">pruebamjp.materia</field>
+      <field name="arch" type="xml">
+      
+       <!-- aca es la tabla index de siempre  -->
+        <tree>
+          
+          <field name="name"/>
+          
+        </tree>
+      </field>
+    </record>
+
+
+     <record model="ir.ui.view" id="pruebamjp.task_form">
+      <field name="name">pruebamjp task form</field>
+      <field name="model">pruebamjp.task</field>
+      <field name="arch" type="xml">
+       <!-- aca es la tabla index de siempre  -->
+        <form>
+          <group>
+             <field name="name"/>
+             
+          </group>
+         
+        </form>
+      </field>
+    </record>
+
+
+
+    
+
+    <record model="ir.actions.act_window" id="pruebamjp.action_materia_window">
+      <field name="name">pruebamjp materia window</field>
+      <field name="res_model">pruebamjp.task</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+
+    
+
+     <menuitem name="Pruebamjp" id="pruebamjp.menu_root"/>
+    
+
+      
+    <menuitem name="Tasks" id="pruebamjp.menu_1_list" parent="pruebamjp.menu_1"
+              action="pruebamjp.action_task_window"/>
+   
+
+
+
+
+
+
+
+
     <!-- explicit list view definition -->
 <!--
     <record model="ir.ui.view" id="pruebamjp.list">

@@ -5,8 +5,8 @@
 # class Pruebamjp(http.Controller):
 #     @http.route('/pruebamjp/pruebamjp', auth='public')
 #     def index(self, **kw):
-#         return "Hello, world"
 
+#         return "Hello, world"
 #     @http.route('/pruebamjp/pruebamjp/objects', auth='public')
 #     def list(self, **kw):
 #         return http.request.render('pruebamjp.listing', {
