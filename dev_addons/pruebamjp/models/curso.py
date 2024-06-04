@@ -8,3 +8,18 @@ class curso(models.Model):
 
     nombre = fields.Char(required=True)
     curso_materia_ids = fields.One2many('pruebamjp.curso_materia', 'curso_id', string="Cursos")
+    inscripcion_ids = fields.One2many('pruebamjp.inscripcion', 'curso_id', string="Cursos")
+
+
+
+    def action_save_and_back_to_tree(self):
+        self.ensure_one()
+        self.write({'nombre': self.nombre})  
+        return {
+            'type': 'ir.actions.act_window',
+            'name': 'crearCurso',
+            'view_mode': 'tree,form',
+            'res_model': 'pruebamjp.curso',
+            'res_id': self.id,
+            'target': 'current',
+        }

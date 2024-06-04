@@ -4,7 +4,7 @@ from odoo import models, fields, api
 
 class curso_materia(models.Model):
     _name = 'pruebamjp.curso_materia'
-    _description = 'Modelo o tabla curso'
+    _description = 'Modelo o tabla curso materia'
 
     # Campo Many2one para relacionar con curso
     curso_id = fields.Many2one('pruebamjp.curso', string="Curso", ondelete='cascade', required=True)
