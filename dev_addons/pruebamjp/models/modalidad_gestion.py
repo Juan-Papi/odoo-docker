@@ -9,4 +9,3 @@ class modalidad_gestion(models.Model):
     nombre = fields.Char(required=True)
     subnota_ids = fields.One2many('pruebamjp.subnota', 'modalidad_gestion_id', string="Modalidad_gestiones")
     
-   

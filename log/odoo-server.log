@@ -10847,3 +10847,942 @@ pruebamjp.access_pruebamjp_estudiante_tutor,access_pruebamjp_estudiante_tutor,pr
 2024-06-04 19:38:36,539 1 INFO ? odoo.service.server: Initiating shutdown 
 2024-06-04 19:38:36,542 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
 2024-06-04 19:38:36,606 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2024-06-04 19:38:40,082 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:561: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 561, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-04 19:38:40,083 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:587: DeprecationWarning: The 'osv_memory_age_limit' option found in the configuration file is a deprecated alias to 'transient_age_limit', please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 587, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-04 19:38:40,085 1 INFO ? odoo: Odoo version 17.0-20240522 
+2024-06-04 19:38:40,086 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-06-04 19:38:40,088 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-06-04 19:38:40,088 1 INFO ? odoo: database: odoo@db:5432 
+2024-06-04 19:38:40,160 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-06-04 19:38:40,712 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on afddbf1b57b5:8069 
+2024-06-04 19:38:42,337 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 19:38:42,351 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-04 19:38:42,417 1 WARNING odoo-p2 odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-04 19:38:42,422 1 INFO odoo-p2 odoo.modules.loading: loading 12 modules... 
+2024-06-04 19:38:42,766 1 INFO odoo-p2 odoo.modules.loading: 12 modules loaded in 0.34s, 0 queries (+0 extra) 
+2024-06-04 19:38:42,793 1 INFO odoo-p2 odoo.modules.loading: Modules loaded. 
+2024-06-04 19:38:42,797 1 INFO odoo-p2 odoo.modules.registry: Registry loaded in 0.478s 
+2024-06-04 19:38:42,798 1 INFO odoo-p2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-04 19:38:42,826 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:42] "GET /websocket HTTP/1.1" 101 - 22 0.014 0.494
+2024-06-04 19:38:42,831 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-06-04 19:38:45,448 1 WARNING odoo-p2 odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-04 19:38:45,506 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:45] "GET /web HTTP/1.1" 200 - 69 0.026 1.765
+2024-06-04 19:38:45,572 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:45] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 4 0.002 0.005
+2024-06-04 19:38:45,595 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:45] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.011
+2024-06-04 19:38:45,597 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:45] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.008 0.009
+2024-06-04 19:38:45,614 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:45] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.003 0.004
+2024-06-04 19:38:46,029 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:46] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.464
+2024-06-04 19:38:46,116 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:46] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 47 0.014 0.059
+2024-06-04 19:38:46,137 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:46] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.011
+2024-06-04 19:38:46,168 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:46] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.019 0.021
+2024-06-04 19:38:46,382 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:46] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.012 0.240
+2024-06-04 19:38:47,575 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:47] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 36 0.015 0.011
+2024-06-04 19:38:47,584 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:47] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.031
+2024-06-04 19:38:47,978 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:47] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.003
+2024-06-04 19:38:49,196 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:49] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 36 0.022 0.026
+2024-06-04 19:38:49,219 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:49] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.004 0.011
+2024-06-04 19:38:52,418 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:52] "POST /web/dataset/call_button HTTP/1.1" 200 - 1 0.001 0.015
+2024-06-04 19:38:52,436 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:52] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 6 0.002 0.006
+2024-06-04 19:38:52,510 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:52] "POST /web/dataset/call_kw/ir.module.module/web_read HTTP/1.1" 200 - 4 0.003 0.058
+2024-06-04 19:38:52,553 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:52] "GET /web/bundle/web_editor.backend_assets_wysiwyg?lang=es_BO HTTP/1.1" 200 - 7 0.003 0.020
+2024-06-04 19:38:52,595 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:52] "GET /web/image?model=ir.module.module&id=377&field=icon_image&unique=1717529822000 HTTP/1.1" 200 - 3 0.001 0.005
+2024-06-04 19:38:53,370 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.26.0.1 
+2024-06-04 19:38:53,372 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.26.0.1 
+2024-06-04 19:38:53,373 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.26.0.1 
+2024-06-04 19:38:53,811 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user pablojuan123@gmail.com #2 via 172.26.0.1 
+2024-06-04 19:38:54,756 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 19:38:54,762 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-04 19:38:54,784 1 INFO odoo-p2 odoo.modules.loading: updating modules list 
+2024-06-04 19:38:54,787 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.26.0.1 
+2024-06-04 19:38:55,280 1 INFO odoo-p2 odoo.modules.loading: loading 12 modules... 
+2024-06-04 19:38:55,281 1 INFO odoo-p2 odoo.modules.loading: Loading module pruebamjp (2/12) 
+2024-06-04 19:38:55,307 1 INFO odoo-p2 odoo.modules.registry: module pruebamjp: creating or updating database tables 
+2024-06-04 19:38:55,346 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.curso() have the same label: Cursos. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 19:38:55,347 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (estudiante_tutor_ids, inscripcion_ids) of pruebamjp.estudiante() have the same label: Estudiantes. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 19:38:55,348 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.gestion() have the same label: Gestiones. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 19:38:55,373 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/security/ir.model.access.csv 
+2024-06-04 19:38:55,404 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/views/views.xml 
+2024-06-04 19:38:55,422 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/views/templates.xml 
+2024-06-04 19:38:55,445 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/views/curso.xml 
+2024-06-04 19:38:55,454 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/views/materia.xml 
+2024-06-04 19:38:55,462 1 INFO odoo-p2 odoo.modules.loading: Module pruebamjp: loading demo 
+2024-06-04 19:38:55,463 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/demo/demo.xml 
+2024-06-04 19:38:55,517 1 WARNING odoo-p2 odoo.modules.loading: The models ['pruebamjp.estudiante_tutor'] have no access rules in module pruebamjp, consider adding some, like:
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+pruebamjp.access_pruebamjp_estudiante_tutor,access_pruebamjp_estudiante_tutor,pruebamjp.model_pruebamjp_estudiante_tutor,base.group_user,1,0,0,0 
+2024-06-04 19:38:55,520 1 INFO odoo-p2 odoo.modules.loading: Module pruebamjp loaded in 0.24s, 161 queries (+161 other) 
+2024-06-04 19:38:55,527 1 INFO odoo-p2 odoo.modules.loading: 12 modules loaded in 0.25s, 161 queries (+161 extra) 
+2024-06-04 19:38:55,594 1 INFO odoo-p2 odoo.modules.registry: verifying fields for every extended model 
+2024-06-04 19:38:55,628 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.curso() have the same label: Cursos. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 19:38:55,644 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (estudiante_tutor_ids, inscripcion_ids) of pruebamjp.estudiante() have the same label: Estudiantes. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 19:38:55,660 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.gestion() have the same label: Gestiones. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 19:38:55,843 1 INFO odoo-p2 odoo.modules.loading: Modules loaded. 
+2024-06-04 19:38:55,847 1 INFO odoo-p2 odoo.modules.registry: Registry loaded in 1.098s 
+2024-06-04 19:38:55,849 1 INFO odoo-p2 odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-06-04 19:38:55,855 1 INFO odoo-p2 odoo.modules.registry: Registry changed, signaling through the database 
+2024-06-04 19:38:55,860 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:55] "POST /web/dataset/call_button HTTP/1.1" 200 - 3339 0.788 1.708
+2024-06-04 19:38:55,885 1 INFO odoo-p2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-04 19:38:55,979 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:55] "GET /web HTTP/1.1" 200 - 72 0.022 0.076
+2024-06-04 19:38:56,051 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:56] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 4 0.004 0.009
+2024-06-04 19:38:56,077 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:56] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.007
+2024-06-04 19:38:56,085 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:56] "POST /web/action/load HTTP/1.1" 200 - 10 0.011 0.008
+2024-06-04 19:38:56,092 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:56] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.012 0.017
+2024-06-04 19:38:56,116 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:56] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.005 0.005
+2024-06-04 19:38:56,160 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:56] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 48 0.019 0.037
+2024-06-04 19:38:56,186 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:56] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.003
+2024-06-04 19:38:56,215 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:56] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.003 0.029
+2024-06-04 19:38:56,218 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:56] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.023 0.015
+2024-06-04 19:38:57,874 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 19:38:57] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2024-06-04 20:51:10,424 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 20:51:10] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.024
+2024-06-04 21:01:39,375 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-06-04 21:01:39,377 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-06-04 21:01:39,834 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
+2024-06-04 21:01:45,433 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:561: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 561, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-04 21:01:45,435 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:587: DeprecationWarning: The 'osv_memory_age_limit' option found in the configuration file is a deprecated alias to 'transient_age_limit', please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 587, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-04 21:01:45,435 1 INFO ? odoo: Odoo version 17.0-20240522 
+2024-06-04 21:01:45,437 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-06-04 21:01:45,437 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-06-04 21:01:45,438 1 INFO ? odoo: database: odoo@db:5432 
+2024-06-04 21:01:45,562 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-06-04 21:01:45,811 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on afddbf1b57b5:8069 
+2024-06-04 21:01:49,681 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 21:01:49,696 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-04 21:01:49,747 1 WARNING odoo-p2 odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-04 21:01:49,754 1 INFO odoo-p2 odoo.modules.loading: loading 12 modules... 
+2024-06-04 21:01:50,019 1 CRITICAL odoo-p2 odoo.modules.module: Couldn't load module pruebamjp 
+2024-06-04 21:01:50,023 1 WARNING odoo-p2 odoo.modules.loading: Transient module states were reset 
+2024-06-04 21:01:50,024 1 ERROR odoo-p2 odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 87, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odoo-p2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/pruebamjp/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/pruebamjp/models/__init__.py", line 3, in <module>
+    from . import models, ciclo, curso_materia, curso, estudiante_tutor, estudiante, gestion, horario, inscripcion, materia, mensualidad, modalidad_gestion, nota, profesor, subnota, tutor, comunicado, comunicado_usuario
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 5, in <module>
+    class modalidad_gestion(models.Model):
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 12, in modalidad_gestion
+    @api.multi
+AttributeError: module 'odoo.api' has no attribute 'multi'
+2024-06-04 21:01:50,058 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:01:50] "GET /websocket HTTP/1.1" 404 - 12 0.020 0.385
+2024-06-04 21:01:50,793 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 21:01:50,801 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-04 21:01:50,804 1 INFO odoo-p2 odoo.modules.loading: loading 12 modules... 
+2024-06-04 21:01:50,844 1 CRITICAL odoo-p2 odoo.modules.module: Couldn't load module pruebamjp 
+2024-06-04 21:01:50,847 1 WARNING odoo-p2 odoo.modules.loading: Transient module states were reset 
+2024-06-04 21:01:50,849 1 ERROR odoo-p2 odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 87, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odoo-p2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/pruebamjp/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/pruebamjp/models/__init__.py", line 3, in <module>
+    from . import models, ciclo, curso_materia, curso, estudiante_tutor, estudiante, gestion, horario, inscripcion, materia, mensualidad, modalidad_gestion, nota, profesor, subnota, tutor, comunicado, comunicado_usuario
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 5, in <module>
+    class modalidad_gestion(models.Model):
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 12, in modalidad_gestion
+    @api.multi
+AttributeError: module 'odoo.api' has no attribute 'multi'
+2024-06-04 21:01:50,857 1 ERROR odoo-p2 odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 87, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odoo-p2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2194, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1749, in _serve_db
+    self.registry = Registry(self.db).check_signaling()
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 89, in __new__
+    return cls.new(db_name)
+  File "<decorator-gen-16>", line 2, in new
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/pruebamjp/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/pruebamjp/models/__init__.py", line 3, in <module>
+    from . import models, ciclo, curso_materia, curso, estudiante_tutor, estudiante, gestion, horario, inscripcion, materia, mensualidad, modalidad_gestion, nota, profesor, subnota, tutor, comunicado, comunicado_usuario
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 5, in <module>
+    class modalidad_gestion(models.Model):
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 12, in modalidad_gestion
+    @api.multi
+AttributeError: module 'odoo.api' has no attribute 'multi'
+2024-06-04 21:01:50,868 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:01:50] "GET /web HTTP/1.1" 500 - 13 0.010 0.087
+2024-06-04 21:01:51,023 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 21:01:51,030 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-04 21:01:51,034 1 INFO odoo-p2 odoo.modules.loading: loading 12 modules... 
+2024-06-04 21:01:51,073 1 CRITICAL odoo-p2 odoo.modules.module: Couldn't load module pruebamjp 
+2024-06-04 21:01:51,076 1 WARNING odoo-p2 odoo.modules.loading: Transient module states were reset 
+2024-06-04 21:01:51,077 1 ERROR odoo-p2 odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 87, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odoo-p2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/pruebamjp/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/pruebamjp/models/__init__.py", line 3, in <module>
+    from . import models, ciclo, curso_materia, curso, estudiante_tutor, estudiante, gestion, horario, inscripcion, materia, mensualidad, modalidad_gestion, nota, profesor, subnota, tutor, comunicado, comunicado_usuario
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 5, in <module>
+    class modalidad_gestion(models.Model):
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 12, in modalidad_gestion
+    @api.multi
+AttributeError: module 'odoo.api' has no attribute 'multi'
+2024-06-04 21:01:51,084 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:01:51] "GET /favicon.ico HTTP/1.1" 404 - 13 0.006 0.071
+2024-06-04 21:01:52,456 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 21:01:52,465 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-04 21:01:52,469 1 INFO odoo-p2 odoo.modules.loading: loading 12 modules... 
+2024-06-04 21:01:52,526 1 CRITICAL odoo-p2 odoo.modules.module: Couldn't load module pruebamjp 
+2024-06-04 21:01:52,539 1 WARNING odoo-p2 odoo.modules.loading: Transient module states were reset 
+2024-06-04 21:01:52,540 1 ERROR odoo-p2 odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 87, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odoo-p2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/pruebamjp/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/pruebamjp/models/__init__.py", line 3, in <module>
+    from . import models, ciclo, curso_materia, curso, estudiante_tutor, estudiante, gestion, horario, inscripcion, materia, mensualidad, modalidad_gestion, nota, profesor, subnota, tutor, comunicado, comunicado_usuario
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 5, in <module>
+    class modalidad_gestion(models.Model):
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 12, in modalidad_gestion
+    @api.multi
+AttributeError: module 'odoo.api' has no attribute 'multi'
+2024-06-04 21:01:52,549 1 ERROR odoo-p2 odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 87, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odoo-p2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2194, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1749, in _serve_db
+    self.registry = Registry(self.db).check_signaling()
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 89, in __new__
+    return cls.new(db_name)
+  File "<decorator-gen-16>", line 2, in new
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/pruebamjp/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/pruebamjp/models/__init__.py", line 3, in <module>
+    from . import models, ciclo, curso_materia, curso, estudiante_tutor, estudiante, gestion, horario, inscripcion, materia, mensualidad, modalidad_gestion, nota, profesor, subnota, tutor, comunicado, comunicado_usuario
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 5, in <module>
+    class modalidad_gestion(models.Model):
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 12, in modalidad_gestion
+    @api.multi
+AttributeError: module 'odoo.api' has no attribute 'multi'
+2024-06-04 21:01:52,553 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 21:01:52,557 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:01:52] "GET /web HTTP/1.1" 500 - 13 0.008 0.111
+2024-06-04 21:01:52,562 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-06-04 21:01:52,566 1 INFO odoo-p2 odoo.modules.loading: loading 12 modules... 
+2024-06-04 21:01:52,598 1 CRITICAL odoo-p2 odoo.modules.module: Couldn't load module pruebamjp 
+2024-06-04 21:01:52,601 1 WARNING odoo-p2 odoo.modules.loading: Transient module states were reset 
+2024-06-04 21:01:52,601 1 ERROR odoo-p2 odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 87, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odoo-p2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/pruebamjp/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/pruebamjp/models/__init__.py", line 3, in <module>
+    from . import models, ciclo, curso_materia, curso, estudiante_tutor, estudiante, gestion, horario, inscripcion, materia, mensualidad, modalidad_gestion, nota, profesor, subnota, tutor, comunicado, comunicado_usuario
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 5, in <module>
+    class modalidad_gestion(models.Model):
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 12, in modalidad_gestion
+    @api.multi
+AttributeError: module 'odoo.api' has no attribute 'multi'
+2024-06-04 21:01:52,608 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:01:52] "GET /web/service-worker.js HTTP/1.1" 404 - 13 0.006 0.076
+2024-06-04 21:01:52,725 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 21:01:52,730 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-06-04 21:01:52,734 1 INFO odoo-p2 odoo.modules.loading: loading 12 modules... 
+2024-06-04 21:01:52,765 1 CRITICAL odoo-p2 odoo.modules.module: Couldn't load module pruebamjp 
+2024-06-04 21:01:52,767 1 WARNING odoo-p2 odoo.modules.loading: Transient module states were reset 
+2024-06-04 21:01:52,768 1 ERROR odoo-p2 odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 87, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odoo-p2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/pruebamjp/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/pruebamjp/models/__init__.py", line 3, in <module>
+    from . import models, ciclo, curso_materia, curso, estudiante_tutor, estudiante, gestion, horario, inscripcion, materia, mensualidad, modalidad_gestion, nota, profesor, subnota, tutor, comunicado, comunicado_usuario
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 5, in <module>
+    class modalidad_gestion(models.Model):
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 12, in modalidad_gestion
+    @api.multi
+AttributeError: module 'odoo.api' has no attribute 'multi'
+2024-06-04 21:01:52,774 1 ERROR odoo-p2 odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 87, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odoo-p2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2194, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1749, in _serve_db
+    self.registry = Registry(self.db).check_signaling()
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 89, in __new__
+    return cls.new(db_name)
+  File "<decorator-gen-16>", line 2, in new
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/pruebamjp/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/pruebamjp/models/__init__.py", line 3, in <module>
+    from . import models, ciclo, curso_materia, curso, estudiante_tutor, estudiante, gestion, horario, inscripcion, materia, mensualidad, modalidad_gestion, nota, profesor, subnota, tutor, comunicado, comunicado_usuario
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 5, in <module>
+    class modalidad_gestion(models.Model):
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 12, in modalidad_gestion
+    @api.multi
+AttributeError: module 'odoo.api' has no attribute 'multi'
+2024-06-04 21:01:52,779 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:01:52] "GET /web HTTP/1.1" 500 - 13 0.006 0.064
+2024-06-04 21:01:52,958 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 21:01:52,979 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2024-06-04 21:01:52,988 1 INFO odoo-p2 odoo.modules.loading: loading 12 modules... 
+2024-06-04 21:01:53,053 1 CRITICAL odoo-p2 odoo.modules.module: Couldn't load module pruebamjp 
+2024-06-04 21:01:53,057 1 WARNING odoo-p2 odoo.modules.loading: Transient module states were reset 
+2024-06-04 21:01:53,058 1 ERROR odoo-p2 odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 87, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odoo-p2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/pruebamjp/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/pruebamjp/models/__init__.py", line 3, in <module>
+    from . import models, ciclo, curso_materia, curso, estudiante_tutor, estudiante, gestion, horario, inscripcion, materia, mensualidad, modalidad_gestion, nota, profesor, subnota, tutor, comunicado, comunicado_usuario
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 5, in <module>
+    class modalidad_gestion(models.Model):
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 12, in modalidad_gestion
+    @api.multi
+AttributeError: module 'odoo.api' has no attribute 'multi'
+2024-06-04 21:01:53,068 1 ERROR odoo-p2 odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 87, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odoo-p2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2194, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1749, in _serve_db
+    self.registry = Registry(self.db).check_signaling()
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 89, in __new__
+    return cls.new(db_name)
+  File "<decorator-gen-16>", line 2, in new
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/pruebamjp/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/pruebamjp/models/__init__.py", line 3, in <module>
+    from . import models, ciclo, curso_materia, curso, estudiante_tutor, estudiante, gestion, horario, inscripcion, materia, mensualidad, modalidad_gestion, nota, profesor, subnota, tutor, comunicado, comunicado_usuario
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 5, in <module>
+    class modalidad_gestion(models.Model):
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 12, in modalidad_gestion
+    @api.multi
+AttributeError: module 'odoo.api' has no attribute 'multi'
+2024-06-04 21:01:53,081 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:01:53] "GET /web HTTP/1.1" 500 - 13 0.012 0.139
+2024-06-04 21:01:53,293 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 21:01:53,299 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-06-04 21:01:53,302 1 INFO odoo-p2 odoo.modules.loading: loading 12 modules... 
+2024-06-04 21:01:53,335 1 CRITICAL odoo-p2 odoo.modules.module: Couldn't load module pruebamjp 
+2024-06-04 21:01:53,338 1 WARNING odoo-p2 odoo.modules.loading: Transient module states were reset 
+2024-06-04 21:01:53,338 1 ERROR odoo-p2 odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 87, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odoo-p2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/pruebamjp/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/pruebamjp/models/__init__.py", line 3, in <module>
+    from . import models, ciclo, curso_materia, curso, estudiante_tutor, estudiante, gestion, horario, inscripcion, materia, mensualidad, modalidad_gestion, nota, profesor, subnota, tutor, comunicado, comunicado_usuario
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 5, in <module>
+    class modalidad_gestion(models.Model):
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 12, in modalidad_gestion
+    @api.multi
+AttributeError: module 'odoo.api' has no attribute 'multi'
+2024-06-04 21:01:53,347 1 ERROR odoo-p2 odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 87, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odoo-p2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2194, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1749, in _serve_db
+    self.registry = Registry(self.db).check_signaling()
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 89, in __new__
+    return cls.new(db_name)
+  File "<decorator-gen-16>", line 2, in new
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/pruebamjp/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/pruebamjp/models/__init__.py", line 3, in <module>
+    from . import models, ciclo, curso_materia, curso, estudiante_tutor, estudiante, gestion, horario, inscripcion, materia, mensualidad, modalidad_gestion, nota, profesor, subnota, tutor, comunicado, comunicado_usuario
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 5, in <module>
+    class modalidad_gestion(models.Model):
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 12, in modalidad_gestion
+    @api.multi
+AttributeError: module 'odoo.api' has no attribute 'multi'
+2024-06-04 21:01:53,352 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:01:53] "GET /web HTTP/1.1" 500 - 13 0.006 0.069
+2024-06-04 21:01:53,452 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 21:01:53,459 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-04 21:01:53,462 1 INFO odoo-p2 odoo.modules.loading: loading 12 modules... 
+2024-06-04 21:01:53,532 1 CRITICAL odoo-p2 odoo.modules.module: Couldn't load module pruebamjp 
+2024-06-04 21:01:53,535 1 WARNING odoo-p2 odoo.modules.loading: Transient module states were reset 
+2024-06-04 21:01:53,537 1 ERROR odoo-p2 odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 87, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odoo-p2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/pruebamjp/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/pruebamjp/models/__init__.py", line 3, in <module>
+    from . import models, ciclo, curso_materia, curso, estudiante_tutor, estudiante, gestion, horario, inscripcion, materia, mensualidad, modalidad_gestion, nota, profesor, subnota, tutor, comunicado, comunicado_usuario
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 5, in <module>
+    class modalidad_gestion(models.Model):
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 12, in modalidad_gestion
+    @api.multi
+AttributeError: module 'odoo.api' has no attribute 'multi'
+2024-06-04 21:01:53,561 1 ERROR odoo-p2 odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 87, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odoo-p2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2194, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1749, in _serve_db
+    self.registry = Registry(self.db).check_signaling()
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 89, in __new__
+    return cls.new(db_name)
+  File "<decorator-gen-16>", line 2, in new
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/pruebamjp/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/pruebamjp/models/__init__.py", line 3, in <module>
+    from . import models, ciclo, curso_materia, curso, estudiante_tutor, estudiante, gestion, horario, inscripcion, materia, mensualidad, modalidad_gestion, nota, profesor, subnota, tutor, comunicado, comunicado_usuario
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 5, in <module>
+    class modalidad_gestion(models.Model):
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 12, in modalidad_gestion
+    @api.multi
+AttributeError: module 'odoo.api' has no attribute 'multi'
+2024-06-04 21:01:53,578 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:01:53] "GET /web HTTP/1.1" 500 - 13 0.005 0.133
+2024-06-04 21:01:55,215 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 21:01:55,227 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-04 21:01:55,233 1 INFO odoo-p2 odoo.modules.loading: loading 12 modules... 
+2024-06-04 21:01:55,276 1 CRITICAL odoo-p2 odoo.modules.module: Couldn't load module pruebamjp 
+2024-06-04 21:01:55,279 1 WARNING odoo-p2 odoo.modules.loading: Transient module states were reset 
+2024-06-04 21:01:55,280 1 ERROR odoo-p2 odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 87, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odoo-p2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 113, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 476, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 364, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 185, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 395, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/pruebamjp/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/pruebamjp/models/__init__.py", line 3, in <module>
+    from . import models, ciclo, curso_materia, curso, estudiante_tutor, estudiante, gestion, horario, inscripcion, materia, mensualidad, modalidad_gestion, nota, profesor, subnota, tutor, comunicado, comunicado_usuario
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 5, in <module>
+    class modalidad_gestion(models.Model):
+  File "/mnt/extra-addons/pruebamjp/models/modalidad_gestion.py", line 12, in modalidad_gestion
+    @api.multi
+AttributeError: module 'odoo.api' has no attribute 'multi'
+2024-06-04 21:01:55,291 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:01:55] "GET /web/service-worker.js HTTP/1.1" 404 - 13 0.008 0.085
+2024-06-04 21:01:59,658 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 21:01:59,664 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-04 21:01:59,667 1 INFO odoo-p2 odoo.modules.loading: loading 12 modules... 
+2024-06-04 21:01:59,868 1 INFO odoo-p2 odoo.modules.loading: 12 modules loaded in 0.20s, 0 queries (+0 extra) 
+2024-06-04 21:01:59,899 1 INFO odoo-p2 odoo.modules.loading: Modules loaded. 
+2024-06-04 21:01:59,902 1 INFO odoo-p2 odoo.modules.registry: Registry loaded in 0.247s 
+2024-06-04 21:01:59,904 1 INFO odoo-p2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-04 21:02:01,798 1 WARNING odoo-p2 odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-04 21:02:01,875 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:01] "GET /web HTTP/1.1" 200 - 89 0.076 2.157
+2024-06-04 21:02:02,155 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:02] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 4 0.002 0.005
+2024-06-04 21:02:02,194 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:02] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.011 0.016
+2024-06-04 21:02:02,199 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:02] "GET /websocket HTTP/1.1" 101 - 1 0.002 0.017
+2024-06-04 21:02:02,212 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-06-04 21:02:02,292 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:02] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.074 0.013
+2024-06-04 21:02:02,822 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:02] "POST /web/action/load HTTP/1.1" 200 - 10 0.005 0.677
+2024-06-04 21:02:02,901 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:02] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 47 0.020 0.034
+2024-06-04 21:02:02,939 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:02] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.015
+2024-06-04 21:02:02,958 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:02] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.019 0.013
+2024-06-04 21:02:02,991 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:02] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.005 0.055
+2024-06-04 21:02:03,725 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:03] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2024-06-04 21:02:57,030 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:57] "GET /web HTTP/1.1" 200 - 9 0.010 0.025
+2024-06-04 21:02:57,157 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:57] "POST /web/action/load HTTP/1.1" 200 - 9 0.005 0.011
+2024-06-04 21:02:57,173 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:57] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 3 0.003 0.007
+2024-06-04 21:02:57,220 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:57] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.009 0.020
+2024-06-04 21:02:57,223 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:57] "GET /websocket HTTP/1.1" 101 - 1 0.003 0.010
+2024-06-04 21:02:57,230 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:57] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 2 0.002 0.021
+2024-06-04 21:02:57,249 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:57] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 5 0.005 0.010
+2024-06-04 21:02:57,259 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:57] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.012
+2024-06-04 21:02:57,296 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:57] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 36 0.022 0.023
+2024-06-04 21:02:57,302 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:57] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.004 0.043
+2024-06-04 21:02:58,977 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:02:58] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2024-06-04 21:03:00,210 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-06-04 21:03:00,211 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-06-04 21:03:00,529 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2024-06-04 21:03:03,719 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:561: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 561, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-04 21:03:03,720 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:587: DeprecationWarning: The 'osv_memory_age_limit' option found in the configuration file is a deprecated alias to 'transient_age_limit', please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 587, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-04 21:03:03,721 1 INFO ? odoo: Odoo version 17.0-20240522 
+2024-06-04 21:03:03,723 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-06-04 21:03:03,723 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-06-04 21:03:03,724 1 INFO ? odoo: database: odoo@db:5432 
+2024-06-04 21:03:03,804 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-06-04 21:03:03,977 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on afddbf1b57b5:8069 
+2024-06-04 21:03:07,030 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 21:03:07,035 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-06-04 21:03:07,052 1 WARNING odoo-p2 odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-04 21:03:07,054 1 INFO odoo-p2 odoo.modules.loading: loading 12 modules... 
+2024-06-04 21:03:07,329 1 INFO odoo-p2 odoo.modules.loading: 12 modules loaded in 0.27s, 0 queries (+0 extra) 
+2024-06-04 21:03:07,350 1 INFO odoo-p2 odoo.modules.loading: Modules loaded. 
+2024-06-04 21:03:07,353 1 INFO odoo-p2 odoo.modules.registry: Registry loaded in 0.335s 
+2024-06-04 21:03:07,355 1 INFO odoo-p2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-04 21:03:07,383 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:07] "GET /websocket HTTP/1.1" 101 - 22 0.014 0.352
+2024-06-04 21:03:07,388 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-06-04 21:03:09,966 1 WARNING odoo-p2 odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-04 21:03:10,039 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:10] "GET /web HTTP/1.1" 200 - 69 0.032 1.681
+2024-06-04 21:03:10,137 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:10] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 4 0.002 0.005
+2024-06-04 21:03:10,168 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:10] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.010 0.014
+2024-06-04 21:03:10,168 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:10] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.015
+2024-06-04 21:03:10,194 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:10] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.008 0.008
+2024-06-04 21:03:10,607 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:10] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.484
+2024-06-04 21:03:10,660 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:10] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 47 0.013 0.022
+2024-06-04 21:03:10,679 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:10] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.010
+2024-06-04 21:03:10,702 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:10] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.014 0.019
+2024-06-04 21:03:10,723 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:10] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.049
+2024-06-04 21:03:11,461 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:11] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 36 0.017 0.013
+2024-06-04 21:03:11,473 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:11] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.033
+2024-06-04 21:03:12,419 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:12] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2024-06-04 21:03:13,880 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:13] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 36 0.018 0.085
+2024-06-04 21:03:13,910 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:13] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.004 0.015
+2024-06-04 21:03:17,621 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.26.0.1 
+2024-06-04 21:03:17,625 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.26.0.1 
+2024-06-04 21:03:17,626 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.26.0.1 
+2024-06-04 21:03:18,256 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user pablojuan123@gmail.com #2 via 172.26.0.1 
+2024-06-04 21:03:18,958 1 INFO odoo-p2 odoo.modules.loading: loading 1 modules... 
+2024-06-04 21:03:19,055 1 INFO odoo-p2 odoo.modules.loading: 1 modules loaded in 0.10s, 0 queries (+0 extra) 
+2024-06-04 21:03:19,074 1 INFO odoo-p2 odoo.modules.loading: updating modules list 
+2024-06-04 21:03:19,077 1 INFO odoo-p2 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.26.0.1 
+2024-06-04 21:03:19,550 1 INFO odoo-p2 odoo.modules.loading: loading 12 modules... 
+2024-06-04 21:03:19,552 1 INFO odoo-p2 odoo.modules.loading: Loading module pruebamjp (2/12) 
+2024-06-04 21:03:19,577 1 INFO odoo-p2 odoo.modules.registry: module pruebamjp: creating or updating database tables 
+2024-06-04 21:03:19,628 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.curso() have the same label: Cursos. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 21:03:19,629 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (estudiante_tutor_ids, inscripcion_ids) of pruebamjp.estudiante() have the same label: Estudiantes. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 21:03:19,630 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.gestion() have the same label: Gestiones. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 21:03:19,678 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/security/ir.model.access.csv 
+2024-06-04 21:03:19,713 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/views/views.xml 
+2024-06-04 21:03:19,740 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/views/templates.xml 
+2024-06-04 21:03:19,767 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/views/curso.xml 
+2024-06-04 21:03:19,784 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/views/materia.xml 
+2024-06-04 21:03:19,813 1 INFO odoo-p2 odoo.modules.loading: Module pruebamjp: loading demo 
+2024-06-04 21:03:19,814 1 INFO odoo-p2 odoo.modules.loading: loading pruebamjp/demo/demo.xml 
+2024-06-04 21:03:19,852 1 WARNING odoo-p2 odoo.modules.loading: The models ['pruebamjp.estudiante_tutor'] have no access rules in module pruebamjp, consider adding some, like:
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+pruebamjp.access_pruebamjp_estudiante_tutor,access_pruebamjp_estudiante_tutor,pruebamjp.model_pruebamjp_estudiante_tutor,base.group_user,1,0,0,0 
+2024-06-04 21:03:19,858 1 INFO odoo-p2 odoo.modules.loading: Module pruebamjp loaded in 0.31s, 161 queries (+161 other) 
+2024-06-04 21:03:19,866 1 INFO odoo-p2 odoo.modules.loading: 12 modules loaded in 0.31s, 161 queries (+161 extra) 
+2024-06-04 21:03:19,939 1 INFO odoo-p2 odoo.modules.registry: verifying fields for every extended model 
+2024-06-04 21:03:19,973 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (estudiante_tutor_ids, inscripcion_ids) of pruebamjp.estudiante() have the same label: Estudiantes. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 21:03:19,973 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.gestion() have the same label: Gestiones. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 21:03:19,974 1 WARNING odoo-p2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.curso() have the same label: Cursos. [Modules: pruebamjp and pruebamjp] 
+2024-06-04 21:03:20,134 1 INFO odoo-p2 odoo.modules.loading: Modules loaded. 
+2024-06-04 21:03:20,141 1 INFO odoo-p2 odoo.modules.registry: Registry loaded in 1.190s 
+2024-06-04 21:03:20,142 1 INFO odoo-p2 odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-06-04 21:03:20,147 1 INFO odoo-p2 odoo.modules.registry: Registry changed, signaling through the database 
+2024-06-04 21:03:20,149 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:20] "POST /web/dataset/call_button HTTP/1.1" 200 - 3339 0.890 1.645
+2024-06-04 21:03:20,176 1 INFO odoo-p2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-04 21:03:20,315 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:20] "GET /web HTTP/1.1" 200 - 72 0.033 0.109
+2024-06-04 21:03:20,447 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:20] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 4 0.004 0.012
+2024-06-04 21:03:20,485 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:20] "GET /websocket HTTP/1.1" 101 - 1 0.002 0.007
+2024-06-04 21:03:20,485 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:20] "POST /web/action/load HTTP/1.1" 200 - 10 0.012 0.011
+2024-06-04 21:03:20,497 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:20] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.017 0.016
+2024-06-04 21:03:20,518 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:20] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.005 0.006
+2024-06-04 21:03:20,551 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:20] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 48 0.015 0.027
+2024-06-04 21:03:20,564 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:20] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.004
+2024-06-04 21:03:20,588 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:20] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.003 0.024
+2024-06-04 21:03:20,591 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:20] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.018 0.012
+2024-06-04 21:03:22,235 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:22] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.005
+2024-06-04 21:03:23,894 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:23] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 36 0.014 0.012
+2024-06-04 21:03:23,902 1 INFO odoo-p2 werkzeug: 172.26.0.1 - - [04/Jun/2024 21:03:23] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.031
+2024-06-04 21:59:03,553 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-06-04 21:59:03,558 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-06-04 21:59:04,067 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
