@@ -4,8 +4,6 @@ import json
 from werkzeug.wrappers import Response
 
 class ApiController(http.Controller):
-        
-  
 
     @http.route('/api/login', type='http', auth='none', methods=['POST'], csrf=False)
     def login(self, **kwargs):
@@ -109,3 +107,40 @@ class ApiController(http.Controller):
 
         response_data = json.dumps({'estudiantes': estudiantes})
         return request.make_response(response_data, headers=[('Content-Type', 'application/json'), ('Access-Control-Allow-Origin', '*')])
+    
+    
+    @http.route('/api/estudiante/<int:estudiante_id>/curso/<int:curso_id>/notas', auth='user', methods=['GET'], csrf=False)
+    def get_notas_curso(self, estudiante_id, curso_id, **kwargs):
+        try:
+            estudiante = request.env['pruebamjp.estudiante'].browse(estudiante_id)
+            if not estudiante.exists():
+                return request.make_response(json.dumps({'error': 'Estudiante no encontrado'}), status=404, headers=[('Content-Type', 'application/json'), ('Access-Control-Allow-Origin', '*')])
+
+            curso = request.env['pruebamjp.curso'].browse(curso_id)
+            if not curso.exists():
+                return request.make_response(json.dumps({'error': 'Curso no encontrado'}), status=404, headers=[('Content-Type', 'application/json'), ('Access-Control-Allow-Origin', '*')])
+
+            # Diccionario para almacenar la información de las notas y subnotas
+            materia_notas = []
+
+            # Obtener todos los curso_materia para el curso especificado
+            for cm in curso.curso_materia_ids:
+                # Filtrar las notas y subnotas para el estudiante en el curso_materia actual
+                notas = request.env['pruebamjp.nota'].search([('curso_materia_id', '=', cm.id), ('estudiante_id', '=', estudiante.id)])
+                subnotas = request.env['pruebamjp.subnota'].search([('curso_materia_id', '=', cm.id), ('estudiante_id', '=', estudiante.id)])
+
+                # Preparar la información para la respuesta
+                notas_info = [nota.nota for nota in notas]
+                subnotas_info = [{'nota': subnota.nota, 'modalidad': subnota.modalidad, 'numero': subnota.numero} for subnota in subnotas]
+                materia_notas.append({
+                    'materia': cm.materia_id.nombre,
+                    'notas': notas_info,
+                    'subnotas': subnotas_info
+                })
+
+            # Devolver la respuesta
+            return request.make_response(json.dumps(materia_notas), headers=[('Content-Type', 'application/json'), ('Access-Control-Allow-Origin', '*')])
+        except Exception as e:
+            return request.make_response(json.dumps({'error': str(e)}), status=500, headers=[('Content-Type', 'application/json'), ('Access-Control-Allow-Origin', '*')])
+        
+        
