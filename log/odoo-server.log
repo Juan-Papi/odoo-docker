@@ -22826,3 +22826,54 @@ pruebamjp.access_pruebamjp_estudiante_tutor,access_pruebamjp_estudiante_tutor,pr
 2024-06-05 20:49:22,360 1 INFO ? odoo.service.server: Initiating shutdown 
 2024-06-05 20:49:22,361 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
 2024-06-05 20:49:22,449 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
+2024-06-05 20:49:26,002 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:561: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 561, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-05 20:49:26,005 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:587: DeprecationWarning: The 'osv_memory_age_limit' option found in the configuration file is a deprecated alias to 'transient_age_limit', please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 587, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-05 20:49:26,014 1 INFO ? odoo: Odoo version 17.0-20240522 
+2024-06-05 20:49:26,015 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-06-05 20:49:26,016 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-06-05 20:49:26,017 1 INFO ? odoo: database: odoo@db:5432 
+2024-06-05 20:49:26,099 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-06-05 20:49:26,233 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 79326e3ce42d:8069 
+2024-06-05 20:49:28,100 1 INFO odoo-bd odoo.modules.loading: loading 1 modules... 
+2024-06-05 20:49:28,109 1 INFO odoo-bd odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-05 20:49:28,130 1 WARNING odoo-bd odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-05 20:49:28,132 1 INFO odoo-bd odoo.modules.loading: loading 12 modules... 
+2024-06-05 20:49:28,868 1 INFO odoo-bd odoo.modules.loading: 12 modules loaded in 0.73s, 0 queries (+0 extra) 
+2024-06-05 20:49:28,908 1 INFO odoo-bd odoo.modules.loading: Modules loaded. 
+2024-06-05 20:49:28,914 1 INFO odoo-bd odoo.modules.registry: Registry loaded in 0.841s 
+2024-06-05 20:49:28,916 1 INFO odoo-bd odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-05 20:49:28,959 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 20:49:28] "GET /websocket HTTP/1.1" 101 - 22 0.037 0.850
+2024-06-05 20:49:29,119 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-06-05 20:51:22,767 1 INFO odoo-bd odoo.addons.base.models.res_users: Login successful for db:odoo-bd login:pablojuan123@gmail.com from 172.28.0.1 
+2024-06-05 20:51:22,776 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 20:51:22] "POST /api/login HTTP/1.1" 200 - 20 0.011 0.335
+2024-06-05 20:51:25,783 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 20:51:25] "GET /api/comunicados/general HTTP/1.1" 200 - 14 0.006 0.571
+2024-06-05 20:54:42,115 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 20:54:42] "GET /api/comunicados/visto/%3Cint:comunicado_usuario_id HTTP/1.1" 404 - 2 0.001 0.002
+2024-06-05 20:54:47,878 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 20:54:47] "GET /api/comunicados/visto/2 HTTP/1.1" 405 - 1 0.001 0.005
+2024-06-05 20:54:55,105 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 20:54:55] "POST /api/comunicados/visto/2 HTTP/1.1" 404 - 2 0.001 0.002
+2024-06-05 21:16:30,192 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 21:16:30] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.003
