@@ -26,7 +26,15 @@ Long description of module's purpose
         'views/views.xml',
         'views/templates.xml',
         'views/curso.xml',
-        'views/materia.xml'
+        'views/materia.xml',
+        'views/ciclo.xml',
+        'views/gestion.xml',
+        'views/modalidad.xml',
+        'views/profesor.xml',
+        'views/estudiante.xml',
+        'views/tutor.xml',
+        'views/horario.xml',
+        'views/curso_materia.xml'
 
     ],
     # only loaded in demonstration mode

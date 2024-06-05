@@ -1,8 +1,8 @@
 <odoo>
   <data>
-      <record model="ir.ui.view" id="pruebamjp.curso_index">
-      <field name="name">gestion curso list</field>
-      <field name="model">pruebamjp.curso</field>
+    <record model="ir.ui.view" id="pruebamjp.profesor_index">
+      <field name="name">gestion materia list</field>
+      <field name="model">pruebamjp.profesor</field>
       <field name="arch" type="xml">
 
         <tree>
@@ -11,21 +11,17 @@
         </tree>
       </field>
     </record>
+   
 
-    <!-- Vista de Formulario -->
-    <record id="pruebamjp.curso_create" model="ir.ui.view">
-      <field name="name">pruebamjp.curso.form</field>
-      <field name="model">pruebamjp.curso</field>
+
+    <record id="pruebamjp.profesor_create" model="ir.ui.view">
+      <field name="name">pruebamjp.profesor.form</field>
+      <field name="model">pruebamjp.profesor</field>
       <field name="arch" type="xml">
-        <form string="Curso Form">
+        <form string="profesoraform">
           <sheet>
             <group>
               <field name="nombre" />
-              <!-- <button string="Guardar" type="object" name="action_save_and_back_to_tree"
-                class="btn-primary" /> -->
-              <!-- <button string="Guardar y Volver a la Lista" type="object"
-              name="action_save_and_back_to_tree" class="btn-primary"/> -->
-              <!-- Otros campos aquí -->
             </group>
             <footer>
 
@@ -38,10 +34,18 @@
         </form>
       </field>
     </record>
+    
 
-    <record model="ir.actions.act_window" id="pruebamjp.action_curso_window">
-      <field name="name">CURSOS</field>
-      <field name="res_model">pruebamjp.curso</field>
+
+
+
+
+
+
+    <record model="ir.actions.act_window" id="pruebamjp.action_profesor_window">
+      <!-- name es el texto que aparece al lado del nuevo  -->
+      <field name="name">profesores</field>
+      <field name="res_model">pruebamjp.profesor</field>
       <field name="view_mode">tree,form</field>
     </record>
 
