@@ -87,3 +87,25 @@ class ApiController(http.Controller):
         # Serializar y devolver la respuesta
         response_data = json.dumps(data)
         return request.make_response(response_data, headers=[('Content-Type', 'application/json'), ('Access-Control-Allow-Origin', '*')])
+    
+    
+    @http.route('/api/mis_estudiantes', auth='user', methods=['GET'], csrf=False)
+    def mis_estudiantes(self, **kwargs):
+        usuario_actual = request.env.user
+        tutor = request.env['pruebamjp.tutor'].search([('usuario_id', '=', usuario_actual.id)], limit=1)
+
+        if not tutor:
+            response_data = json.dumps({'error': 'Tutor no encontrado'})
+            return request.make_response(response_data, headers=[('Content-Type', 'application/json'), ('Access-Control-Allow-Origin', '*')], status=404)
+
+        estudiantes = []
+        for estudiante_tutor in tutor.estudiante_tutor_ids:
+            estudiante_data = {
+                'nombre': estudiante_tutor.estudiante_id.nombre,
+                'apellido': estudiante_tutor.estudiante_id.apellido,
+                'edad': estudiante_tutor.estudiante_id.edad,
+            }
+            estudiantes.append(estudiante_data)
+
+        response_data = json.dumps({'estudiantes': estudiantes})
+        return request.make_response(response_data, headers=[('Content-Type', 'application/json'), ('Access-Control-Allow-Origin', '*')])

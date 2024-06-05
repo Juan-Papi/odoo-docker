@@ -22502,3 +22502,162 @@ TypeError: 'int' object is not iterable
 2024-06-05 19:09:20,684 1 INFO ? odoo.service.server: Initiating shutdown 
 2024-06-05 19:09:20,685 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
 2024-06-05 19:09:20,929 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 5 connections  
+2024-06-05 19:09:23,677 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:561: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 561, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-05 19:09:23,678 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:587: DeprecationWarning: The 'osv_memory_age_limit' option found in the configuration file is a deprecated alias to 'transient_age_limit', please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 587, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-05 19:09:23,679 1 INFO ? odoo: Odoo version 17.0-20240522 
+2024-06-05 19:09:23,680 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-06-05 19:09:23,681 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-06-05 19:09:23,681 1 INFO ? odoo: database: odoo@db:5432 
+2024-06-05 19:09:23,770 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-06-05 19:09:23,887 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 79326e3ce42d:8069 
+2024-06-05 19:09:24,949 1 INFO odoo-bd odoo.modules.loading: loading 1 modules... 
+2024-06-05 19:09:24,957 1 INFO odoo-bd odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-05 19:09:24,979 1 WARNING odoo-bd odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-05 19:09:24,981 1 INFO odoo-bd odoo.modules.loading: loading 12 modules... 
+2024-06-05 19:09:25,421 1 INFO odoo-bd odoo.modules.loading: 12 modules loaded in 0.44s, 0 queries (+0 extra) 
+2024-06-05 19:09:25,443 1 INFO odoo-bd odoo.modules.loading: Modules loaded. 
+2024-06-05 19:09:25,446 1 INFO odoo-bd odoo.modules.registry: Registry loaded in 0.519s 
+2024-06-05 19:09:25,448 1 INFO odoo-bd odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-05 19:09:25,810 1 INFO odoo-bd odoo.addons.base.models.res_users: Login successful for db:odoo-bd login:pablojuan123@gmail.com from 172.28.0.1 
+2024-06-05 19:09:25,827 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:09:25] "POST /api/login HTTP/1.1" 200 - 39 0.021 0.881
+2024-06-05 19:09:26,633 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:09:26] "GET /websocket HTTP/1.1" 101 - 2 0.001 0.003
+2024-06-05 19:09:26,640 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-06-05 19:10:39,603 1 INFO odoo-bd odoo.http: Session expired 
+2024-06-05 19:10:39,606 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:10:39] "GET /api/test%0A HTTP/1.1" 303 - 3 0.003 0.027
+2024-06-05 19:10:39,748 1 WARNING odoo-bd odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-05 19:10:39,849 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:10:39] "GET /web/login?redirect=%2Fapi%2Ftest%0A%3F HTTP/1.1" 200 - 54 0.031 0.204
+2024-06-05 19:10:43,019 1 INFO odoo-bd odoo.addons.base.models.res_users: Login successful for db:odoo-bd login:pablojuan123@gmail.com from 172.28.0.1 
+2024-06-05 19:10:43,025 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:10:43] "POST /api/login HTTP/1.1" 200 - 15 0.005 0.366
+2024-06-05 19:10:45,482 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:10:45] "GET /api/test%0A HTTP/1.1" 200 - 3 0.001 0.003
+2024-06-05 19:14:00,944 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:14:00] "GET /api/subnota/estudiante/1 HTTP/1.1" 404 - 2 0.003 0.657
+2024-06-05 19:40:22,316 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-06-05 19:40:22,318 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-06-05 19:40:22,794 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
+2024-06-05 19:40:26,202 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:561: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 561, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-05 19:40:26,206 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:587: DeprecationWarning: The 'osv_memory_age_limit' option found in the configuration file is a deprecated alias to 'transient_age_limit', please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 587, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-05 19:40:26,207 1 INFO ? odoo: Odoo version 17.0-20240522 
+2024-06-05 19:40:26,208 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-06-05 19:40:26,209 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-06-05 19:40:26,210 1 INFO ? odoo: database: odoo@db:5432 
+2024-06-05 19:40:26,317 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-06-05 19:40:26,465 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 79326e3ce42d:8069 
+2024-06-05 19:40:28,898 1 INFO odoo-bd odoo.modules.loading: loading 1 modules... 
+2024-06-05 19:40:28,907 1 INFO odoo-bd odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-05 19:40:29,048 1 WARNING odoo-bd odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-05 19:40:29,050 1 INFO odoo-bd odoo.modules.loading: loading 12 modules... 
+2024-06-05 19:40:29,530 1 INFO odoo-bd odoo.modules.loading: 12 modules loaded in 0.48s, 0 queries (+0 extra) 
+2024-06-05 19:40:29,552 1 INFO odoo-bd odoo.modules.loading: Modules loaded. 
+2024-06-05 19:40:29,554 1 INFO odoo-bd odoo.modules.registry: Registry loaded in 0.673s 
+2024-06-05 19:40:29,555 1 INFO odoo-bd odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-05 19:40:29,581 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:40:29] "GET /websocket HTTP/1.1" 101 - 22 0.015 0.687
+2024-06-05 19:40:29,603 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-06-05 19:40:32,475 1 INFO odoo-bd odoo.addons.base.models.res_users: Login successful for db:odoo-bd login:pablojuan123@gmail.com from 172.28.0.1 
+2024-06-05 19:40:32,485 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:40:32] "POST /api/login HTTP/1.1" 200 - 20 0.009 0.355
+2024-06-05 19:40:34,809 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:40:34] "GET /api/test%0A HTTP/1.1" 200 - 4 0.002 0.003
+2024-06-05 19:41:00,217 1 ERROR odoo-bd odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2194, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1770, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 133, in retrying
+    result = func()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1797, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1914, in dispatch
+    return self.request.registry['ir.http']._dispatch(endpoint)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 222, in _dispatch
+    result = endpoint(**request.params)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 725, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/mnt/extra-addons/pruebamjp/controllers/controllerAPI.py", line 102, in mis_estudiantes
+    return request.make_response(response_data, status=404, mimetype='application/json', headers=[('Access-Control-Allow-Origin', '*')])
+TypeError: Request.make_response() got an unexpected keyword argument 'mimetype'
+2024-06-05 19:41:00,229 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:41:00] "GET /api/mis_estudiantes HTTP/1.1" 500 - 3 0.001 0.015
+2024-06-05 19:41:11,970 1 WARNING odoo-bd odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-05 19:41:12,161 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:41:12] "GET /web?debug=1 HTTP/1.1" 200 - 64 0.057 1.909
+2024-06-05 19:41:12,315 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:41:12] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 4 0.002 0.004
+2024-06-05 19:41:12,336 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:41:12] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.004 0.005
+2024-06-05 19:41:12,345 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:41:12] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.007
+2024-06-05 19:41:12,351 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:41:12] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.010 0.012
+2024-06-05 19:41:12,895 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:41:12] "POST /web/action/load HTTP/1.1" 200 - 9 0.004 0.584
+2024-06-05 19:41:12,950 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:41:12] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 47 0.015 0.025
+2024-06-05 19:41:12,964 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:41:12] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.003
+2024-06-05 19:41:13,024 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:41:13] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.052 0.011
+2024-06-05 19:41:13,046 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:41:13] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.003 0.079
+2024-06-05 19:41:13,916 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:41:13] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2024-06-05 19:44:11,680 1 ERROR odoo-bd odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2194, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1770, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 133, in retrying
+    result = func()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1797, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1914, in dispatch
+    return self.request.registry['ir.http']._dispatch(endpoint)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 222, in _dispatch
+    result = endpoint(**request.params)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 725, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/mnt/extra-addons/pruebamjp/controllers/controllerAPI.py", line 102, in mis_estudiantes
+    for estudiante_tutor in tutor.estudiante_tutor_ids:
+TypeError: Request.make_response() got an unexpected keyword argument 'mimetype'
+2024-06-05 19:44:11,726 1 INFO odoo-bd werkzeug: 172.28.0.1 - - [05/Jun/2024 19:44:11] "GET /api/mis_estudiantes HTTP/1.1" 500 - 2 0.001 0.050
+2024-06-05 19:44:15,799 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-06-05 19:44:15,800 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-06-05 19:44:16,237 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 5 connections  
