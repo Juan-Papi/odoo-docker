@@ -35,14 +35,6 @@
       <field name="view_mode">tree,form</field>
     </record>
 
-    <!-- <record model="ir.actions.act_window" id="gestion.action_materia_window">
-      <field name="name">Materias</field>
-      <field name="res_model">gestion.materia</field>
-     
-     <field name="view_mode">tree,form</field>
-      <field name="view_id" ref="gestion.materia_create"/>
-      <field name="view_id" ref="gestion.materia_index"/>
-
-      </record> -->
+   
   </data>
 </odoo>

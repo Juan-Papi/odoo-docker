@@ -5,18 +5,23 @@
     <!-- <menuitem name="Materia" id="pruebamjp.menu_1" parent="pruebamjp.menu_root"/> -->
 
 
-    <menuitem name="Curso" id="pruebamjp.menu_2" parent="pruebamjp.menu_root" />
+     <menuitem name="Curso" id="pruebamjp.menu_2" parent="pruebamjp.menu_root" />
     
       <menuitem name="cursos" id="pruebamjp.menu_2_list" parent="pruebamjp.menu_2"
       action="pruebamjp.action_curso_window" /> 
+     
      <menuitem name="materias" id="pruebamjp.menu_3_list" parent="pruebamjp.menu_2"
       action="pruebamjp.action_materia_window" />  
+     
       <menuitem name="profesores" id="pruebamjp.menu_4_list" parent="pruebamjp.menu_2"
       action="pruebamjp.action_profesor_window" />  
+     
      <menuitem name="ciclos" id="pruebamjp.menu_5_list" parent="pruebamjp.menu_2"
       action="pruebamjp.action_ciclo_window" />
+      
        <menuitem name="horarios" id="pruebamjp.menu_12_list" parent="pruebamjp.menu_2"
       action="pruebamjp.action_horario_window" /> 
+
        <menuitem name="curso_materia" id="pruebamjp.menu_13_list" parent="pruebamjp.menu_2"
       action="pruebamjp.action_curso_materia_window" />  
 
@@ -27,8 +32,8 @@
     
     <menuitem name="gestiones" id="pruebamjp.menu_6_list" parent="pruebamjp.menu_3"
       action="pruebamjp.action_gestion_window" />
-    <menuitem name="modalidades" id="pruebamjp.menu_7_list" parent="pruebamjp.menu_3"
-      action="pruebamjp.action_modalidad_gestion_window" />
+     <menuitem name="modalidades" id="pruebamjp.menu_7_list" parent="pruebamjp.menu_3"
+      action="pruebamjp.action_modalidad_gestion_window" /> 
 
 
 
@@ -43,6 +48,17 @@
 
       <menuitem name="inscripcion" id="pruebamjp.menu_17_list" parent="pruebamjp.menu_4"
        action="pruebamjp.action_inscripcion_window" />
+
+      <menuitem name="notafinal" id="pruebamjp.menu_18_list" parent="pruebamjp.menu_4"
+       action="pruebamjp.action_nota_window" />
+
+       <menuitem name="subnotas" id="pruebamjp.menu_19_list" parent="pruebamjp.menu_4"
+       action="pruebamjp.action_subnota_window" />
+
+        <menuitem name="mensualidad" id="pruebamjp.menu_20_list" parent="pruebamjp.menu_4"
+       action="pruebamjp.action_mensualidad_window" />   
+  
+
  
   </data>
 </odoo>

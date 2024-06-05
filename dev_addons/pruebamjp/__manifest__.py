@@ -37,6 +37,11 @@ Long description of module's purpose
         'views/curso_materia.xml',
         'views/estudiante_tutor.xml',
         'views/inscripcion.xml',
+        'views/nota.xml',
+        'views/subnota.xml',
+        'views/mensualidad.xml'
+
+
 
 
     ],

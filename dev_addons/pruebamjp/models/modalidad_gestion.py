@@ -7,5 +7,5 @@ class modalidad_gestion(models.Model):
     _description = 'Modelo o tabla modalidad gestion'
 
     nombre = fields.Char(required=True)
-    subnota_ids = fields.One2many('pruebamjp.subnota', 'modalidad_gestion_id', string="Modalidad_gestiones")
+    #subnota_ids = fields.One2many('pruebamjp.subnota', 'modalidad_gestion_id', string="Modalidad_gestiones")
     

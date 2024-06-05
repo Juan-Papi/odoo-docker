@@ -9,6 +9,7 @@ class curso_materia(models.Model):
     # Campo Many2one para relacionar con curso
     curso_id = fields.Many2one('pruebamjp.curso', string="Curso", ondelete='cascade', required=True)
     curso_nombre = fields.Char(related='curso_id.nombre', string='Curso') 
+    curso_paralelo = fields.Char(related='curso_id.paralelo', string='Curso') 
 
 
     materia_id = fields.Many2one('pruebamjp.materia', string="Materia", ondelete='cascade', required=True)

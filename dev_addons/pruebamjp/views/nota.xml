@@ -1,14 +1,19 @@
 <odoo>
   <data>
-    <record model="ir.ui.view" id="pruebamjp.estudiante_index">
-      <field name="name">gestion estudiante list</field>
-      <field name="model">pruebamjp.estudiante</field>
+    <record model="ir.ui.view" id="pruebamjp.nota_index">
+      <field name="name">pruebamjp nota list</field>
+      <field name="model">pruebamjp.nota</field>
       <field name="arch" type="xml">
 
         <tree>
-          <field name="nombre" />
-          <field name="apellido" />
-          <field name="edad" />
+          <field name="nota" />
+          <field name="curso_nombre" />
+          <field name="curso_paralelo" />
+
+          <field name="estudiante_nombre" />
+          <field name="materia_nombre" />
+          <field name="year" />
+
          
         
           
@@ -17,16 +22,21 @@
     </record>
 
     <!-- Vista de Formulario -->
-    <record id="pruebamjp.estudiante_create" model="ir.ui.view">
-      <field name="name">pruebamjp.estudiante.form</field>
-      <field name="model">pruebamjp.estudiante</field>
+    <record id="pruebamjp.nota_create" model="ir.ui.view">
+      <field name="name">pruebamjp.nota.form</field>
+      <field name="model">pruebamjp.nota</field>
       <field name="arch" type="xml">
-        <form string="estudianteform">
+        <form string="notaform">
           <sheet>
             <group>
-              <field name="nombre" />
-               <field name="apellido" />
-                <field name="edad" />
+              <field name="nota" />
+               
+               <field name="estudiante_id" />
+               <field name="estudiante_nombre" />
+               <field name="curso_materia_id" />
+               <field name="curso_nombre" />
+                <field name="curso_paralelo" />
+                
                  <!-- <field name="estudiante_tutor"></field>  -->
                
              
@@ -41,21 +51,13 @@
       </field>
     </record> 
 
-    <record model="ir.actions.act_window" id="pruebamjp.action_estudiante_window">
+    <record model="ir.actions.act_window" id="pruebamjp.action_nota_window">
       <!-- name es el texto que aparece al lado del nuevo  -->
-      <field name="name">estudiantes</field>
-      <field name="res_model">pruebamjp.estudiante</field>
+      <field name="name">notas</field>
+      <field name="res_model">pruebamjp.nota</field>
       <field name="view_mode">tree,form</field>
     </record>
 
-    <!-- <record model="ir.actions.act_window" id="gestion.action_materia_window">
-      <field name="name">Materias</field>
-      <field name="res_model">gestion.materia</field>
-     
-     <field name="view_mode">tree,form</field>
-      <field name="view_id" ref="gestion.materia_create"/>
-      <field name="view_id" ref="gestion.materia_index"/>
-
-      </record> -->
+    
   </data>
 </odoo>
