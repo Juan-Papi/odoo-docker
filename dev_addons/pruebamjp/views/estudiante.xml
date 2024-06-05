@@ -8,7 +8,10 @@
         <tree>
           <field name="nombre" />
           <field name="apellido" />
-          <field name="edad" /> 
+          <field name="edad" />
+         
+        
+          
         </tree>
       </field>
     </record>
@@ -24,7 +27,8 @@
               <field name="nombre" />
                <field name="apellido" />
                 <field name="edad" />
-                
+                 <!-- <field name="estudiante_tutor"></field>  -->
+               
              
             </group>
             <footer>

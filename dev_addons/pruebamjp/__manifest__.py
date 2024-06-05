@@ -34,7 +34,15 @@ Long description of module's purpose
         'views/estudiante.xml',
         'views/tutor.xml',
         'views/horario.xml',
-        'views/curso_materia.xml'
+        'views/curso_materia.xml',
+        'views/estudiante_tutor.xml',
+        'views/inscripcion.xml',
+        'views/nota.xml',
+        'views/subnota.xml',
+        'views/mensualidad.xml'
+
+
+
 
     ],
     # only loaded in demonstration mode

@@ -11,6 +11,7 @@ class tutor(models.Model):
     apellido = fields.Char(required=True)
     telefono = fields.Char(required=True)
     direccion = fields.Char(required=True)
-    estudiante_tutor_ids = fields.One2many('pruebamjp.estudiante_tutor', 'tutor_id', string="Tutores")
+    #estudiante_tutor = fields.One2many('pruebamjp.estudiante_tutor', 'tutor_id', string="Tutores")
+    estudiante_tutor=fields.One2many(string="estudiante_tutor", comodel_name="pruebamjp.estudiante_tutor",inverse_name='tutor')
     usuario_id = fields.Many2one('res.users', string='Usuario', default=lambda self: self.env.user, required=True)
-    
+   
