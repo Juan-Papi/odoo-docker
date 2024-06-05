@@ -14,16 +14,15 @@
     </record> 
 
     <!-- Vista de Formulario -->
-    <!-- <record id="pruebamjp.modalidad_gestion_create" model="ir.ui.view">
+     <record id="pruebamjp.modalidad_gestion_create" model="ir.ui.view">
       <field name="name">pruebamjp gestion form</field>
-      <field name="model">pruebamjp.modalidad_gestion_</field>
+      <field name="model">pruebamjp.modalidad_gestion</field>
       <field name="arch" type="xml">
         <form string="gestionform">
           <sheet>
             <group>
-              <field name="year" />
-              <field name="hora_inicio" />
-              <field name="hora_fin" /> 
+              <field name="nombre" />
+             
              
             </group>
             <footer>
@@ -33,7 +32,7 @@
           </sheet>
         </form>
       </field>
-    </record> -->
+    </record> 
 
     <record model="ir.actions.act_window" id="pruebamjp.action_modalidad_gestion_window">
       <!-- name es el texto que aparece al lado del nuevo  -->

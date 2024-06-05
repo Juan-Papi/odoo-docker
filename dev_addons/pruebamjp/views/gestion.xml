@@ -7,8 +7,8 @@
 
         <tree>
           <field name="year" />
-          <field name="hora_inicio" />
-          <field name="hora_fin" />    
+          <field name="fecha_inicio" />
+          <field name="fecha_fin" />    
          
 
         </tree>
@@ -24,8 +24,8 @@
           <sheet>
             <group>
               <field name="year" />
-              <field name="hora_inicio" />
-              <field name="hora_fin" /> 
+              <field name="fecha_inicio" />
+              <field name="fecha_fin" /> 
               <field name="modalidad_gestion_id" />
             </group>
             <footer>

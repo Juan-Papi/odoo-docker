@@ -20,11 +20,11 @@
         <form string="materiaform">
           <sheet>
             <group>
-              <field name="nombre" />
+                <field name="nombre" />
+                   
+              
             </group>
             <footer>
-
-              
             </footer>
           </sheet>
         </form>
