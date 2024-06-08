@@ -1,5 +1,5 @@
 from odoo import models, fields, api
-
+from odoo.exceptions import ValidationError
 
 class mensualidad(models.Model):
      _name = 'pruebamjp.mensualidad'

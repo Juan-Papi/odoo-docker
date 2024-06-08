@@ -1,5 +1,5 @@
 from odoo import models, fields, api
-
+from odoo.exceptions import ValidationError
 
 class inscripcion(models.Model):
      _name = 'pruebamjp.inscripcion'
@@ -18,6 +18,13 @@ class inscripcion(models.Model):
 
      mensualidad_ids = fields.One2many('pruebamjp.mensualidad', 'inscripcion_id', string="Inscripciones")
      
+
+     @api.depends('estudiante' ,'estudiante_nombre', 'curso_nombre','curso_paralelo','gestion_year') 
+     def _compute_display_name(self): 
+         for rec in self: 
+             rec.display_name = f"{rec.estudiante_nombre} - {rec.estudiante.apellido} {rec.curso_nombre} - {rec.curso_paralelo} - {rec.gestion_year}"
+
+
      #def _compute_nombre_estudiante(self):
      # if self.estudiante:
      #   self.estudiante_nombre = self.estudiante.nombre

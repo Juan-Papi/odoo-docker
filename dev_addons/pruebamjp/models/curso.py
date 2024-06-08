@@ -46,7 +46,7 @@ class curso(models.Model):
 
 
     def unlink(self):
-        for curso in self:
-            if curso.curso_materia_ids or curso.inscripcion_ids:
+        for cursos in self:
+            if cursos.curso_materia_ids or cursos.inscripcion_ids:
                 raise ValidationError("No se puede eliminar el curso porque tiene materias o inscripciones relacionadas.")
-               
+        return super(curso, self).unlink()        

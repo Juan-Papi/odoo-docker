@@ -1,6 +1,6 @@
 
 from odoo import models, fields, api
-
+from odoo.exceptions import ValidationError
 
 class curso_materia(models.Model):
     _name = 'pruebamjp.curso_materia'
@@ -66,3 +66,10 @@ class curso_materia(models.Model):
             ])
             if existing_records:
                 raise ValidationError('La combinación de Curso, Materia y Horario ya existe.')         
+
+
+
+
+          
+
+

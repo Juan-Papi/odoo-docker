@@ -1,6 +1,6 @@
 
 from odoo import models, fields, api
-
+from odoo.exceptions import ValidationError
 
 class comunicado_usuario(models.Model):
     _name = 'pruebamjp.comunicado_usuario'

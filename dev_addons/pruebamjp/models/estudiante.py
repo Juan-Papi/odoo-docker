@@ -1,6 +1,6 @@
 
 from odoo import models, fields, api
-
+from odoo.exceptions import ValidationError
 
 class estudiante(models.Model):
     _name = 'pruebamjp.estudiante'
@@ -24,3 +24,22 @@ class estudiante(models.Model):
 
 
 
+
+    @api.constrains('nombre','apellido')
+    def _check_unique_estudiante(self):
+        for rec in self:
+            existing_records = self.search([
+                ('nombre', '=', rec.nombre),
+                ('apellido', '=', rec.apellido),
+                
+                
+                ('id', '!=', rec.id)
+            ])
+            if existing_records:
+                raise ValidationError('ya existe el estudiante')  
+
+    def unlink(self):
+        for estudiantes in self:
+            if  estudiantes.inscripcion_ids or estudiantes.estudiante_tutor:
+                raise ValidationError("No se puede eliminar el estudiante porque tiene  inscripciones  o tutores relacionados.")
+        return super(estudiante, self).unlink()          

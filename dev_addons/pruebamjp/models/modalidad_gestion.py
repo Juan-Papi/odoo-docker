@@ -1,6 +1,6 @@
 
 from odoo import models, fields, api
-
+from odoo.exceptions import ValidationError
 
 class modalidad_gestion(models.Model):
     _name = 'pruebamjp.modalidad_gestion'

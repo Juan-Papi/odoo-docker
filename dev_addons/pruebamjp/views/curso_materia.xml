@@ -6,12 +6,12 @@
       <field name="arch" type="xml">
 
         <tree>
-          <field name="curso_nombre" />
+          <field name="curso_id" />
           <field name="curso_paralelo"></field>
         
-          <field name="materia_nombre" />
-          <field name="profesor_nombre" />
-          <field name="ciclo_nombre" />
+          <field name="materia_id" />
+          <field name="profesor_id" />
+          <field name="ciclo_id" />
           <field name="hora_inicio" />
           <field name="year" /> 
           </tree>
@@ -28,22 +28,22 @@
             <group>
               
                 <field name="curso_id" />
-                <field name="curso_nombre" />
+                
                 
                 <field name="materia_id" />
-                <field name="materia_nombre" />
+                
                 
                 <field name="profesor_id" /> 
-                <field name="profesor_nombre" />
+                
                 
                 <field name="ciclo_id" />
-                <field name="ciclo_nombre" />
+                
                 
                 <field name="horario_id" />
-                <field name="hora_inicio" />
+                
                 
                 <field name="gestion_id" />
-                <field name="year" /> 
+                
 
 
             </group>
@@ -59,7 +59,7 @@
 
     <record model="ir.actions.act_window" id="pruebamjp.action_curso_materia_window">
       
-      <field name="name">Curso_materia</field>
+      <field name="name">MATERIAS DEL CURSO</field>
       <field name="res_model">pruebamjp.curso_materia</field>
       <field name="view_mode">tree,form</field>
     </record> 

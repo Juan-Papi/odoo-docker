@@ -1,6 +1,6 @@
 
 from odoo import models, fields, api
-
+from odoo.exceptions import ValidationError
 
 class nota(models.Model):
     _name = 'pruebamjp.nota'

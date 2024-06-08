@@ -1,6 +1,6 @@
 
 from odoo import models, fields, api
-
+from odoo.exceptions import ValidationError
 
 class ciclo(models.Model):
     _name = 'pruebamjp.ciclo'
@@ -14,3 +14,50 @@ class ciclo(models.Model):
     def _compute_display_name(self): 
          for rec in self: 
              rec.display_name = f"{rec.nombre}" 
+
+
+
+
+    @api.constrains('nombre')
+    def _check_unique_curso_materia(self):
+        for rec in self:
+            existing_records = self.search([
+                ('nombre', '=', rec.nombre),
+                
+                ('id', '!=', rec.id)
+            ])
+            if existing_records:
+                raise ValidationError('ya existe el ciclo')          
+
+
+    @api.model
+    def create(self, vals):
+        # Convertir a mayúsculas antes de crear el registro
+        if 'nombre' in vals:
+            vals['nombre'] = vals['nombre'].upper()
+        return super(ciclo, self).create(vals)            
+
+    @api.constrains('nombre')
+    def _mayusculas(self):
+        for record in self:
+            # Validar que los campos estén en mayúsculas
+            if record.nombre != record.nombre.upper():
+                raise ValidationError('el campo nombre  debe estar en mayúsculas.')
+
+
+    @api.constrains('nombre')
+    def _check_unique_ciclo(self):
+        for rec in self:
+            existing_records = self.search([
+                ('nombre', '=', rec.nombre),
+                
+                
+                ('id', '!=', rec.id)
+            ])
+            if existing_records:
+                raise ValidationError('ya existe el ciclo')
+    def unlink(self):
+        for ciclos in self:
+            if ciclos.curso_materia_ids :
+                raise ValidationError("No se puede eliminar el ciclo porque esta relacionada a un curso.")
+        return super(ciclo, self).unlink()                                          

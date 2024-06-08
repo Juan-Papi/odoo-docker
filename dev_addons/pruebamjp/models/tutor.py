@@ -1,6 +1,6 @@
 
 from odoo import models, fields, api
-
+from odoo.exceptions import ValidationError
 
 class tutor(models.Model):
     _name = 'pruebamjp.tutor'
@@ -19,3 +19,17 @@ class tutor(models.Model):
     def _compute_display_name(self): 
          for rec in self: 
              rec.display_name = f"{rec.nombre} {rec.apellido}"
+
+
+    @api.constrains('nombre','apellido')
+    def _check_unique_tutor(self):
+        for rec in self:
+            existing_records = self.search([
+                ('nombre', '=', rec.nombre),
+                ('apellido', '=', rec.apellido),
+                
+                
+                ('id', '!=', rec.id)
+            ])
+            if existing_records:
+                raise ValidationError('ya existe el tutor')           

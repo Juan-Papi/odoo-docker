@@ -7,10 +7,9 @@
 
         <tree>
           <field name="nota" />
-          <field name="curso_nombre" />
-          <field name="curso_paralelo" />
-
-          <field name="estudiante_nombre" />
+          <field name="curso_materia_id" />
+          
+          <field name="estudiante_id" />
           <field name="materia_nombre" />
           <field name="year" />
           <field name="numero"/>
@@ -35,11 +34,7 @@
               <field name="nota" />
                 
                <field name="estudiante_id" />
-               <field name="estudiante_nombre" />
                <field name="curso_materia_id" />
-               <field name="curso_nombre" />
-                <field name="curso_paralelo" />
-                <field name="modalidad_nombre"/>
                 <field name="numero" />
                  <!-- <field name="estudiante_tutor"></field>  -->
                

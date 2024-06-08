@@ -1,6 +1,6 @@
 
 from odoo import models, fields, api
-
+from odoo.exceptions import ValidationError
 
 class gestion(models.Model):
     _name = 'pruebamjp.gestion'
@@ -22,3 +22,20 @@ class gestion(models.Model):
     def _compute_display_name(self): 
          for rec in self: 
              rec.display_name = f"{rec.year}" 
+
+
+    @api.constrains('year')
+    def _check_unique_estudiante(self):
+        for rec in self:
+            existing_records = self.search([
+                ('year', '=', rec.year),
+                ('id', '!=', rec.id)
+            ])
+            if existing_records:
+                raise ValidationError('ya existe la gestion')
+
+    def unlink(self):
+        for gestiones in self:
+            if gestiones.curso_materia_ids or gestiones.inscripcion_ids:
+                raise ValidationError("No se puede eliminar la gestion porque esta relacionada a un curso  o hay inscripciones")
+        return super(gestion, self).unlink()                                

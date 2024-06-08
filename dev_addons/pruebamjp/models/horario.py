@@ -33,7 +33,34 @@ class horario(models.Model):
                 raise ValidationError("La hora final no puede ser mayor que las 23:00.") 
 
 
+    #cadena que aparece en los crete form de las tablas ralacionads 
     @api.depends('hora_inicio','hora_fin') 
     def _compute_display_name(self): 
          for rec in self: 
-             rec.display_name = f"horario {rec.hora_inicio}:{rec.minuto_inicio} - {rec.hora_fin}:{rec.minuto_fin} - {rec.dia}"          
+             rec.display_name = f"horario {rec.hora_inicio}:{rec.minuto_inicio} - {rec.hora_fin}:{rec.minuto_fin} - {rec.dia}"
+
+   
+    @api.constrains('hora_inicio','hora_fin','minuto_inicio','minuto_fin')
+    def _check_unique_estudiante(self):
+        for rec in self:
+            existing_records = self.search([
+                ('hora_inicio', '=', rec.hora_inicio),
+                ('hora_fin', '=', rec.hora_fin),
+                ('minuto_inicio', '=', rec.minuto_incio),
+                ('minuto_fin', '=', rec.minuto_fin),
+                
+                
+                ('id', '!=', rec.id)
+            ])
+            if existing_records:
+                raise ValidationError('ya existe el horario')
+
+
+
+
+    #no se puede eliminar 
+    def unlink(self):
+        for horarios in self:
+            if horarios.curso_materia_ids :
+                raise ValidationError("No se puede eliminar el horario porque esta relacionada a un curso.")
+        return super(horario, self).unlink()                             
