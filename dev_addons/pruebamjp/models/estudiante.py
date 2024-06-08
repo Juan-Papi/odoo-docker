@@ -16,3 +16,11 @@ class estudiante(models.Model):
     #estudiante_tutor_ids = fields.One2many('pruebamjp.estudiante_tutor', 'estudiante_id', string="Estudiantes")
     estudiante_tutor=fields.One2many(string="estudiante_tutor", comodel_name="pruebamjp.estudiante_tutor",inverse_name='estudiante')
     
+
+    @api.depends('nombre', 'apellido') 
+    def _compute_display_name(self): 
+         for rec in self: 
+             rec.display_name = f"{rec.nombre} {rec.apellido}"
+
+
+

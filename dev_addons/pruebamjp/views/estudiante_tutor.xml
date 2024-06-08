@@ -6,9 +6,9 @@
       <field name="arch" type="xml">
 
         <tree>
-          <!-- <field name="estudiante" /> -->
+          <field name="estudiante" />
           <field name="estudiante_nombre" />
-            <field name="tutor_nombre" /> 
+          <field name="tutor_nombre" /> 
 
         </tree>
       </field>
@@ -23,10 +23,10 @@
           
             <group>
                 <field name="estudiante" />
-                <field name="estudiante_nombre" />
+                
 
                  <field name="tutor" />
-                 <field name="tutor_nombre" /> 
+                  
             </group>
             
         </form>

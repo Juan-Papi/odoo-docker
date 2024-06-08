@@ -9,7 +9,7 @@ class curso_materia(models.Model):
     # Campo Many2one para relacionar con curso
     curso_id = fields.Many2one('pruebamjp.curso', string="Curso", ondelete='cascade', required=True)
     curso_nombre = fields.Char(related='curso_id.nombre', string='Curso') 
-    curso_paralelo = fields.Char(related='curso_id.paralelo', string='Curso') 
+    curso_paralelo = fields.Char(related='curso_id.paralelo', string='Paralelo') 
 
 
     materia_id = fields.Many2one('pruebamjp.materia', string="Materia", ondelete='cascade', required=True)
@@ -34,3 +34,35 @@ class curso_materia(models.Model):
     gestion_id = fields.Many2one('pruebamjp.gestion', string="Gestion", ondelete='cascade', required=True) 
     year = fields.Integer(related='gestion_id.year', string='Año') 
     
+
+
+    
+    @api.depends('curso_nombre','curso_paralelo','materia_nombre','year') 
+    def _compute_display_name(self): 
+         for rec in self: 
+             rec.display_name = f"{rec.curso_nombre} {rec.curso_paralelo}- {rec.materia_nombre} -{rec.year}" 
+
+
+    @api.constrains('curso_id', 'materia_id')
+    def _check_unique_curso_materia(self):
+        for rec in self:
+            existing_records = self.search([
+                ('curso_id', '=', rec.curso_id.id),
+                ('materia_id', '=', rec.materia_id.id),
+                
+                ('id', '!=', rec.id)
+            ])
+            if existing_records:
+                raise ValidationError('La combinación de Curso, Materia ya existe.')    
+
+    @api.constrains('curso_id', 'materia_id', 'horario_id')
+    def _check_unique_curso_materia_horario(self):
+        for rec in self:
+            existing_records = self.search([
+                ('curso_id', '=', rec.curso_id.id),
+                ('materia_id', '=', rec.materia_id.id),
+                ('horario_id', '=', rec.horario_id.id),
+                ('id', '!=', rec.id)
+            ])
+            if existing_records:
+                raise ValidationError('La combinación de Curso, Materia y Horario ya existe.')         

@@ -31,3 +31,9 @@ class horario(models.Model):
             
             if record.minuto_fin < 0 or record.minuto_fin > 59:
                 raise ValidationError("La hora final no puede ser mayor que las 23:00.") 
+
+
+    @api.depends('hora_inicio','hora_fin') 
+    def _compute_display_name(self): 
+         for rec in self: 
+             rec.display_name = f"horario {rec.hora_inicio}:{rec.minuto_inicio} - {rec.hora_fin}:{rec.minuto_fin} - {rec.dia}"          

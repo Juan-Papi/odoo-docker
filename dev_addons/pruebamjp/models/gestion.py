@@ -14,3 +14,11 @@ class gestion(models.Model):
     curso_materia_ids = fields.One2many('pruebamjp.curso_materia', 'gestion_id', string="Gestiones")
     modalidad_gestion_id = fields.Many2one('pruebamjp.modalidad_gestion', string="Modalidad de Gestión", ondelete='cascade', required=True)
     inscripcion_ids = fields.One2many('pruebamjp.inscripcion', 'gestion_id', string="Gestiones")
+  
+
+
+
+    @api.depends('year','fecha_inicio','fecha_fin') 
+    def _compute_display_name(self): 
+         for rec in self: 
+             rec.display_name = f"{rec.year}" 

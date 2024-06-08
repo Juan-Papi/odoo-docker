@@ -8,3 +8,11 @@ class profesor(models.Model):
 
     nombre = fields.Char(required=True)
     curso_materia_ids = fields.One2many('pruebamjp.curso_materia', 'profesor_id', string="Profesores")
+  
+
+
+        
+    @api.depends('nombre') 
+    def _compute_display_name(self): 
+         for rec in self: 
+             rec.display_name = f"{rec.nombre}" 

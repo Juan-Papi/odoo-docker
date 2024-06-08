@@ -7,3 +7,11 @@ class materia(models.Model):
 
      nombre = fields.Char(required=True)
      curso_materia_ids = fields.One2many('pruebamjp.curso_materia', 'materia_id', string="Materias del Curso")
+
+
+
+     
+     @api.depends('nombre') 
+     def _compute_display_name(self): 
+         for rec in self: 
+             rec.display_name = f"{rec.nombre}" 
