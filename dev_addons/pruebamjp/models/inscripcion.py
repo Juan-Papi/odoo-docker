@@ -19,10 +19,10 @@ class inscripcion(models.Model):
      mensualidad_ids = fields.One2many('pruebamjp.mensualidad', 'inscripcion_id', string="Inscripciones")
      
 
-     @api.depends('estudiante' ,'estudiante_nombre', 'curso_nombre','curso_paralelo','gestion_year') 
+     @api.depends('estudiante' ,'estudiante_nombre', 'curso_nombre','curso_paralelo','gestion_id') 
      def _compute_display_name(self): 
          for rec in self: 
-             rec.display_name = f"{rec.estudiante_nombre} - {rec.estudiante.apellido} {rec.curso_nombre} - {rec.curso_paralelo} - {rec.gestion_year}"
+             rec.display_name = f"{rec.estudiante_nombre} - {rec.estudiante.apellido} {rec.curso_nombre} - {rec.curso.paralelo} - {rec.gestion_id.year}"
 
 
      #def _compute_nombre_estudiante(self):

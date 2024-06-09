@@ -22,6 +22,10 @@ class curso(models.Model):
             vals['paralelo'] = vals['paralelo'].upper()
         return super(curso, self).create(vals)         
     
+
+
+
+    
     @api.constrains('nombre', 'paralelo')
     def _check_unique_curso_paralelo(self):
         for record in self:

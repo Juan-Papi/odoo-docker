@@ -30,7 +30,7 @@
                  <field name="curso" />
                  
                    
-                 <field name="curso_paralelo" />
+                <!--  <field name="curso_paralelo" /> -->
 
                  <field name="gestion_id" />
                  

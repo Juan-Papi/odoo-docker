@@ -10,6 +10,23 @@ class profesor(models.Model):
     curso_materia_ids = fields.One2many('pruebamjp.curso_materia', 'profesor_id', string="Profesores")
   
 
+   
+    @api.model
+    def create(self, vals):
+        # Convertir a mayúsculas antes de crear el registro
+        if 'nombre' in vals:
+            vals['nombre'] = vals['nombre'].upper()
+        return super(profesor, self).create(vals)
+   
+
+    
+    @api.constrains('nombre')
+    def _check_mayusculas(self):
+        for record in self:
+            # Validar que los campos estén en mayúsculas
+            if record.nombre != record.nombre.upper() :
+                raise ValidationError('Los campos nombre  debe estar en mayúsculas.')
+
 
         
     @api.depends('nombre') 

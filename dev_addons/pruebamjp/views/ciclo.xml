@@ -35,7 +35,7 @@
 
     <record model="ir.actions.act_window" id="pruebamjp.action_ciclo_window">
       <!-- name es el texto que aparece al lado del nuevo  -->
-      <field name="name">ciclos</field>
+      <field name="name">CICLOS</field>
       <field name="res_model">pruebamjp.ciclo</field>
       <field name="view_mode">tree,form</field>
     </record>

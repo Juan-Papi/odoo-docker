@@ -27,6 +27,8 @@
                <field name="apellido" />
                 <field name="telefono" />
                 <field name="direccion" />
+                <field name="usuario_id" />
+
               
 
               

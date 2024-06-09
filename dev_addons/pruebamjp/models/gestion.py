@@ -8,7 +8,7 @@ class gestion(models.Model):
 
     #year = fields.Char(required=True)
     #year = fields.Integer(required=True)
-    year = fields.Integer(required=True)#el unique es como siempre
+    year = fields.Integer(required=True,string="año")#el unique es como siempre
     fecha_inicio = fields.Datetime()
     fecha_fin = fields.Datetime()
     curso_materia_ids = fields.One2many('pruebamjp.curso_materia', 'gestion_id', string="Gestiones")

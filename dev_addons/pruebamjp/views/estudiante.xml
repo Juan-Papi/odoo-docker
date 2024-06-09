@@ -43,7 +43,7 @@
 
     <record model="ir.actions.act_window" id="pruebamjp.action_estudiante_window">
       <!-- name es el texto que aparece al lado del nuevo  -->
-      <field name="name">estudiantes</field>
+      <field name="name">ESTUDIANTES</field>
       <field name="res_model">pruebamjp.estudiante</field>
       <field name="view_mode">tree,form</field>
     </record>

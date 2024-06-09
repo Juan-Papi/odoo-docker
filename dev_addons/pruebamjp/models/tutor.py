@@ -15,10 +15,34 @@ class tutor(models.Model):
     estudiante_tutor=fields.One2many(string="estudiante_tutor", comodel_name="pruebamjp.estudiante_tutor",inverse_name='tutor')
     usuario_id = fields.Many2one('res.users', string='Usuario', default=lambda self: self.env.user, required=True)
    
+
+    @api.model
+    def create(self, vals):
+        # Convertir a mayúsculas antes de crear el registro
+        if 'nombre' in vals:
+            vals['nombre'] = vals['nombre'].upper()
+        if 'apellido' in vals:
+            vals['apellido'] = vals['apellido'].upper()
+        return super(tutor, self).create(vals) 
+
+    
+    @api.constrains('nombre', 'apellido')
+    def _check_mayusculas(self):
+        for record in self:
+            # Validar que los campos estén en mayúsculas
+            if record.nombre != record.nombre.upper() or record.apellido != record.apellido.upper():
+                raise ValidationError('Los campos nombre y apelliido deben estar en mayúsculas.')
+   
+   
+   
     @api.depends('nombre', 'apellido') 
     def _compute_display_name(self): 
          for rec in self: 
              rec.display_name = f"{rec.nombre} {rec.apellido}"
+
+   
+
+
 
 
     @api.constrains('nombre','apellido')

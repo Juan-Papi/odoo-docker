@@ -37,7 +37,7 @@
 
     <record model="ir.actions.act_window" id="pruebamjp.action_gestion_window">
       <!-- name es el texto que aparece al lado del nuevo  -->
-      <field name="name">gestiones</field>
+      <field name="name">GESTIONES</field>
       <field name="res_model">pruebamjp.gestion</field>
       <field name="view_mode">tree,form</field>
     </record>
