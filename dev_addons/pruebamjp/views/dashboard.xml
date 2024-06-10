@@ -1,0 +1,32 @@
+<odoo>
+  <data>
+     <record model="ir.ui.view" id="view_gestion_academica_kanban">
+      <field name="name">gestion.academica.kanban</field>
+      
+      <field name="arch" type="xml">
+        <kanban>
+          <templates>
+            <t t-name="kanban-box">
+              <div class="oe_kanban_global_click">
+                <div class="oe_kanban_details">
+                  <!-- Contenido de la tarjeta -->
+                  <strong>Gestión Académica</strong>
+                  <!-- Campos adicionales -->
+                </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record>
+
+      <record model="ir.actions.act_window" id="pruebamjp.accion_gestion_academica">
+      <field name="name">Gestión Académica</field>
+      
+      <field name="view_mode">kanban</field>
+      
+       </record>
+     
+
+  </data>
+ </odoo> 

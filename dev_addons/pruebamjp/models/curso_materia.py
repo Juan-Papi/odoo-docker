@@ -20,7 +20,6 @@ class curso_materia(models.Model):
     
 
 
-    ciclo_id = fields.Many2one('pruebamjp.ciclo', string="Ciclo", ondelete='cascade', required=True)
     #ciclo_nombre = fields.Char(related='ciclo_id.nombre', string='Ciclo') 
     
     

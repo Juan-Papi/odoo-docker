@@ -10,7 +10,8 @@ class curso(models.Model):
     paralelo=fields.Char()
     curso_materia_ids = fields.One2many('pruebamjp.curso_materia', 'curso_id', string="Cursos")
     inscripcion_ids = fields.One2many('pruebamjp.inscripcion', 'curso', string="Cursos")
-
+    
+    ciclo_id = fields.Many2one('pruebamjp.ciclo', string="Ciclo", ondelete='cascade', required=True)
 
     
     @api.model
@@ -43,10 +44,10 @@ class curso(models.Model):
    
 
 
-    @api.depends('nombre','paralelo') 
+    @api.depends('nombre','paralelo','ciclo_id') 
     def _compute_display_name(self): 
          for rec in self: 
-             rec.display_name = f"{rec.nombre} {rec.paralelo} "
+             rec.display_name = f"{rec.nombre} {rec.paralelo} - {rec.ciclo_id.nombre} "
 
 
     def unlink(self):

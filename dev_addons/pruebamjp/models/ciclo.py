@@ -7,7 +7,7 @@ class ciclo(models.Model):
     _description = 'Modelo o tabla ciclo'
 
     nombre = fields.Char(required=True)
-    curso_materia_ids = fields.One2many('pruebamjp.curso_materia', 'ciclo_id', string="Ciclos")
+    curso_id = fields.One2many('pruebamjp.curso', 'ciclo_id', string="Ciclos")
 
 
     @api.depends('nombre') 
@@ -58,6 +58,6 @@ class ciclo(models.Model):
                 raise ValidationError('ya existe el ciclo')
     def unlink(self):
         for ciclos in self:
-            if ciclos.curso_materia_ids :
+            if ciclos.cursoid :
                 raise ValidationError("No se puede eliminar el ciclo porque esta relacionada a un curso.")
         return super(ciclo, self).unlink()                                          

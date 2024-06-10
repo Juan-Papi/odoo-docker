@@ -2,10 +2,14 @@
   <data>
     <menuitem name="Gestion" id="pruebamjp.menu_root" />
 
+       <!-- Menú para el Dashboard que apunta a la acción de la vista kanban -->
+     <menuitem name="Dashboard" id="pruebamjp.menu_1" parent="pruebamjp.menu_root" action="pruebamjp.accion_gestion_academica"/> 
+
+    <!-- Acción para abrir la vista kanban -->
 
      <menuitem name="Curso" id="pruebamjp.menu_2" parent="pruebamjp.menu_root" />
 
-    <menuitem name="cursos" id="pruebamjp.menu_2_list" parent="pruebamjp.menu_2"
+      <menuitem name="cursos" id="pruebamjp.menu_2_list" parent="pruebamjp.menu_2"
       action="pruebamjp.action_curso_window" />
 
     <menuitem name="materias" id="pruebamjp.menu_3_list" parent="pruebamjp.menu_2"
@@ -57,8 +61,20 @@
     <menuitem name="subnotas" id="pruebamjp.menu_19_list" parent="pruebamjp.menu_4"
       action="pruebamjp.action_subnota_window" />
 
-    <menuitem name="mensualidad" id="pruebamjp.menu_20_list" parent="pruebamjp.menu_4"
+     <menuitem name="mensualidad" id="pruebamjp.menu_20_list" parent="pruebamjp.menu_4"
       action="pruebamjp.action_mensualidad_window" /> 
+
+
+      <menuitem name="Asistencia" id="pruebamjp.menu_25" parent="pruebamjp.menu_root" />
+   
+      <!-- <menuitem name="asistencia" id="pruebamjp.menu_20_list" parent="pruebamjp.menu_25"
+      action="pruebamjp.action_asistencia_window" />  -->
+
+  
+
+
+
+
 
 
   </data>
