@@ -25,7 +25,6 @@ Long description of module's purpose
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        'views/dashboard.xml',
         'views/curso.xml',
         'views/materia.xml',
         'views/ciclo.xml',
