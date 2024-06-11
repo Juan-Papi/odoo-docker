@@ -1916,3 +1916,111 @@ AttributeError: 'pruebamjp.subnota' object has no attribute 'modalidad'
 2024-06-05 22:33:37,693 1 INFO ? odoo.service.server: Initiating shutdown 
 2024-06-05 22:33:37,694 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
 2024-06-05 22:33:38,113 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
+2024-06-05 22:33:55,302 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:561: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 561, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-05 22:33:55,304 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:587: DeprecationWarning: The 'osv_memory_age_limit' option found in the configuration file is a deprecated alias to 'transient_age_limit', please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 587, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-05 22:33:55,304 1 INFO ? odoo: Odoo version 17.0-20240522 
+2024-06-05 22:33:55,308 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-06-05 22:33:55,310 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-06-05 22:33:55,311 1 INFO ? odoo: database: odoo@db:5432 
+2024-06-05 22:33:55,432 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-06-05 22:33:55,599 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 6d624fa3990b:8069 
+2024-06-05 22:33:57,480 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-05 22:33:57,495 1 INFO odoo-parcial odoo.modules.loading: loading 1 modules... 
+2024-06-05 22:33:57,500 1 INFO odoo-parcial odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-06-05 22:33:57,503 1 INFO odoo-parcial odoo.modules.loading: loading 12 modules... 
+2024-06-05 22:33:57,807 1 INFO odoo-parcial odoo.modules.loading: 12 modules loaded in 0.30s, 0 queries (+0 extra) 
+2024-06-05 22:33:57,828 1 INFO odoo-parcial odoo.modules.loading: Modules loaded. 
+2024-06-05 22:33:57,831 1 INFO odoo-parcial odoo.modules.registry: Registry loaded in 0.349s 
+2024-06-05 22:33:57,833 1 INFO odoo-parcial odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-05 22:33:57,868 1 INFO odoo-parcial werkzeug: 172.29.0.1 - - [05/Jun/2024 22:33:57] "GET /api/subnota/estudiante/1 HTTP/1.1" 200 - 35 0.016 0.757
+2024-06-05 22:34:04,043 1 INFO odoo-parcial werkzeug: 172.29.0.1 - - [05/Jun/2024 22:34:04] "GET /websocket HTTP/1.1" 101 - 2 0.004 0.011
+2024-06-05 22:34:04,050 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-06-05 22:36:40,473 1 ERROR odoo-parcial odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2194, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1770, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 133, in retrying
+    result = func()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1797, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1914, in dispatch
+    return self.request.registry['ir.http']._dispatch(endpoint)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 222, in _dispatch
+    result = endpoint(**request.params)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 725, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/mnt/extra-addons/pruebamjp/controllers/controllerAPI.py", line 99, in mis_estudiantes
+    for estudiante_tutor in tutor.estudiante_tutor_ids:
+AttributeError: 'pruebamjp.tutor' object has no attribute 'estudiante_tutor_ids'
+2024-06-05 22:36:40,506 1 INFO odoo-parcial werkzeug: 172.29.0.1 - - [05/Jun/2024 22:36:40] "GET /api/mis_estudiantes HTTP/1.1" 500 - 3 0.002 0.036
+2024-06-05 22:36:41,979 1 ERROR odoo-parcial odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2194, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1770, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 133, in retrying
+    result = func()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1797, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1914, in dispatch
+    return self.request.registry['ir.http']._dispatch(endpoint)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 222, in _dispatch
+    result = endpoint(**request.params)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 725, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/mnt/extra-addons/pruebamjp/controllers/controllerAPI.py", line 99, in mis_estudiantes
+    for estudiante_tutor in tutor.estudiante_tutor_ids:
+AttributeError: 'pruebamjp.tutor' object has no attribute 'estudiante_tutor_ids'
+2024-06-05 22:36:41,982 1 INFO odoo-parcial werkzeug: 172.29.0.1 - - [05/Jun/2024 22:36:41] "GET /api/mis_estudiantes HTTP/1.1" 500 - 2 0.000 0.005
+2024-06-05 22:36:54,618 1 INFO odoo-parcial odoo.addons.base.models.res_users: Login successful for db:odoo-parcial login:pablojuan123@gmail.com from 172.29.0.1 
+2024-06-05 22:36:54,633 1 INFO odoo-parcial werkzeug: 172.29.0.1 - - [05/Jun/2024 22:36:54] "POST /api/login HTTP/1.1" 200 - 19 0.010 0.356
+2024-06-05 22:37:02,189 1 ERROR odoo-parcial odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2194, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1770, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 133, in retrying
+    result = func()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1797, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1914, in dispatch
+    return self.request.registry['ir.http']._dispatch(endpoint)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 222, in _dispatch
+    result = endpoint(**request.params)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 725, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/mnt/extra-addons/pruebamjp/controllers/controllerAPI.py", line 99, in mis_estudiantes
+    for estudiante_tutor in tutor.estudiante_tutor_ids:
+AttributeError: 'pruebamjp.tutor' object has no attribute 'estudiante_tutor_ids'
+2024-06-05 22:37:02,203 1 INFO odoo-parcial werkzeug: 172.29.0.1 - - [05/Jun/2024 22:37:02] "GET /api/mis_estudiantes HTTP/1.1" 500 - 2 0.003 0.022
+2024-06-05 22:37:33,706 1 INFO odoo-parcial werkzeug: 172.29.0.1 - - [05/Jun/2024 22:37:33] "GET /api/test%0A HTTP/1.1" 200 - 3 0.002 0.006
