@@ -33,7 +33,7 @@
 
     <record model="ir.actions.act_window" id="pruebamjp.action_materia_window">
      
-      <field name="name">materias</field>
+      <field name="name">MATERIAS</field>
       <field name="res_model">pruebamjp.materia</field>
       <field name="view_mode">tree,form</field>
     </record> 

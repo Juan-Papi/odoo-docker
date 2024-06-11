@@ -8,6 +8,7 @@
         <tree>
           <field name="nombre" />
           <field name="paralelo" />
+          <field name="ciclo_id"></field>
 
         </tree>
       </field>
@@ -23,6 +24,7 @@
             <group>
               <field name="nombre" />
               <field name="paralelo" />
+              <field name="ciclo_id"></field>
               
             </group>
           </form>

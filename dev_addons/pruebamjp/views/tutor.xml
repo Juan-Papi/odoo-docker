@@ -27,6 +27,8 @@
                <field name="apellido" />
                 <field name="telefono" />
                 <field name="direccion" />
+                <field name="usuario_id" />
+
               
 
               
@@ -43,7 +45,7 @@
 
     <record model="ir.actions.act_window" id="pruebamjp.action_tutor_window">
       <!-- name es el texto que aparece al lado del nuevo  -->
-      <field name="name">estudiantes</field>
+      <field name="name">tutores</field>
       <field name="res_model">pruebamjp.tutor</field>
       <field name="view_mode">tree,form</field>
     </record>

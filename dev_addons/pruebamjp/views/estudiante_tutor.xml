@@ -6,9 +6,9 @@
       <field name="arch" type="xml">
 
         <tree>
-          <!-- <field name="estudiante" /> -->
-          <field name="estudiante_nombre" />
-            <field name="tutor_nombre" /> 
+          <field name="estudiante" />
+          
+          <field name="tutor_nombre" /> 
 
         </tree>
       </field>
@@ -23,10 +23,10 @@
           
             <group>
                 <field name="estudiante" />
-                <field name="estudiante_nombre" />
+                
 
                  <field name="tutor" />
-                 <field name="tutor_nombre" /> 
+                  
             </group>
             
         </form>
@@ -35,7 +35,7 @@
 
     <record model="ir.actions.act_window" id="pruebamjp.action_estudiante_tutor_window">
       
-      <field name="name">Curso_materia</field>
+      <field name="name">TUTORES DE LOS ESTUDIANTES</field>
       <field name="res_model">pruebamjp.estudiante_tutor</field>
       <field name="view_mode">tree,form</field>
     </record> 

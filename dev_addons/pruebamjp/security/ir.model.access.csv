@@ -17,3 +17,5 @@ access_pruebamjp_tutor,pruebamjp.tutor,model_pruebamjp_tutor,base.group_user,1,1
 access_pruebamjp_comunicado,pruebamjp.comunicado,model_pruebamjp_comunicado,base.group_user,1,1,1,1
 access_pruebamjp_comunicado_usuario,pruebamjp.comunicado_usuario,model_pruebamjp_comunicado_usuario,base.group_user,1,1,1,1
 access_pruebamjp_estudiante_tutor,pruebamjp.estudiante_tutor,model_pruebamjp_estudiante_tutor,base.group_user,1,1,1,1
+access_pruebamjp_asistencia,pruebamjp.asistencia,model_pruebamjp_asistencia,base.group_user,1,1,1,1
+access_pruebamjp_asistenciawizard,pruebamjp.asistenciawizard,model_pruebamjp_asistenciawizard,base.group_user,1,1,1,1

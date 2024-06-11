@@ -1,6 +1,6 @@
 
 from odoo import models, fields, api
-
+from odoo.exceptions import ValidationError
 
 class estudiante_tutor(models.Model):
     _name = 'pruebamjp.estudiante_tutor'
@@ -16,3 +16,20 @@ class estudiante_tutor(models.Model):
     estudiante_nombre = fields.Char(related='estudiante.nombre', string='Nombre del Estudiante')
     tutor_nombre = fields.Char(related='tutor.nombre', string='Nombre del tutor')
    
+    
+
+
+    @api.constrains('estudiante','tutor')
+    def _check_unique_estudiante_tutor(self):
+        for rec in self:
+            existing_records = self.search([
+                ('estudiante', '=', rec.estudiante.id),
+                ('tutor', '=', rec.tutor.id),
+                
+                
+                ('id', '!=', rec.id)
+            ])
+        if existing_records:
+            raise ValidationError('ya existe esta combinacion de estudiante con tutor')
+
+           

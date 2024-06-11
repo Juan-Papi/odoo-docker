@@ -39,12 +39,24 @@ Long description of module's purpose
         'views/inscripcion.xml',
         'views/nota.xml',
         'views/subnota.xml',
-        'views/mensualidad.xml'
+        'views/mensualidad.xml',
+        'views/comunicado.xml',
+        'views/comunicado_usuario.xml',
+        'views/asistencia.xml',
+
+        
+        
+              
 
 
 
 
     ],
+    'assets': {
+        'web.assets_backend': [
+            'pruebamjp/static/src/css/styles.css',
+        ],
+    },
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',

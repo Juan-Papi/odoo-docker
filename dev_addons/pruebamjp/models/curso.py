@@ -1,6 +1,6 @@
 
 from odoo import models, fields, api
-
+from odoo.exceptions import ValidationError
 
 class curso(models.Model):
     _name = 'pruebamjp.curso'
@@ -10,17 +10,48 @@ class curso(models.Model):
     paralelo=fields.Char()
     curso_materia_ids = fields.One2many('pruebamjp.curso_materia', 'curso_id', string="Cursos")
     inscripcion_ids = fields.One2many('pruebamjp.inscripcion', 'curso', string="Cursos")
+    
+    ciclo_id = fields.Many2one('pruebamjp.ciclo', string="Ciclo", ondelete='cascade', required=True)
+
+    
+    @api.model
+    def create(self, vals):
+        # Convertir a mayúsculas antes de crear el registro
+        if 'nombre' in vals:
+            vals['nombre'] = vals['nombre'].upper()
+        if 'paralelo' in vals:
+            vals['paralelo'] = vals['paralelo'].upper()
+        return super(curso, self).create(vals)         
+    
 
 
 
-    def action_save_and_back_to_tree(self):
-        self.ensure_one()
-        self.write({'nombre': self.nombre})  
-        return {
-            'type': 'ir.actions.act_window',
-            'name': 'crearCurso',
-            'view_mode': 'tree,form',
-            'res_model': 'pruebamjp.curso',
-            'res_id': self.id,
-            'target': 'current',
-        }
+    
+    @api.constrains('nombre', 'paralelo')
+    def _check_unique_curso_paralelo(self):
+        for record in self:
+            # Validar que los campos estén en mayúsculas
+            if record.nombre != record.nombre.upper() or record.paralelo != record.paralelo.upper():
+                raise ValidationError('Los campos nombre y paralelo deben estar en mayúsculas.')
+        for record in self:
+            existing = self.search([
+                ('nombre', '=', record.nombre),
+                ('paralelo', '=', record.paralelo),
+                ('id', '!=', record.id)
+            ])
+            if existing:
+                raise ValidationError('El curso y paralelo deben ser únicos.')    
+   
+
+
+    @api.depends('nombre','paralelo','ciclo_id') 
+    def _compute_display_name(self): 
+         for rec in self: 
+             rec.display_name = f"{rec.nombre} {rec.paralelo} - {rec.ciclo_id.nombre} "
+
+
+    def unlink(self):
+        for cursos in self:
+            if cursos.curso_materia_ids or cursos.inscripcion_ids:
+                raise ValidationError("No se puede eliminar el curso porque tiene materias o inscripciones relacionadas.")
+        return super(curso, self).unlink()        
