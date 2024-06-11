@@ -8,7 +8,7 @@
         <tree>
           <field name="nombre" />
           <field name="paralelo" />
-          <field name="ciclo_id"></field> 
+          <field name="ciclo_id"></field>
 
         </tree>
       </field>
@@ -25,13 +25,13 @@
               <field name="nombre" />
               <field name="paralelo" />
               <field name="ciclo_id"></field>
-               
+              
             </group>
           </form>
       </field>
     </record>
 
-       <record model="ir.actions.act_window" id="pruebamjp.action_asistencia_window">
+    <record model="ir.actions.act_window" id="pruebamjp.action_curso_window">
       <field name="name">CURSOS</field>
       <field name="res_model">pruebamjp.curso</field>
       <field name="view_mode">tree,form</field>

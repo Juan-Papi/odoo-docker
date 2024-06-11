@@ -19,5 +19,15 @@ class subnota(models.Model):
     #modalidad_id=fields.Char(related='curso_materia_id.gestion_id.modalidad_gestion_id', string='Modalidad')
     #modalidad_nombre=fields.Char(related='curso_materia_id.gestion_id.modalidad_gestion_id.nombre', string='Modalidad')
      
-    estudiante_id = fields.Many2one('pruebamjp.estudiante', string="Estudiante", ondelete='cascade', required=True)
+    estudiante_id = fields.Many2one('pruebamjp.estudiante', string="Estudiante", ondelete='cascade')
+    subinscripcion_id = fields.Many2one('pruebamjp.inscripcion', string="Inscripcion", ondelete='cascade')
     estudiante_nombre=fields.Char(related='estudiante_id.nombre', string='Estudiante')
+    
+
+    
+    @api.constrains('curso_materia_id', 'inscripcion_id')
+    def _check_year(self):
+        for record in self:
+            if record.curso_materia_id.gestion_id.year != record.subinscripcion_id.gestion_id.year:
+                raise ValidationError("El año de la gestión del curso materia y la inscripción deben coincidir.")  
+     

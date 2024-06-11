@@ -7,9 +7,9 @@
 
         <tree>
           <field name="nota" />
-         <!--  <field name="curso_materia_id" />
+           <field name="curso_materia_id" />
           
-          <field name="estudiante_id" />
+         <!--  <field name="estudiante_id" />
           <field name="materia_nombre" />
           <field name="year" />
           <field name="numero"/> -->
@@ -33,8 +33,8 @@
             <group>
               <field name="nota" />
                 
-               <field name="estudiante_id" />
-               <field name="curso_materia_id" />
+               <field name="subinscripcion_id" />
+                <field name="curso_materia_id" />
                 <field name="numero" />
                  <!-- <field name="estudiante_tutor"></field>  -->
                

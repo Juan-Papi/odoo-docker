@@ -31,9 +31,9 @@
             <group>
               <field name="nota" />
                
-               <field name="estudiante_id" />
-               <field name="curso_materia_id" />
-               
+               <field name="noinscripcion_id" />
+               <field name="curso_materia_id" /> 
+                
                 
                  <!-- <field name="estudiante_tutor"></field>  -->
                
