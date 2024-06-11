@@ -1,6 +1,6 @@
 <odoo>
   <data>
-    <menuitem name="Gestion" id="pruebamjp.menu_root" />
+    <menuitem name="SCHOOL" id="pruebamjp.menu_root" />
 
     <!-- Acción para abrir la vista kanban -->
 
