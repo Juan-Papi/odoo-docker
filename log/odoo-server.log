@@ -16811,3 +16811,9 @@ pruebamjp.access_pruebamjp_asistencia_wizard_line,access_pruebamjp_asistencia_wi
 2024-06-12 21:38:02,960 1 INFO odoo werkzeug: 172.21.0.1 - - [12/Jun/2024 21:38:02] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.024 0.043
 2024-06-12 21:38:02,969 1 INFO odoo werkzeug: 172.21.0.1 - - [12/Jun/2024 21:38:02] "POST /mail/load_message_failures HTTP/1.1" 200 - 3 0.002 0.013
 2024-06-12 21:38:02,989 1 INFO odoo werkzeug: 172.21.0.1 - - [12/Jun/2024 21:38:02] "POST /web/dataset/call_kw/pruebamjp.mensualidad/onchange HTTP/1.1" 200 - 1 0.002 0.005
+2024-06-12 21:38:04,583 1 INFO odoo werkzeug: 172.21.0.1 - - [12/Jun/2024 21:38:04] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2024-06-12 21:42:08,247 1 INFO odoo odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2024-06-12 21:42:08,252 1 INFO odoo odoo.addons.base.models.ir_cron: Job done: `payment: post-process transactions` (0.005s). 
+2024-06-12 21:44:55,547 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-06-12 21:44:55,548 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-06-12 21:44:55,666 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 8 connections  
