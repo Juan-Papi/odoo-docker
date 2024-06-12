@@ -46,18 +46,18 @@ class subnota(models.Model):
 
 
 
-    @api.constrains('curso_materia_id', 'estudiante_id', 'numero', 'year')
-    def _check_unique_subnota(self):
-        for record in self:
-            existing_subnota = self.env['pruebamjp.subnota'].search([
-                ('curso_materia_id', '=', record.curso_materia_id.id),
-                ('estudiante_id', '=', record.estudiante_id.id),
-                ('numero', '=', record.numero),
-                ('year', '=', record.year),
-                ('id', '!=', record.id)
-            ])
-            if existing_subnota:
-                raise ValidationError("Ya existe una subnota con el mismo curso, estudiante, número y año.") 
+    # @api.constrains('curso_materia_id', 'estudiante_id', 'numero', 'year')
+    # def _check_unique_subnota(self):
+    #     for record in self:
+    #         existing_subnota = self.env['pruebamjp.subnota'].search([
+    #             ('curso_materia_id', '=', record.curso_materia_id.id),
+    #             ('estudiante_id', '=', record.estudiante_id.id),
+    #             ('numero', '=', record.numero),
+    #             ('year', '=', record.year),
+    #             ('id', '!=', record.id)
+    #         ])
+    #         if existing_subnota:
+    #             raise ValidationError("Ya existe una subnota con el mismo curso, estudiante, número y año.") 
 
 
 

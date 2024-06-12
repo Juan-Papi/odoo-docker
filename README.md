@@ -34,8 +34,7 @@ entre al odoo web , en el apartado exec ejecute el sgte comnado
 ```
 pip install PyJwt
 ```
-
-
+ojo: tiene que estar corriendo el contenedor
 
 
 
