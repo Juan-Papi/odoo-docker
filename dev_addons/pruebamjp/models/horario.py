@@ -20,8 +20,13 @@ class horario(models.Model):
 
     
     curso_materia_ids = fields.One2many('pruebamjp.curso_materia', 'horario_id', string="Horarios")
+     
     
-  
+
+    
+
+
+
     @api.model
     def create(self, vals):
         # Convertir a mayúsculas antes de crear el registro

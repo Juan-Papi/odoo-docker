@@ -37,7 +37,7 @@
 
     <record model="ir.actions.act_window" id="pruebamjp.action_modalidad_gestion_window">
       <!-- name es el texto que aparece al lado del nuevo  -->
-      <field name="name">MODALIDADES</field>
+      <field name="name">PERIODOS ACADEMICOS</field>
       <field name="res_model">pruebamjp.modalidad_gestion</field>
       
     </record>
