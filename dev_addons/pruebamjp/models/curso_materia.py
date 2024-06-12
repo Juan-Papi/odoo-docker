@@ -34,7 +34,28 @@ class curso_materia(models.Model):
     #year = fields.Integer(related='gestion_id.year', string='Año') 
     
 
+    
+    @api.constrains('horario_id')
+    def _check_horario_conflict(self):
+        for record in self:
+            existing_records = self.env['pruebamjp.curso_materia'].search([
+                ('curso_id', '=', record.curso_id.id),
+                ('horario_id.dia', '=', record.horario_id.dia),
+                ('id', '!=', record.id)
+            ])
 
+            for existing in existing_records:
+                if self._is_overlap(existing.horario_id, record.horario_id):
+                    raise ValidationError("Conflicto de horario detectado para el curso {} y materia {} en el día {}.".format(
+                        record.curso_id.nombre, record.materia_id.nombre, record.horario_id.dia
+                    ))
+
+    def _is_overlap(self, horario1, horario2):
+        start1 = horario1.hora_inicio * 60 + horario1.minuto_inicio
+        end1 = horario1.hora_fin * 60 + horario1.minuto_fin
+        start2 = horario2.hora_inicio * 60 + horario2.minuto_inicio
+        end2 = horario2.hora_fin * 60 + horario2.minuto_fin
+        return max(start1, start2) < min(end1, end2) 
     
     @api.depends('curso_id','gestion_id') 
     def _compute_display_name(self): 

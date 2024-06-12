@@ -36,7 +36,7 @@
 
     <menuitem name="gestiones" id="pruebamjp.menu_6_list" parent="pruebamjp.menu_3"
       action="pruebamjp.action_gestion_window" />
-    <menuitem name="modalidades" id="pruebamjp.menu_7_list" parent="pruebamjp.menu_3"
+    <menuitem name="periodos academicos" id="pruebamjp.menu_7_list" parent="pruebamjp.menu_3"
       action="pruebamjp.action_modalidad_gestion_window" />
 
 

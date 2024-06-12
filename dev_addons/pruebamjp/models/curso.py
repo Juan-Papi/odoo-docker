@@ -27,7 +27,7 @@ class curso(models.Model):
 
 
     
-    @api.constrains('nombre', 'paralelo')
+    @api.constrains('nombre', 'paralelo','ciclo_id')
     def _check_unique_curso_paralelo(self):
         for record in self:
             # Validar que los campos estén en mayúsculas
@@ -37,6 +37,7 @@ class curso(models.Model):
             existing = self.search([
                 ('nombre', '=', record.nombre),
                 ('paralelo', '=', record.paralelo),
+                ('ciclo_id', '=', record.ciclo_id.id),
                 ('id', '!=', record.id)
             ])
             if existing:
