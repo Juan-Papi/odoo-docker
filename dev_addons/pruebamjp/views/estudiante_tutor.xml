@@ -8,7 +8,7 @@
         <tree>
           <field name="estudiante" />
           
-          <field name="tutor_nombre" /> 
+          <field name="tutor" /> 
 
         </tree>
       </field>

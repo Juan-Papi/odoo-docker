@@ -1,6 +1,6 @@
 
 # from odoo import models, fields, api
-# from odoo.exceptions import ValidationError
+from odoo.exceptions import ValidationError
 # from datetime import date
 from odoo import models, fields, api
 from datetime import date
@@ -12,7 +12,7 @@ class asistencia(models.Model):
      curso_materia_id = fields.Many2one('pruebamjp.curso_materia', string="Curso Materia", required=True)
      estudiante_id = fields.Many2one('pruebamjp.estudiante', string="Estudiante")
      gestion_id = fields.Many2one('pruebamjp.gestion', string="Gestion", compute='_compute_gestion_id', store=True)
-     fecha = fields.Date(string="Fecha", default=fields.Date.context_today, required=True)
+     fecha = fields.Datetime(string="Fecha", default=fields.Date.context_today, required=True)
      asistencia_line_ids = fields.One2many('pruebamjp.asistencialine', 'asistencia_id', string="Líneas de Asistencia")
 
      @api.depends('curso_materia_id')
@@ -33,6 +33,39 @@ class asistencia(models.Model):
                 record.asistencia_line_ids = [(0, 0, {
                     'estudiante_id': estudiante.id,
                 }) for estudiante in estudiantes]
+
+     
+     
+     @api.constrains('curso_materia_id', 'fecha')
+     def _check_duplicate_asistencia(self):
+        for record in self:
+            existing_asistencia = self.search([
+                ('curso_materia_id', '=', record.curso_materia_id.id),
+                ('fecha', '=', record.fecha),
+                ('id', '!=', record.id)
+            ])
+            if existing_asistencia:
+                raise ValidationError('Ya existe un registro de asistencia para este curso materia en la fecha especificada.')    
+     
+     @api.constrains('curso_materia_id')
+     def _check_profesor_curso_materia(self):
+        usuario_id = self.env.uid
+        profesor = self.env['pruebamjp.profesor'].search([('usuario_id', '=', usuario_id)], limit=1)
+        for record in self:
+            if profesor and record.curso_materia_id.profesor_id != profesor:
+                raise ValidationError('No puedes registrar asistencia para un curso que no está relacionado contigo.')
+
+
+
+     @api.constrains('fecha')
+     def _check_fecha_gestion(self):
+        for record in self:
+            if record.gestion_id:
+                if record.fecha < record.gestion_id.fecha_inicio or record.fecha > record.gestion_id.fecha_fin:
+                    raise ValidationError(f'La fecha de asistencia debe estar entre {record.gestion_id.fecha_inicio} y {record.gestion_id.fecha_fin}.')
+
+
+ 
 
 
 
