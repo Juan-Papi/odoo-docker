@@ -3386,3 +3386,170 @@ KeyError: 'academic.student'
 2024-06-11 23:20:53,926 1 INFO ? odoo.service.server: Initiating shutdown 
 2024-06-11 23:20:53,927 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
 2024-06-11 23:20:54,054 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 5 connections  
+2024-06-12 00:53:36,930 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:561: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 561, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-12 00:53:36,931 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/tools/config.py:587: DeprecationWarning: The 'osv_memory_age_limit' option found in the configuration file is a deprecated alias to 'transient_age_limit', please use the latter.
+  File "/usr/bin/odoo", line 8, in <module>
+    odoo.cli.main()
+  File "/usr/lib/python3/dist-packages/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/usr/lib/python3/dist-packages/odoo/cli/server.py", line 126, in main
+    odoo.tools.config.parse_config(args)
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 380, in parse_config
+    self._warn_deprecated_options()
+  File "/usr/lib/python3/dist-packages/odoo/tools/config.py", line 587, in _warn_deprecated_options
+    warnings.warn(
+ 
+2024-06-12 00:53:36,932 1 INFO ? odoo: Odoo version 17.0-20240522 
+2024-06-12 00:53:36,934 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-06-12 00:53:36,935 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-06-12 00:53:36,935 1 INFO ? odoo: database: odoo@db:5432 
+2024-06-12 00:53:37,065 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-06-12 00:53:37,449 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0db832d7a074:8069 
+2024-06-12 00:54:00,717 1 INFO odoopar2 odoo.modules.loading: loading 1 modules... 
+2024-06-12 00:54:00,727 1 INFO odoopar2 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-12 00:54:00,758 1 WARNING odoopar2 odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-12 00:54:00,763 1 INFO odoopar2 odoo.modules.loading: loading 12 modules... 
+2024-06-12 00:54:00,997 1 WARNING odoopar2 odoo.api.create: The model odoo.addons.pruebamjp.models.ciclo is not overriding the create method in batch 
+2024-06-12 00:54:01,026 1 WARNING odoopar2 odoo.api.create: The model odoo.addons.pruebamjp.models.curso is not overriding the create method in batch 
+2024-06-12 00:54:01,054 1 WARNING odoopar2 odoo.api.create: The model odoo.addons.pruebamjp.models.estudiante is not overriding the create method in batch 
+2024-06-12 00:54:01,092 1 WARNING odoopar2 odoo.api.create: The model odoo.addons.pruebamjp.models.horario is not overriding the create method in batch 
+2024-06-12 00:54:01,132 1 WARNING odoopar2 odoo.api.create: The model odoo.addons.pruebamjp.models.materia is not overriding the create method in batch 
+2024-06-12 00:54:01,158 1 WARNING odoopar2 odoo.api.create: The model odoo.addons.pruebamjp.models.modalidad_gestion is not overriding the create method in batch 
+2024-06-12 00:54:01,180 1 WARNING odoopar2 odoo.api.create: The model odoo.addons.pruebamjp.models.profesor is not overriding the create method in batch 
+2024-06-12 00:54:01,208 1 WARNING odoopar2 odoo.api.create: The model odoo.addons.pruebamjp.models.tutor is not overriding the create method in batch 
+2024-06-12 00:54:01,221 1 WARNING odoopar2 odoo.api.create: The model odoo.addons.pruebamjp.models.comunicado is not overriding the create method in batch 
+2024-06-12 00:54:01,325 1 INFO odoopar2 odoo.modules.loading: 12 modules loaded in 0.56s, 0 queries (+0 extra) 
+2024-06-12 00:54:01,350 1 WARNING odoopar2 odoo.fields: Field pruebamjp.asistencia_wizard_line.wizard_id with unknown comodel_name 'pruebamjp.asistencia_wizard' 
+2024-06-12 00:54:01,359 1 INFO odoopar2 odoo.modules.loading: Modules loaded. 
+2024-06-12 00:54:01,364 1 INFO odoopar2 odoo.modules.registry: Registry loaded in 0.690s 
+2024-06-12 00:54:01,404 1 INFO odoopar2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-12 00:54:01,405 1 INFO odoopar2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-12 00:54:01,405 1 INFO odoopar2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-12 00:54:01,406 1 INFO odoopar2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-12 00:54:01,478 1 INFO odoopar2 odoo.http: Session expired 
+2024-06-12 00:54:01,479 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:01] "POST /web/action/load HTTP/1.1" 200 - 1 0.001 0.804
+2024-06-12 00:54:01,624 1 WARNING odoopar2 odoo.modules.module: Missing `license` key in manifest for 'pruebamjp', defaulting to LGPL-3 
+2024-06-12 00:54:01,686 1 INFO odoopar2 odoo.addons.base.models.ir_rule: Access Denied by record rules for operation: read on record ids: [2], uid: 4, model: res.users 
+2024-06-12 00:54:01,790 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:01] "GET /web?debug=1 HTTP/1.1" 303 - 4 0.042 0.068
+2024-06-12 00:54:02,056 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:02] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 17 0.057 1.318
+2024-06-12 00:54:02,380 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:02] "GET /websocket HTTP/1.1" 101 - 5 0.162 0.136
+2024-06-12 00:54:02,635 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-06-12 00:54:03,701 1 INFO odoopar2 odoo.addons.base.models.ir_model: Access Denied by ACLs for operation: read, uid: 4, model: ir.module.module 
+2024-06-12 00:54:03,705 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:03] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 31 0.089 2.948
+2024-06-12 00:54:03,718 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:03] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 35 0.187 2.821
+2024-06-12 00:54:03,793 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:03] "GET /web/login?debug=1 HTTP/1.1" 200 - 51 0.316 1.587
+2024-06-12 00:54:03,818 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:03] "GET /web/binary/company_logo HTTP/1.1" 304 - 5 0.003 0.006
+2024-06-12 00:54:05,512 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:05] "GET /web/service-worker.js HTTP/1.1" 200 - 5 0.057 0.050
+2024-06-12 00:54:05,839 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:05] "GET /web/webclient/translations/1718153643866 HTTP/1.1" 200 - 6 0.003 1.962
+2024-06-12 00:54:09,294 1 INFO odoopar2 odoo.addons.base.models.res_users: Login successful for db:odoopar2 login:pablojuan123@gmail.com from 172.18.0.1 
+2024-06-12 00:54:09,356 1 INFO odoopar2 odoo.modules.registry: Caches invalidated, signaling through the database: ['default'] 
+2024-06-12 00:54:09,367 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:09] "POST /web/login HTTP/1.1" 303 - 46 0.039 0.493
+2024-06-12 00:54:09,599 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:09] "GET /web HTTP/1.1" 200 - 67 0.086 0.138
+2024-06-12 00:54:09,679 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:09] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.006 0.008
+2024-06-12 00:54:09,731 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:09] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 3 0.001 0.057
+2024-06-12 00:54:09,741 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:09] "POST /web/action/load HTTP/1.1" 200 - 12 0.060 0.010
+2024-06-12 00:54:09,750 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:09] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.006
+2024-06-12 00:54:09,751 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:09] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.010 0.012
+2024-06-12 00:54:09,839 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:09] "POST /web/dataset/call_kw/res.users/get_views HTTP/1.1" 200 - 51 0.036 0.047
+2024-06-12 00:54:09,900 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:09] "POST /web/dataset/call_kw/res.users/web_read HTTP/1.1" 200 - 47 0.018 0.024
+2024-06-12 00:54:09,981 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:09] "GET /web/image?model=res.users&id=8&field=avatar_128&unique=1718123115000 HTTP/1.1" 200 - 9 0.005 0.012
+2024-06-12 00:54:11,388 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:11] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.002 0.009
+2024-06-12 00:54:14,965 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:14] "POST /web/action/load HTTP/1.1" 200 - 9 0.005 0.010
+2024-06-12 00:54:15,030 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:15] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 40 0.019 0.029
+2024-06-12 00:54:15,050 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:15] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.006
+2024-06-12 00:54:15,103 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:15] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.031 0.027
+2024-06-12 00:54:15,151 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:15] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.010 0.095
+2024-06-12 00:54:16,285 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:16] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.023 0.016
+2024-06-12 00:54:16,295 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:16] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.007 0.040
+2024-06-12 00:54:18,102 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:18] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.017 0.015
+2024-06-12 00:54:18,120 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:18] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.003 0.008
+2024-06-12 00:54:19,582 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:19] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.019 0.014
+2024-06-12 00:54:19,590 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:19] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.005 0.036
+2024-06-12 00:54:23,855 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:23] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.013 0.016
+2024-06-12 00:54:23,870 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:23] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.007
+2024-06-12 00:54:26,307 1 INFO odoopar2 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.18.0.1 
+2024-06-12 00:54:26,309 1 INFO odoopar2 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.18.0.1 
+2024-06-12 00:54:26,310 1 INFO odoopar2 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['pruebamjp'] to user pablojuan123@gmail.com #2 via 172.18.0.1 
+2024-06-12 00:54:26,967 1 INFO odoopar2 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user pablojuan123@gmail.com #2 via 172.18.0.1 
+2024-06-12 00:54:27,051 1 INFO odoopar2 odoo.modules.loading: loading 1 modules... 
+2024-06-12 00:54:27,081 1 INFO odoopar2 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-12 00:54:27,141 1 INFO odoopar2 odoo.modules.loading: updating modules list 
+2024-06-12 00:54:27,190 1 INFO odoopar2 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.18.0.1 
+2024-06-12 00:54:27,968 1 INFO odoopar2 odoo.modules.loading: loading 12 modules... 
+2024-06-12 00:54:27,969 1 INFO odoopar2 odoo.modules.loading: Loading module pruebamjp (2/12) 
+2024-06-12 00:54:27,995 1 INFO odoopar2 odoo.modules.registry: module pruebamjp: creating or updating database tables 
+2024-06-12 00:54:28,071 1 WARNING odoopar2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.curso() have the same label: Cursos. [Modules: pruebamjp and pruebamjp] 
+2024-06-12 00:54:28,078 1 WARNING odoopar2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.gestion() have the same label: Gestiones. [Modules: pruebamjp and pruebamjp] 
+2024-06-12 00:54:28,079 1 WARNING odoopar2 odoo.addons.base.models.ir_model: Two fields (estudiante_nombre, estudiante) of pruebamjp.inscripcion() have the same label: Estudiante. [Modules: pruebamjp and pruebamjp] 
+2024-06-12 00:54:28,079 1 WARNING odoopar2 odoo.addons.base.models.ir_model: Two fields (curso_nombre, curso) of pruebamjp.inscripcion() have the same label: Curso. [Modules: pruebamjp and pruebamjp] 
+2024-06-12 00:54:28,080 1 WARNING odoopar2 odoo.addons.base.models.ir_model: Two fields (estudiante_nombre, estudiante_id) of pruebamjp.nota() have the same label: Estudiante. [Modules: pruebamjp and pruebamjp] 
+2024-06-12 00:54:28,080 1 WARNING odoopar2 odoo.addons.base.models.ir_model: Two fields (estudiante_nombre, estudiante_id) of pruebamjp.subnota() have the same label: Estudiante. [Modules: pruebamjp and pruebamjp] 
+2024-06-12 00:54:28,151 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/security/ir.model.access.csv 
+2024-06-12 00:54:28,245 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/views.xml 
+2024-06-12 00:54:28,452 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/templates.xml 
+2024-06-12 00:54:28,473 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/curso.xml 
+2024-06-12 00:54:28,524 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/materia.xml 
+2024-06-12 00:54:28,560 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/ciclo.xml 
+2024-06-12 00:54:28,591 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/gestion.xml 
+2024-06-12 00:54:28,632 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/modalidad.xml 
+2024-06-12 00:54:28,767 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/profesor.xml 
+2024-06-12 00:54:28,884 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/estudiante.xml 
+2024-06-12 00:54:28,934 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/tutor.xml 
+2024-06-12 00:54:29,019 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/horario.xml 
+2024-06-12 00:54:29,089 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/curso_materia.xml 
+2024-06-12 00:54:29,130 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/estudiante_tutor.xml 
+2024-06-12 00:54:29,164 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/inscripcion.xml 
+2024-06-12 00:54:29,196 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/nota.xml 
+2024-06-12 00:54:29,223 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/subnota.xml 
+2024-06-12 00:54:29,256 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/mensualidad.xml 
+2024-06-12 00:54:29,429 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/comunicado.xml 
+2024-06-12 00:54:29,542 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/comunicado_usuario.xml 
+2024-06-12 00:54:29,632 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/views/asistencia.xml 
+2024-06-12 00:54:29,675 1 INFO odoopar2 odoo.modules.loading: Module pruebamjp: loading demo 
+2024-06-12 00:54:29,676 1 INFO odoopar2 odoo.modules.loading: loading pruebamjp/demo/demo.xml 
+2024-06-12 00:54:29,707 1 WARNING odoopar2 odoo.modules.loading: The models ['pruebamjp.asistencia_wizard_line'] have no access rules in module pruebamjp, consider adding some, like:
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+pruebamjp.access_pruebamjp_asistencia_wizard_line,access_pruebamjp_asistencia_wizard_line,pruebamjp.model_pruebamjp_asistencia_wizard_line,base.group_user,1,0,0,0 
+2024-06-12 00:54:29,718 1 INFO odoopar2 odoo.modules.loading: Module pruebamjp loaded in 1.75s, 712 queries (+712 other) 
+2024-06-12 00:54:29,726 1 INFO odoopar2 odoo.modules.loading: 12 modules loaded in 1.76s, 712 queries (+712 extra) 
+2024-06-12 00:54:29,821 1 INFO odoopar2 odoo.modules.registry: verifying fields for every extended model 
+2024-06-12 00:54:29,879 1 WARNING odoopar2 odoo.addons.base.models.ir_model: Two fields (estudiante_nombre, estudiante_id) of pruebamjp.subnota() have the same label: Estudiante. [Modules: pruebamjp and pruebamjp] 
+2024-06-12 00:54:29,880 1 WARNING odoopar2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.gestion() have the same label: Gestiones. [Modules: pruebamjp and pruebamjp] 
+2024-06-12 00:54:29,881 1 WARNING odoopar2 odoo.addons.base.models.ir_model: Two fields (inscripcion_ids, curso_materia_ids) of pruebamjp.curso() have the same label: Cursos. [Modules: pruebamjp and pruebamjp] 
+2024-06-12 00:54:29,882 1 WARNING odoopar2 odoo.addons.base.models.ir_model: Two fields (estudiante_nombre, estudiante) of pruebamjp.inscripcion() have the same label: Estudiante. [Modules: pruebamjp and pruebamjp] 
+2024-06-12 00:54:29,882 1 WARNING odoopar2 odoo.addons.base.models.ir_model: Two fields (curso_nombre, curso) of pruebamjp.inscripcion() have the same label: Curso. [Modules: pruebamjp and pruebamjp] 
+2024-06-12 00:54:29,883 1 WARNING odoopar2 odoo.addons.base.models.ir_model: Two fields (estudiante_nombre, estudiante_id) of pruebamjp.nota() have the same label: Estudiante. [Modules: pruebamjp and pruebamjp] 
+2024-06-12 00:54:30,089 1 INFO odoopar2 odoo.modules.loading: Modules loaded. 
+2024-06-12 00:54:30,093 1 INFO odoopar2 odoo.modules.registry: Registry loaded in 3.064s 
+2024-06-12 00:54:30,095 1 INFO odoopar2 odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-06-12 00:54:30,099 1 INFO odoopar2 odoo.modules.registry: Registry changed, signaling through the database 
+2024-06-12 00:54:30,100 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:30] "POST /web/dataset/call_button HTTP/1.1" 200 - 3924 1.453 2.348
+2024-06-12 00:54:30,116 1 INFO odoopar2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-12 00:54:30,250 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:30] "GET /web HTTP/1.1" 200 - 69 0.028 0.109
+2024-06-12 00:54:30,354 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:30] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 4 0.001 0.004
+2024-06-12 00:54:30,384 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:30] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.008 0.008
+2024-06-12 00:54:30,391 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:30] "POST /web/action/load HTTP/1.1" 200 - 9 0.011 0.010
+2024-06-12 00:54:30,397 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:30] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.016
+2024-06-12 00:54:30,405 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:30] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.020 0.014
+2024-06-12 00:54:30,425 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:30] "POST /web/dataset/call_kw/pruebamjp.curso/get_views HTTP/1.1" 200 - 19 0.007 0.010
+2024-06-12 00:54:30,441 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:30] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.001 0.002
+2024-06-12 00:54:30,445 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:30] "POST /web/dataset/call_kw/pruebamjp.curso/web_search_read HTTP/1.1" 200 - 4 0.004 0.004
+2024-06-12 00:54:32,068 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:54:32] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.005
+2024-06-12 00:55:13,258 1 INFO odoopar2 odoo.addons.base.models.res_users: Login successful for db:odoopar2 login:pedro@gmail.com from 172.18.0.1 
+2024-06-12 00:55:13,278 1 INFO odoopar2 odoo.addons.pruebamjp.controllers.auth_api: Token creado correctamente para el usuario pedro@gmail.com 
+2024-06-12 00:55:13,303 1 INFO odoopar2 werkzeug: 172.18.0.1 - - [12/Jun/2024 00:55:13] "POST /api/auth/login HTTP/1.1" 200 - 23 0.009 0.429
