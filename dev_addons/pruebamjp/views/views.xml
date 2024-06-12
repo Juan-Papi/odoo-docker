@@ -62,11 +62,11 @@
 
 <!-- 
       <menuitem name="Asistencia" id="pruebamjp.menu_25" parent="pruebamjp.menu_root" /> 
-   
-      <menuitem name="asistencia" id="pruebamjp.menu_20_list" parent="pruebamjp.menu_25"
-      action="pruebamjp.action_asistencia_window" />
+    -->
+      <menuitem name="asistencia" id="pruebamjp.menu_29_list" parent="pruebamjp.menu_4"
+      action="pruebamjp.action_asistencia_window" /> 
 
-   -->
+   
 
 
 

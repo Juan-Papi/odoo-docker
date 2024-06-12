@@ -7,7 +7,7 @@
 
         <tree>
           <field name="nombre" />
-
+          <field name="usuario_id" />
         </tree>
       </field>
     </record>
@@ -22,6 +22,7 @@
           <sheet>
             <group>
               <field name="nombre" />
+              <field name="usuario_id" />
             </group>
             <footer>
 

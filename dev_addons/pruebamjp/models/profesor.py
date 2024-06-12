@@ -8,7 +8,7 @@ class profesor(models.Model):
 
     nombre = fields.Char(required=True)
     curso_materia_ids = fields.One2many('pruebamjp.curso_materia', 'profesor_id', string="Profesores")
-  
+    usuario_id = fields.Many2one('res.users', string='Usuario',required=True)
 
    
     @api.model
@@ -35,17 +35,18 @@ class profesor(models.Model):
              rec.display_name = f"{rec.nombre}" 
 
 
-    @api.constrains('nombre')
-    def _check_unique_estudiante(self):
+    @api.constrains('nombre', 'usuario_id')
+    def _check_unique_profesor(self):
         for rec in self:
+            # Buscar si existe otro registro con el mismo nombre o el mismo usuario_id
             existing_records = self.search([
+                '|',
                 ('nombre', '=', rec.nombre),
-                
-                
+                ('usuario_id', '=', rec.usuario_id.id),
                 ('id', '!=', rec.id)
             ])
             if existing_records:
-                raise ValidationError('ya existe el profesor')
+                raise ValidationError('Ya existe un profesor con el mismo nombre o ya hay un profesor asignado al usuario.')
     
     
     def unlink(self):

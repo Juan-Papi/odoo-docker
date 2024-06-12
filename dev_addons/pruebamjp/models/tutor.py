@@ -43,15 +43,16 @@ class tutor(models.Model):
 
 
 
-    @api.constrains('nombre','apellido')
+    @api.constrains('nombre', 'apellido', 'usuario_id')
     def _check_unique_tutor(self):
         for rec in self:
             existing_records = self.search([
+                '|',
+                '&',
                 ('nombre', '=', rec.nombre),
                 ('apellido', '=', rec.apellido),
-                
-                
+                ('usuario_id', '=', rec.usuario_id.id),
                 ('id', '!=', rec.id)
             ])
             if existing_records:
-                raise ValidationError('ya existe el tutor')           
+                raise ValidationError('Ya existe un tutor con el mismo nombre y apellido, o ya hay un tutor asignado al usuario.')           

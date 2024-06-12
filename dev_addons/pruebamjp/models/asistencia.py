@@ -7,34 +7,67 @@ from datetime import date
 class asistencia(models.Model):
      _name = 'pruebamjp.asistencia'
      _description = 'Modelo o tabla asistencia'
+    
+    
      curso_materia_id = fields.Many2one('pruebamjp.curso_materia', string="Curso Materia", required=True)
-     estudiante_id = fields.Many2one('pruebamjp.estudiante', string="Estudiante", required=True)
-     gestion_id = fields.Many2one('pruebamjp.gestion', string="Gestion", required=True, compute='_compute_gestion_id', store=True)
+     estudiante_id = fields.Many2one('pruebamjp.estudiante', string="Estudiante")
+     gestion_id = fields.Many2one('pruebamjp.gestion', string="Gestion", compute='_compute_gestion_id', store=True)
      fecha = fields.Date(string="Fecha", default=fields.Date.context_today, required=True)
-     asistio = fields.Boolean(string="Asistió", default=False, required=True)
+     asistencia_line_ids = fields.One2many('pruebamjp.asistencialine', 'asistencia_id', string="Líneas de Asistencia")
 
-#     @api.depends('curso_materia_id')
-#     def _compute_gestion_id(self):
-#         for record in self:
-#             record.gestion_id = record.curso_materia_id.gestion_id if record.curso_materia_id else False
+     @api.depends('curso_materia_id')
+     def _compute_gestion_id(self):
+        for record in self:
+            record.gestion_id = record.curso_materia_id.gestion_id.id if record.curso_materia_id else False
 
-#     @api.constrains('curso_materia_id', 'gestion_id')
-#     def _check_gestion(self):
-#         for record in self:
-#             if record.curso_materia_id.gestion_id != record.gestion_id:
-#                 raise ValidationError("La gestión del Curso Materia y la gestión seleccionada deben coincidir.")
+     @api.onchange('curso_materia_id')
+     def load_estudiantes(self):
+        for record in self:
+            if record.curso_materia_id and record.gestion_id:
+                estudiantes = self.env['pruebamjp.inscripcion'].search([
+                    ('curso', '=', record.curso_materia_id.curso_id.id),
+                    ('gestion_id', '=', record.gestion_id.id)
+                ]).mapped('estudiante')
+                
+                record.asistencia_line_ids = [(5, 0, 0)]  # Borrar líneas existentes
+                record.asistencia_line_ids = [(0, 0, {
+                    'estudiante_id': estudiante.id,
+                }) for estudiante in estudiantes]
 
-#     @api.model
-#     def create(self, vals):
-#         # Verificar si ya existe una asistencia para el estudiante, curso materia y fecha
-#         existing_asistencia = self.search([
-#             ('curso_materia_id', '=', vals.get('curso_materia_id')),
-#             ('estudiante_id', '=', vals.get('estudiante_id')),
-#             ('fecha', '=', vals.get('fecha'))
-#         ])
-#         if existing_asistencia:
-#             raise ValidationError("Ya existe un registro de asistencia para este estudiante en este curso materia y fecha.")
-#         return super(asistencia, self).create(vals)
+
+
+class asistencialine(models.Model):
+      _name = 'pruebamjp.asistencialine'
+      _description = 'Línea de Asistencia'
+
+      asistencia_id = fields.Many2one('pruebamjp.asistencia', string="Asistencia", required=True, ondelete='cascade')
+      estudiante_id = fields.Many2one('pruebamjp.estudiante', string="Estudiante", required=True)
+      asistio = fields.Boolean(string="Asistió", default=False)
+
+
+
+
+
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 class asistenciawizard(models.Model):
     _name = 'pruebamjp.asistenciawizard'
