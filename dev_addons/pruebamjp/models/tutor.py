@@ -12,7 +12,7 @@ class tutor(models.Model):
     telefono = fields.Char(required=True)
     direccion = fields.Char(required=True)
     estudiante_tutor=fields.One2many(string="estudiante_tutor", comodel_name="pruebamjp.estudiante_tutor",inverse_name='tutor')
-    usuario_id = fields.Many2one('res.users', string='Usuario')
+    usuario_id = fields.Many2one('res.users', string='Usuario',required=True)
 
     @api.model
     def create(self, vals):

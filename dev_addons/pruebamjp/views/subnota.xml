@@ -15,6 +15,10 @@
           <field name="numero"/> -->
           <!-- <field name=""/> -->
           <field name="numero" />
+          <field name="notafinal"/>
+          <field name="estudiante_nombre"/> 
+          <field name="year"/>
+          
 
 
         </tree>
@@ -34,6 +38,7 @@
               <field name="subinscripcion_id" />
               <field name="curso_materia_id" />
               <field name="numero" />
+              <field name="notafinal"/>
               <!-- <field name="estudiante_tutor"></field>  -->
 
 

@@ -9,8 +9,8 @@ class estudiante_tutor(models.Model):
 
     relacion=fields.Char() 
     #estudiante_id = fields.Many2one('pruebamjp.estudiante', string="Estudiante", ondelete='cascade', required=True)
-    estudiante = fields.Many2one("pruebamjp.estudiante",ondelete="set null",help="estudiante relacionado")
-    tutor = fields.Many2one("pruebamjp.tutor",ondelete="set null",help="tutor relacionado")
+    estudiante = fields.Many2one("pruebamjp.estudiante",ondelete="cascade",help="estudiante relacionado",required=True)
+    tutor = fields.Many2one("pruebamjp.tutor", ondelete="cascade", help="Tutor relacionado", required=True)
     
     #tutor_id = fields.Many2one('pruebamjp.tutor', string="Tutor", ondelete='cascade', required=True)
     estudiante_nombre = fields.Char(related='estudiante.nombre', string='Nombre del Estudiante')

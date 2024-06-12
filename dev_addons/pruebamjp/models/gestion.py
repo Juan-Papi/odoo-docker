@@ -38,4 +38,11 @@ class gestion(models.Model):
         for gestiones in self:
             if gestiones.curso_materia_ids or gestiones.inscripcion_ids:
                 raise ValidationError("No se puede eliminar la gestion porque esta relacionada a un curso  o hay inscripciones")
-        return super(gestion, self).unlink()                                
+        return super(gestion, self).unlink() 
+
+
+    @api.constrains('year')
+    def _check_year(self):
+        for record in self:
+            if record.year < 2000:
+                raise ValidationError("El año no puede ser menor a 2000.")                                   
