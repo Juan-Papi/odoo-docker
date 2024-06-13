@@ -413,6 +413,7 @@ class AuthAPI(http.Controller):
                         "id": subnota.id,
                         "nota": subnota.nota,
                         "numero": subnota.numero,
+                        "modalidad": subnota.subinscripcion_id.gestion_id.modalidad_gestion_id.nombre,
                         "curso_materia_id": curso_materia_id,
                         "curso_nombre": subnota.curso_nombre,
                         "curso_paralelo": subnota.curso_paralelo,
