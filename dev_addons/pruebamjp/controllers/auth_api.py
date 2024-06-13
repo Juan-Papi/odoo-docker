@@ -69,23 +69,6 @@ class AuthAPI(http.Controller):
         return response
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @http.route("/api/students/by_tutor", auth="public", methods=["GET"])
     def get_students_by_tutor(self):
         token = request.httprequest.headers.get("Authorization")
@@ -149,93 +132,6 @@ class AuthAPI(http.Controller):
                 "message": str(e),
                 "success": False,
             }, 500)
-
-
-
-
-
-
-    @http.route("/api/students/subnotas/<int:estudiante>", auth="public", methods=["GET"], csrf=False)
-    def get_subnotas_by_student(self, estudiante):
-        token = request.httprequest.headers.get("Authorization")
-        if not token:
-            _logger.error("Token faltante en la solicitud")
-            return self._response_with_cors({
-                "error": "Token faltante",
-                "success": False,
-            }, 401)
-
-        if token.startswith("Bearer "):
-            token = token.split(" ")[1]  # Obtener solo el token, sin el prefijo 'Bearer '
-
-        try:
-            payload = jwt.decode(token, self.secret_key, algorithms=["HS256"])
-            user_id = payload.get("user_id")
-
-            # Verificar que el usuario existe
-            user = request.env["res.users"].sudo().browse(user_id)
-            if not user:
-                _logger.error("El usuario con ID %s no existe", user_id)
-                return self._response_with_cors({
-                    "error": "Usuario no autorizado",
-                    "message": "El usuario no existe",
-                    "success": False,
-                }, 403)
-
-            # Buscar la inscripción del estudiante
-            inscripcion = request.env['pruebamjp.inscripcion'].sudo().search([
-                ('estudiante', '=', int(estudiante))
-            ], limit=1)
-
-            if not inscripcion:
-                return self._response_with_cors({
-                    "error": "Inscripción no encontrada",
-                    "success": False,
-                }, 404)
-
-            # Buscar las subnotas relacionadas con la inscripción y filtrar por el campo 'numero'
-            subnotas = request.env['pruebamjp.subnota'].sudo().search([
-                ('subinscripcion_id', '=', inscripcion.id)
-            ])
-
-            subnotas_data = [{
-                "id": subnota.id,
-                "nota": subnota.nota,
-                "numero": subnota.numero,
-                "curso_materia_id": subnota.curso_materia_id.id,
-                "curso_nombre": subnota.curso_nombre,
-                "curso_paralelo": subnota.curso_paralelo,
-                "materia_nombre": subnota.materia_nombre,
-                "year": subnota.year,
-                "estudiante_id": subnota.subinscripcion_id.estudiante.id,
-                "estudiante_nombre": subnota. subinscripcion_id.estudiante.nombre,
-            } for subnota in subnotas]
-
-            return self._response_with_cors({
-                "success": True,
-                "data": subnotas_data,
-            })
-
-        except jwt.ExpiredSignatureError:
-            _logger.error("Token expirado")
-            return self._response_with_cors({
-                "error": "Token expirado",
-                "success": False,
-            }, 403)
-        except jwt.InvalidTokenError:
-            _logger.error("Token inválido")
-            return self._response_with_cors({
-                "error": "Token inválido",
-                "success": False,
-            }, 403)
-        except Exception as e:
-            _logger.exception("Error al procesar la solicitud: %s", str(e))
-            return self._response_with_cors({
-                "error": "Error Interno del Servidor",
-                "message": str(e),
-                "success": False,
-            }, 500)
-
 
     @http.route("/api/estudiante/<int:estudiante>", auth="public", methods=["GET"], csrf=False)
     def get_subnotas_by_student(self, estudiante):
@@ -312,65 +208,6 @@ class AuthAPI(http.Controller):
                 "success": False,
             }, 500)
    
-
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     @http.route("/api/auth/check-status", auth="public", methods=["GET"])
     def check_auth_status(self):
         token = request.httprequest.headers.get('Authorization')
@@ -436,77 +273,102 @@ class AuthAPI(http.Controller):
                 'success': False
             }, 500)
             
-    @http.route("/api/estudiante/<int:estudiante>", auth="public", methods=["GET"], csrf=False)
+            
+            
+    
+    @http.route("/api/students/subnotas/<int:estudiante>", auth="public", methods=["GET"], csrf=False)
     def get_subnotas_by_student(self, estudiante):
-        token = request.httprequest.headers.get("Authorization")
-        if not token:
-            _logger.error("Token faltante en la solicitud")
-            return self._response_with_cors({
-                "error": "Token faltante",
-                "success": False,
-            }, 401)
-
-        if token.startswith("Bearer "):
-            token = token.split(" ")[1]  # Obtener solo el token, sin el prefijo 'Bearer '
-
-        try:
-            payload = jwt.decode(token, self.secret_key, algorithms=["HS256"])
-            user_id = payload.get("user_id")
-
-            # Verificar que el usuario existe
-            user = request.env["res.users"].sudo().browse(user_id)
-            if not user:
-                _logger.error("El usuario con ID %s no existe", user_id)
+            token = request.httprequest.headers.get("Authorization")
+            if not token:
+                _logger.error("Token faltante en la solicitud")
                 return self._response_with_cors({
-                    "error": "Usuario no autorizado",
-                    "message": "El usuario no existe",
+                    "error": "Token faltante",
+                    "success": False,
+                }, 401)
+
+            if token.startswith("Bearer "):
+                token = token.split(" ")[1]  # Obtener solo el token, sin el prefijo 'Bearer '
+
+            try:
+                payload = jwt.decode(token, self.secret_key, algorithms=["HS256"])
+                user_id = payload.get("user_id")
+
+                # Verificar que el usuario existe
+                user = request.env["res.users"].sudo().browse(user_id)
+                if not user:
+                    _logger.error("El usuario con ID %s no existe", user_id)
+                    return self._response_with_cors({
+                        "error": "Usuario no autorizado",
+                        "message": "El usuario no existe",
+                        "success": False,
+                    }, 403)
+
+                # Buscar la inscripción del estudiante
+                inscripcion = request.env['pruebamjp.inscripcion'].sudo().search([
+                    ('estudiante', '=', int(estudiante))
+                ], limit=1)
+
+                if not inscripcion:
+                    return self._response_with_cors({
+                        "error": "Inscripción no encontrada",
+                        "success": False,
+                    }, 404)
+
+                # Buscar las subnotas relacionadas con la inscripción
+                subnotas = request.env['pruebamjp.subnota'].sudo().search([
+                    ('subinscripcion_id', '=', inscripcion.id)
+                ])
+
+                # Agrupar subnotas por curso_materia_id y calcular la nota promedio
+                subnotas_by_curso_materia = {}
+                for subnota in subnotas:
+                    curso_materia_id = subnota.curso_materia_id.id
+                    if curso_materia_id not in subnotas_by_curso_materia:
+                        subnotas_by_curso_materia[curso_materia_id] = []
+                    subnotas_by_curso_materia[curso_materia_id].append(subnota.nota)
+
+                subnotas_data = []
+                for subnota in subnotas:
+                    curso_materia_id = subnota.curso_materia_id.id
+                    notas = subnotas_by_curso_materia[curso_materia_id]
+                    nota_promedio = sum(notas) / len(notas) if notas else 0
+
+                    subnotas_data.append({
+                        "id": subnota.id,
+                        "nota": subnota.nota,
+                        "numero": subnota.numero,
+                        "curso_materia_id": curso_materia_id,
+                        "curso_nombre": subnota.curso_nombre,
+                        "curso_paralelo": subnota.curso_paralelo,
+                        "materia_nombre": subnota.materia_nombre,
+                        "year": subnota.year,
+                        "estudiante_id": subnota.subinscripcion_id.estudiante.id,
+                        "estudiante_nombre": f"{subnota.subinscripcion_id.estudiante.nombre} {subnota.subinscripcion_id.estudiante.apellido}",
+                        "nota_promedio": nota_promedio
+                    })
+
+                return self._response_with_cors({
+                    "success": True,
+                    "data": subnotas_data,
+                })
+
+            except jwt.ExpiredSignatureError:
+                _logger.error("Token expirado")
+                return self._response_with_cors({
+                    "error": "Token expirado",
                     "success": False,
                 }, 403)
-
-            # Buscar la inscripción del estudiante
-            estudianteb = request.env['pruebamjp.estudiante'].sudo().search([
-                ('id', '=', int(estudiante))
-            ], limit=1)
-
-            if not estudianteb:
+            except jwt.InvalidTokenError:
+                _logger.error("Token inválido")
                 return self._response_with_cors({
-                    "error": " estudiante no encontrado",
+                    "error": "Token inválido",
                     "success": False,
-                }, 404)
-            # Buscar las subnotas relacionadas con la inscripción y filtrar por el campo 'numero'
-            # subnotas = request.env['pruebamjp.subnota'].sudo().search([
-            #     ('subinscripcion_id', '=', inscripcion.id)
-            # ])
+                }, 403)
+            except Exception as e:
+                _logger.exception("Error al procesar la solicitud: %s", str(e))
+                return self._response_with_cors({
+                    "error": "Error Interno del Servidor",
+                    "message": str(e),
+                    "success": False,
+                }, 500)
 
-            estudiante_data = [{
-                "id": estudianteb.id,
-                "nombre": estudianteb.nombre,
-                "apellido": estudianteb.apellido,
-                "edad": estudianteb.edad,
-            }]
-
-            return self._response_with_cors({
-                "success": True,
-                "data": estudiante_data,
-            })
-
-        except jwt.ExpiredSignatureError:
-            _logger.error("Token expirado")
-            return self._response_with_cors({
-                "error": "Token expirado",
-                "success": False,
-            }, 403)
-        except jwt.InvalidTokenError:
-            _logger.error("Token inválido")
-            return self._response_with_cors({
-                "error": "Token inválido",
-                "success": False,
-            }, 403)
-        except Exception as e:
-            _logger.exception("Error al procesar la solicitud: %s", str(e))
-            return self._response_with_cors({
-                "error": "Error Interno del Servidor",
-                "message": str(e),
-                "success": False,
-            }, 500)
-    
