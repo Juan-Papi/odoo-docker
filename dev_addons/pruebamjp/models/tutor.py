@@ -16,7 +16,6 @@ class tutor(models.Model):
 
     @api.model
     def create(self, vals):
-        # Convertir a mayúsculas antes de crear el registro
         if 'nombre' in vals:
             vals['nombre'] = vals['nombre'].upper()
         if 'apellido' in vals:
@@ -27,7 +26,6 @@ class tutor(models.Model):
     @api.constrains('nombre', 'apellido')
     def _check_mayusculas(self):
         for record in self:
-            # Validar que los campos estén en mayúsculas
             if record.nombre != record.nombre.upper() or record.apellido != record.apellido.upper():
                 raise ValidationError('Los campos nombre y apelliido deben estar en mayúsculas.')
    
@@ -37,10 +35,6 @@ class tutor(models.Model):
     def _compute_display_name(self): 
          for rec in self: 
              rec.display_name = f"{rec.nombre} {rec.apellido}"
-
-   
-
-
 
 
     @api.constrains('nombre', 'apellido', 'usuario_id')

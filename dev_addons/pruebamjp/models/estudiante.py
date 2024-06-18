@@ -12,15 +12,11 @@ class estudiante(models.Model):
     nota_ids = fields.One2many('pruebamjp.nota', 'estudiante_id', string="Estudiantes_nota")
     subnota_ids = fields.One2many('pruebamjp.subnota', 'estudiante_id', string="Estudiantes_subnota")
     inscripcion_ids = fields.One2many('pruebamjp.inscripcion', 'estudiante', string="Estudiantes")
-    
-    #estudiante_tutor_ids = fields.One2many('pruebamjp.estudiante_tutor', 'estudiante_id', string="Estudiantes")
     estudiante_tutor=fields.One2many(string="estudiante_tutor", comodel_name="pruebamjp.estudiante_tutor",inverse_name='estudiante')
     
 
-
     @api.model
     def create(self, vals):
-        # Convertir a mayúsculas antes de crear el registro
         if 'nombre' in vals:
             vals['nombre'] = vals['nombre'].upper()
         if 'apellido' in vals:
@@ -31,20 +27,14 @@ class estudiante(models.Model):
     @api.constrains('nombre', 'apellido')
     def _check_mayusculas(self):
         for record in self:
-            # Validar que los campos estén en mayúsculas
             if record.nombre != record.nombre.upper() or record.apellido != record.apellido.upper():
                 raise ValidationError('Los campos nombre y apellido deben estar en mayúsculas.')
-
-
-
 
 
     @api.depends('nombre', 'apellido') 
     def _compute_display_name(self): 
          for rec in self: 
              rec.display_name = f"{rec.nombre} {rec.apellido}"
-
-
 
 
     @api.constrains('nombre','apellido')

@@ -26,13 +26,8 @@ class comunicado_usuario(models.Model):
 
     @api.model
     def _get_domain_usuarios(self):
-        # Obtener todos los registros de tutores
         tutores = self.env['pruebamjp.tutor'].search([])
-
-        # Extraer los IDs de usuarios relacionados con esos tutores
         usuario_ids = tutores.mapped('usuario_id.id')
-
-        # Devolver el dominio que filtra usuarios por los IDs obtenidos
         return [('id', 'in', usuario_ids)]
 
 

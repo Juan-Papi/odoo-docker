@@ -32,32 +32,16 @@ class comunicado(models.Model):
     def create_comunicado_for_tutors_of_course(self):
         if not self.curso_id:
             raise ValidationError("Por favor, seleccione un curso.")
-        # Obtener inscripciones del curso
         max_year = self.env['pruebamjp.gestion'].search([], order='year desc', limit=1).year
-
-        # Obtener inscripciones del curso en el año más reciente
         inscripciones = self.env['pruebamjp.inscripcion'].search([
         ('curso', '=', self.curso_id.id),
         ('gestion_id.year', '=', max_year)
         ])
-         # Obtener estudiantes de esas inscripciones
         estudiante_ids = inscripciones.mapped('estudiante.id')
-        # Obtener relaciones estudiante-tutor
         estudiante_tutores = self.env['pruebamjp.estudiante_tutor'].search([('estudiante', 'in', estudiante_ids)])
-        # Obtener tutores de esas relaciones
         tutor_ids = estudiante_tutores.mapped('tutor.id')
-        # Obtener usuarios relacionados con esos tutores
         usuarios = self.env['res.users'].search([('id', 'in', self.env['pruebamjp.tutor'].browse(tutor_ids).mapped('usuario_id.id'))])
-        # Crear comunicados para esos usuarios
         self._create_comunicado_usuarios(usuarios)
-
-
-
-
-
-
-
-
 
     @api.model
     def create(self, vals):

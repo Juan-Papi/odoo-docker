@@ -24,10 +24,3 @@ class inscripcion(models.Model):
      def _compute_display_name(self): 
          for rec in self: 
              rec.display_name = f"{rec.estudiante_nombre} - {rec.estudiante.apellido} {rec.curso_nombre} - {rec.curso.paralelo} - {rec.gestion_id.year}"
-
-
-     #def _compute_nombre_estudiante(self):
-     # if self.estudiante:
-     #   self.estudiante_nombre = self.estudiante.nombre
-     # else:
-     #   self.estudiante_nombre = ''

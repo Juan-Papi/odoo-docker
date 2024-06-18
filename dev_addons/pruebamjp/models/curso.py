@@ -16,7 +16,6 @@ class curso(models.Model):
     
     @api.model
     def create(self, vals):
-        # Convertir a mayúsculas antes de crear el registro
         if 'nombre' in vals:
             vals['nombre'] = vals['nombre'].upper()
         if 'paralelo' in vals:
@@ -30,7 +29,6 @@ class curso(models.Model):
     @api.constrains('nombre', 'paralelo','ciclo_id')
     def _check_unique_curso_paralelo(self):
         for record in self:
-            # Validar que los campos estén en mayúsculas
             if record.nombre != record.nombre.upper() or record.paralelo != record.paralelo.upper():
                 raise ValidationError('Los campos nombre y paralelo deben estar en mayúsculas.')
         for record in self:

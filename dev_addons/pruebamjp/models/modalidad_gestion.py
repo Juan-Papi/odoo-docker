@@ -7,7 +7,6 @@ class modalidad_gestion(models.Model):
     _description = 'Modelo o tabla modalidad gestion'
 
     nombre = fields.Char(required=True)
-    #subnota_ids = fields.One2many('pruebamjp.subnota', 'modalidad_gestion_id', string="Modalidad_gestiones")
     gestion = fields.One2many('pruebamjp.gestion', 'modalidad_gestion_id', string="gestiones")
     
     @api.depends('nombre') 
@@ -17,7 +16,6 @@ class modalidad_gestion(models.Model):
 
     @api.model
     def create(self, vals):
-        # Convertir a mayúsculas antes de crear el registro
         if 'nombre' in vals:
             vals['nombre'] = vals['nombre'].upper()
         return super(modalidad_gestion, self).create(vals) 
@@ -25,10 +23,8 @@ class modalidad_gestion(models.Model):
     @api.constrains('nombre')
     def _check_mayusculas(self):
         for record in self:
-            # Validar que los campos estén en mayúsculas
             if record.nombre != record.nombre.upper() :
                 raise ValidationError('Los campos nombre deben estar en mayúsculas.')
-
 
 
     def unlink(self):

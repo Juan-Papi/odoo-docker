@@ -29,7 +29,6 @@ class horario(models.Model):
 
     @api.model
     def create(self, vals):
-        # Convertir a mayúsculas antes de crear el registro
         if 'dia' in vals:
             vals['dia'] = vals['dia'].upper()
         return super(horario, self).create(vals)
@@ -39,23 +38,14 @@ class horario(models.Model):
     @api.constrains('hora_inicio', 'minuto_inicio', 'hora_fin', 'minuto_fin')
     def _check_time_intervals(self):
         for record in self:
-            # Convertir todo a minutos
             inicio_total_minutos = record.hora_inicio * 60 + record.minuto_inicio
             fin_total_minutos = record.hora_fin * 60 + record.minuto_fin
-
-            # Calcular la diferencia en minutos
             diferencia = fin_total_minutos - inicio_total_minutos
-
-            # Verificar que la diferencia sea múltiplo de 45 minutos
             if diferencia % 45 != 0:
                 raise ValidationError("La diferencia entre la hora de inicio y la hora de fin debe ser múltiplo de 45 minutos.")
-
-            # Validar que la hora de inicio y fin sean válidas
             if not (0 <= record.hora_inicio < 24 and 0 <= record.minuto_inicio < 60 and 
                     0 <= record.hora_fin < 24 and 0 <= record.minuto_fin < 60):
                 raise ValidationError("Las horas y minutos deben estar en un rango válido.")
-
-            # Validar que la hora de inicio sea anterior a la hora de fin
             if inicio_total_minutos >= fin_total_minutos:
                 raise ValidationError("La hora de inicio debe ser anterior a la hora de fin.")
 
@@ -80,7 +70,6 @@ class horario(models.Model):
                 raise ValidationError("los minutos no pueden ser mayor a 59 o menores a 0") 
 
 
-    #cadena que aparece en los crete form de las tablas ralacionads 
     @api.depends('hora_inicio','hora_fin') 
     def _compute_display_name(self): 
          for rec in self: 
@@ -105,8 +94,7 @@ class horario(models.Model):
 
 
 
-
-    #no se puede eliminar 
+ 
     def unlink(self):
         for horarios in self:
             if horarios.curso_materia_ids :

@@ -20,7 +20,6 @@ class materia(models.Model):
 
      @api.model
      def create(self, vals):
-        # Convertir a mayúsculas antes de crear el registro
         if 'nombre' in vals:
             vals['nombre'] = vals['nombre'].upper()
         return super(materia, self).create(vals)            
@@ -28,7 +27,6 @@ class materia(models.Model):
      @api.constrains('nombre')
      def _mayusculas(self):
         for record in self:
-            # Validar que los campos estén en mayúsculas
             if record.nombre != record.nombre.upper():
                 raise ValidationError('el campo nombre  debe estar en mayúsculas.')
 

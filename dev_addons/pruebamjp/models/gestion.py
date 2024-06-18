@@ -5,10 +5,7 @@ from odoo.exceptions import ValidationError
 class gestion(models.Model):
     _name = 'pruebamjp.gestion'
     _description = 'Modelo o tabla gestion'
-
-    #year = fields.Char(required=True)
-    #year = fields.Integer(required=True)
-    year = fields.Integer(required=True,string="año")#el unique es como siempre
+    year = fields.Integer(required=True,string="año")
     fecha_inicio = fields.Datetime(required=True)
     fecha_fin = fields.Datetime(required=True)
     curso_materia_ids = fields.One2many('pruebamjp.curso_materia', 'gestion_id', string="Gestiones")

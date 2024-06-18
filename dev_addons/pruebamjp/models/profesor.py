@@ -13,7 +13,6 @@ class profesor(models.Model):
    
     @api.model
     def create(self, vals):
-        # Convertir a mayúsculas antes de crear el registro
         if 'nombre' in vals:
             vals['nombre'] = vals['nombre'].upper()
         return super(profesor, self).create(vals)
@@ -23,7 +22,6 @@ class profesor(models.Model):
     @api.constrains('nombre')
     def _check_mayusculas(self):
         for record in self:
-            # Validar que los campos estén en mayúsculas
             if record.nombre != record.nombre.upper() :
                 raise ValidationError('Los campos nombre  debe estar en mayúsculas.')
 
@@ -38,7 +36,6 @@ class profesor(models.Model):
     @api.constrains('nombre', 'usuario_id')
     def _check_unique_profesor(self):
         for rec in self:
-            # Buscar si existe otro registro con el mismo nombre o el mismo usuario_id
             existing_records = self.search([
                 '|',
                 ('nombre', '=', rec.nombre),
